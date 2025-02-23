@@ -308,6 +308,28 @@ $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
+// 自訂顏色
+$primary-100: #f6f2e8;
+$primary-200: rgba(246, 242, 232, 0.3);
+$primary-300: #f5efdf;
+
+$secondary-100: #f5e9cb;
+
+$neutral-100: #484848;
+$neutral-200: rgba(72, 72, 72, 0.7);
+$neutral-300: rgba(72, 72, 72, 0.5);
+$neutral-400: rgba(72, 72, 72, 0.4);
+$neutral-500: rgba(72, 72, 72, 0.3);
+$neutral-600: rgba(72, 72, 72, 0.1);
+$neutral-700: #f8f7f6;
+$neutral-800: #f8e7d8;
+$neutral-900: #ffffff;
+$neutral-1000: rgba(255, 255, 255, 0.87);
+
+$error-100: #eb4649;
+$error-200: #d33e41;
+// 自訂顏色
+
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
@@ -638,6 +660,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
+// 自訂字體大小
 // scss-docs-start font-sizes
 $font-sizes: (
   1: $h1-font-size,
@@ -645,9 +668,14 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: 1rem,
+  8: 0.9375rem,
+  9: 0.875rem,
+  10: 0.75rem,
 ) !default;
 // scss-docs-end font-sizes
+// 自訂字體大小
 
 // scss-docs-start headings-variables
 $headings-margin-bottom:      $spacer * .5 !default;
@@ -665,7 +693,9 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
+  7: 1rem,
+  8: 0.5rem,
 ) !default;
 
 $display-font-family: null !default;
