@@ -1,12 +1,12 @@
 import Header from '../layout/Header';
 
-function Home() {
+function Products() {
     return (
         <>
             <Header />
-            <h1>這是首頁</h1>
+            <h1>這是全部商品頁</h1>
         </>
     )
 }
 
-export default Home
+export default Products

@@ -1,0 +1,115 @@
+nav {
+    width: 100%;
+    z-index: 9999;
+}
+
+header {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*下拉選單*/
+
+.dropdown-menu {
+    color: #484848;
+    background: #FFFFFFDE;
+}
+.dropdown a{
+    font-size: 20px;
+}
+
+/*pc*/
+@media (min-width:992px) {
+    header {
+        padding: 0 96px;
+        margin-bottom: 1px;
+    }
+
+    .mobileLogo {
+        display: none;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+
+    .mobileIcon {
+        display: none;
+    }
+
+    .mobile-list-btn {
+        display: none;
+    }
+
+    .menuBTN,
+    .closeBTN {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+    }
+
+    .navBAR .pcNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 50%; */
+        /* border: 1px solid black; */
+    }
+
+    .navBAR .pcNav li .navIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        margin-right: 24px;
+    }
+
+    .navBAR .pcNav li .logInBtn {
+        width: 130px;
+        display: block;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.4;
+        background: #F6F2E8;
+        color: #484848;
+        padding: 12px 32px;
+        border-radius: 100px;
+    }
+
+    .navBAR .pcNav li a:hover {
+        transition: all .6s;
+        transform: translateY(5px);
+        color: #4848484D;
+    }
+
+    // Navbar
+    .secondary-nav {
+        max-width: 100%;
+        margin: 0 auto;
+        border: 1px solid #4848481A;
+    }
+
+    .secondary-nav .nav-list {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    .nav-list a{
+        color: #484848;
+        font-weight: 900;
+    }
+
+    .secondary-nav a:hover {
+        color: #4848484D;
+    }
+}
