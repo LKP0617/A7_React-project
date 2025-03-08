@@ -22,7 +22,7 @@
 }
 
 .brand_swiper {
-    .mySwiper {
+    .swiper {
         overflow: visible;
     }
 
@@ -35,15 +35,15 @@
         background-size: cover;
 
         &.swiper-slide-img1 {
-            background-image: url(../../../assets/images/seven/brands_sos.png);
+            background-image: url('/src/assets/images/seven/brands_sos.png');
         }
 
         &.swiper-slide-img2 {
-            background-image: url(../images/brands_negaflower.png);
+            background-image: url('/src/assets/images/seven/brands_negaflower.png');
         }
 
         &.swiper-slide-img3 {
-            background-image: url(../images/brands_陶之家.png);
+            background-image: url('/src/assets/images/seven/brands_陶之家.png');
         }
 
         &.swiper-slide-prev,
@@ -63,15 +63,15 @@
         @media (max-width: 410px) {
 
             &.swiper-slide-img1 {
-                background-image: url(../images/brands_sos_mobile.png);
+                background-image: url('/src/assets/images/seven/brands_sos_mobile.png');
             }
 
             &.swiper-slide-img2 {
-                background-image: url(../images/brands_negaflower_mobile.png);
+                background-image: url('/src/assets/images/seven/brands_negaflower_mobile.png');
             }
 
             &.swiper-slide-img3 {
-                background-image: url(../images/brands_陶之家_mobile.png);
+                background-image: url('/src/assets/images/seven/brands_陶之家_mobile.png');
             }
         }
     }
@@ -91,30 +91,6 @@
     .swiper-wrapper {
         overflow: visible;
     }
-
-    // .swiper-button-next,
-    // .swiper-button-prev {
-    //     width: 60px;
-    //     height: 60px;
-    //     background-color: #FFFFFF;
-    //     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
-
-    //     img {
-    //         height: 24px;
-    //     }
-
-    //     &::after {
-    //         display: none;
-    //     }
-    // }
-
-    // .swiper-button-next {
-    //     right: -30px;
-    // }
-
-    // .swiper-button-prev {
-    //     left: -30px;
-    // }
 
     @media (max-width: 765px) {
 
@@ -156,7 +132,7 @@
 
 // 網站品牌
 .index_brand {
-    // background-image: url('../../images/seven/index_bg_image.png');
+    background-image: url('/src/assets/images/seven/index_bg_image.png');
     width: 100%;
     aspect-ratio: 1920 / 838;
     background-size: contain;
@@ -203,7 +179,7 @@
 @media (max-width: 576px) {
     .index_brand {
         position: none;
-        background-image: url(../images/brandsr_mobile_bg.png);
+        background-image: url('/src/assets/images/seven/brandsr_mobile_bg.png');
         max-width: 100%;
         height: 530px;
         background-position: center;
@@ -213,7 +189,7 @@
         padding: 45px 0;
 
         .index_brand_title_mobile {
-            background-image: url(../images/index_mobile_bg_img.png);
+            background-image: url('/src/assets/images/seven/index_mobile_bg_img.png');
             height: 251px;
             background-position: center;
             background-size: cover;
@@ -253,7 +229,7 @@
 }
 
 .product_type_Bg {
-    background-image: url(../images/product_type_Bg.png);
+    background-image: url('/src/assets/images/seven/product_type_Bg.png');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -289,19 +265,19 @@
             transition: background 0.6s ease;
 
             &.product_type01 {
-                background-image: url(../images/product_type01.png);
+                background-image: url('/src/assets/images/seven/product_type01.png');
                 background-position: center;
                 background-size: cover;
             }
 
             &.product_type02 {
-                background-image: url(../images/product_type02.png);
+                background-image: url('/src/assets/images/seven/product_type02.png');
                 background-position: center;
                 background-size: cover;
             }
 
             &.product_type03 {
-                background-image: url(../images/product_type03.png);
+                background-image: url('/src/assets/images/seven/product_type03.png');
                 background-position: center;
                 background-size: cover;
             }
@@ -319,7 +295,7 @@
             &.product_type01,
             &.product_type02,
             &.product_type03 {
-                background-image: url(../images/product_type.png);
+                background-image: url('/src/assets/images/seven/product_type.png');
             }
         }
 

@@ -1,30 +1,32 @@
-@font-face {
-	font-family: 'Gensen';
-	src: url('/assets/fonts/GenSenRounded2TW-R.otf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: 'Gensen';
+// 	src: url('/src/assets/fonts/GenSenRounded2TW-R.otf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 /*字體字型*/
 @font-face{
     font-family: 'gensen-b';
-    // src: url('/assets/fonts/GenSenRounded2TW-B.otf');
-    src: url('../../fonts/GenSenRounded2TW-B.otf');
+    src: url('/src/assets/fonts/GenSenRounded2TW-B.otf');
 }
+
 @font-face{
     font-family: 'gensen-r';
-    src: url('/assets/fonts/GenSenRounded2TW-R.otf');
+    src: url('/src/assets/fonts/GenSenRounded2TW-R.otf');
 }
+
 @font-face{
     font-family: 'chenyuluoyan';
-    src: url('/assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf');
+    src: url('/src/assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf');
 }
+
 @font-face{
     font-family: 'AR Brush2 Ultra';
-    src: url('/assets/fonts/b287fa9818ecd1e48da5d579b5655e68.ttf');
+    src: url('/src/assets/fonts/b287fa9818ecd1e48da5d579b5655e68.ttf');
 }
 
 
 body {
-	font-family: 'Gensen', sans-serif, 'gensen-b';
+	font-family: sans-serif, 'gensen-b', 'gensen-r', 'chenyuluoyan', 'AR Brush2 Ultra';
 }

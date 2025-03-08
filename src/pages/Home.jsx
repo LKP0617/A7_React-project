@@ -3,6 +3,7 @@ import Footer from '../layout/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import sevenImgs from '../assets/images/seven/SevenImgs';
+import Icons from '../assets/images/icons/Icons';
 // import bgImage from '/src/images/seven/index_bg_image.png';
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
 
             <div className="brands">
                 <div className="brand_container">
-                    <div className='brand_swiper'>
+                    <div className='brand_swiper margin-bottom-1 margin-bottom-mobile-1'>
                         <Swiper
                             modules={[Navigation, Pagination]}
                             spaceBetween={48}
@@ -26,40 +27,39 @@ function Home() {
                                 576: { slidesPerView: 1, spaceBetween: 0 },
                                 0: { slidesPerView: 1, spaceBetween: 0 },
                             }}
+                            className='position-relative'
                         >
                             <SwiperSlide>
-                                <img src={sevenImgs.brands_toa} width={'auto'} alt="brands_toa" />
+                                <div className="swiper-slide swiper-slide-img1"></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={sevenImgs.brands_negaflower} width={'auto'} alt="brands_negaflower" />
+                                <div className="swiper-slide swiper-slide-img2"></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={sevenImgs.brands_sos} width={'auto'} alt="brands_sos" />
+                                <div className="swiper-slide swiper-slide-img3"></div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
                 </div>
             </div>
 
+            <div className="index_brand margin-bottom-1 margin-bottom-mobile-1`">
+                <div className="container container-mobile">
+                    <div className="index_brand_title_mobile margin-bottom-mobile-1"></div>
+                    <div className="brand-content brand-content-lg p-4">
+                        <h5 className="fw-bold">
+                            在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。</h5>
+                        <h4 className="fw-bold text-end">——拾柒</h4>
+                    </div>
 
-            {/* <div style={{ backgroundImage: `url(${bgImage})` }}> */}
-            <div className="index_brand margin-bottom-1 margin-bottom-mobile-1">
-                    <div className="container container-mobile">
-                        <div className="index_brand_title_mobile margin-bottom-mobile-1"></div>
-                        <div className="brand-content brand-content-lg p-4">
-                            <h5 className="fw-bold">
-                                在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。</h5>
-                            <h4 className="fw-bold text-end">——拾柒</h4>
+                    <div className="brand-content-mobile">
+                        <div className="d-flex justify-content-center">
+                            <h5 className="fw-bold pb-2 mb-3">拾柒</h5>
                         </div>
-                        <div className="brand-content-mobile">
-                            <div className="d-flex justify-content-center">
-                                <h5 className="fw-bold pb-2 mb-3">拾柒</h5>
-                            </div>
-                            <p className="fw-bold text-center">在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。</p>
-                        </div>
+                        <p className="fw-bold text-center">在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。</p>
                     </div>
                 </div>
-            {/* </div> */}
+            </div>
 
             <div className="container container-mobile">
                 <div className="product_types d-flex flex-sm-row flex-column align-items-center margin-bottom-1 margin-bottom-mobile-1">
@@ -117,7 +117,7 @@ function Home() {
                     <div className="recommend_product_title justify-content-between align-items-center margin-bottom-2">
                         <h4 className="fw-bold">熱銷推薦</h4>
 
-                        {/* <div className="recommend_product_swiper d-lg-none">
+                        <div className="recommend_product_swiper d-lg-none">
                             <div className="swiper mySwiper2">
                                 <div className="swiper-wrapper">
 
@@ -132,7 +132,7 @@ function Home() {
                                                 </div>
                                                 <div className="card-body d-flex flex-column gap-2">
                                                     <div className="d-flex justify-content-center align-items-center gap-3">
-                                                        <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style="width: 24px; height: 24px;" />
+                                                        {/* <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style={"width: 24px; height: 24px;"} /> */}
                                                         <p className="fs-10">Nega Flower</p>
                                                     </div>
                                                     <div className="d-flex flex-column justify-content-center gap-1">
@@ -148,7 +148,7 @@ function Home() {
                                 <div className="swiper-button-next2"></div>
                                 <div className="swiper-button-prev2"></div>
                             </div>
-                        </div> */}
+                        </div>
 
                         <a className="btn index_btn rounded-pill" href="#" role="button">
                             <p className="fs-8 fw-bold">查看更多</p>
@@ -162,7 +162,7 @@ function Home() {
                                 <div className="position-relative recommend_product_card_img">
                                     <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
                                     <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
                                     </button>
                                 </div>
                                 <div className="card-body d-flex gap-3">
