@@ -1,12 +1,17 @@
 
 @import 'bootstrap/scss/functions';
-@import './base/fontFamily';
 @import "./utils/variables";
 @import "./utils/variables-dark";
+@import "./utils/mixin";
 
 @import 'bootstrap/scss/bootstrap';
+@import 'swiper/scss';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 // base
+@import './base/base';
+@import './base/fontFamily';
 
 
 // layout

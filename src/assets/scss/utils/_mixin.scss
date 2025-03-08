@@ -1,0 +1,19 @@
+.margin-bottom-1 {
+    margin-bottom: 80px;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+    .margin-bottom-md-1 {
+        margin-bottom: 27px;
+    }
+}
+
+@media (max-width: 576px) {
+    .margin-bottom-mobile-1 {
+        margin-bottom: 40px;
+    }
+}

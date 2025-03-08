@@ -1,0 +1,594 @@
+.index_btn {
+    &:hover {
+        background-color: rgba(246, 242, 232);
+    }
+}
+
+// 品牌輪播
+.brands,
+.recommend_product {
+    overflow-x: hidden;
+}
+
+.brand_container {
+    max-width: 1296px;
+    width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+
+    @media (max-width: 765px) {
+        padding: 0;
+    }
+}
+
+.brand_swiper {
+    .mySwiper {
+        overflow: visible;
+    }
+
+    .swiper-slide {
+        position: relative;
+        width: 100%;
+        max-width: 1920px;
+        height: 700px;
+        background-position: center;
+        background-size: cover;
+
+        &.swiper-slide-img1 {
+            background-image: url(../../../assets/images/seven/brands_sos.png);
+        }
+
+        &.swiper-slide-img2 {
+            background-image: url(../images/brands_negaflower.png);
+        }
+
+        &.swiper-slide-img3 {
+            background-image: url(../images/brands_陶之家.png);
+        }
+
+        &.swiper-slide-prev,
+        &.swiper-slide-next {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 1;
+            }
+        }
+
+        @media (max-width: 410px) {
+
+            &.swiper-slide-img1 {
+                background-image: url(../images/brands_sos_mobile.png);
+            }
+
+            &.swiper-slide-img2 {
+                background-image: url(../images/brands_negaflower_mobile.png);
+            }
+
+            &.swiper-slide-img3 {
+                background-image: url(../images/brands_陶之家_mobile.png);
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .swiper-slide {
+            height: 450px;
+        }
+    }
+
+    @media (max-width: 765px) {
+        .swiper-slide {
+            height: 350px;
+        }
+    }
+
+    .swiper-wrapper {
+        overflow: visible;
+    }
+
+    // .swiper-button-next,
+    // .swiper-button-prev {
+    //     width: 60px;
+    //     height: 60px;
+    //     background-color: #FFFFFF;
+    //     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
+
+    //     img {
+    //         height: 24px;
+    //     }
+
+    //     &::after {
+    //         display: none;
+    //     }
+    // }
+
+    // .swiper-button-next {
+    //     right: -30px;
+    // }
+
+    // .swiper-button-prev {
+    //     left: -30px;
+    // }
+
+    @media (max-width: 765px) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #382511;
+        width: 16px;
+        height: 16px;
+        padding: 0 4px;
+    }
+
+    @media (max-width: 410px) {
+        .swiper-slide {
+            height: 386px;
+            max-height: 100%;
+            background-size: cover;
+            margin-bottom: 40px;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+            height: 10px;
+        }
+
+        .swiper-pagination-bullet {
+            position: relative;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+
+// 網站品牌
+.index_brand {
+    // background-image: url('../../images/seven/index_bg_image.png');
+    width: 100%;
+    aspect-ratio: 1920 / 838;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+
+    .brand-content {
+        background-color: rgba($color: #FFFFFF, $alpha: 0.87);
+        max-width: 416px;
+        border-radius: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h5 {
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+    }
+
+    .brand-content-mobile {
+        color: transparent;
+    }
+}
+
+@media (max-width: 992px) {
+    .index_brand {
+
+        .brand-content {
+            max-width: 321px;
+
+            h5 {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .index_brand {
+        position: none;
+        background-image: url(../images/brandsr_mobile_bg.png);
+        max-width: 100%;
+        height: 530px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        padding: 45px 0;
+
+        .index_brand_title_mobile {
+            background-image: url(../images/index_mobile_bg_img.png);
+            height: 251px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 64px;
+        }
+
+        .brand-content {
+            display: none;
+        }
+
+        .brand-content-mobile {
+            color: #382511;
+
+            h5 {
+                border-bottom: 3px #382511 solid;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+// 商品類別
+.product_types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+    .col {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.product_type_Bg {
+    background-image: url(../images/product_type_Bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 306px;
+    aspect-ratio: 1 / 1;
+}
+
+.product_type {
+    max-width: 306px;
+    width: 100%;
+    aspect-ratio: 306 / 444;
+    padding: 7px;
+    border: 2px dashed #484848;
+    border-radius: 108px;
+    transition: border 0.3s ease;
+
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        .product_type01,
+        .product_type02,
+        .product_type03 {
+            background-repeat: no-repeat;
+            background: rgba($color: #000000, $alpha: 0.2);
+            background-blend-mode: multiply;
+            border-radius: 100px;
+            width: 100%;
+            height: 100%;
+            transition: background 0.6s ease;
+
+            &.product_type01 {
+                background-image: url(../images/product_type01.png);
+                background-position: center;
+                background-size: cover;
+            }
+
+            &.product_type02 {
+                background-image: url(../images/product_type02.png);
+                background-position: center;
+                background-size: cover;
+            }
+
+            &.product_type03 {
+                background-image: url(../images/product_type03.png);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+
+    &:hover {
+        border: 2px solid #484848;
+
+        .product_type01,
+        .product_type02,
+        .product_type03 {
+            background: rgba($color: #000000, $alpha: 0.5);
+
+            &.product_type01,
+            &.product_type02,
+            &.product_type03 {
+                background-image: url(../images/product_type.png);
+            }
+        }
+
+        h4 {
+            padding-bottom: 16px;
+            border-bottom: 1px solid #FFFFFF;
+            transition: border-bottom 0.3s ease;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .product_type_Bg h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product_types {
+        gap: 40px;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+
+    .product_type_Bg {
+        width: 100%;
+        max-width: 351px;
+
+        h3 {
+            font-size: 32px;
+        }
+    }
+
+    .product_type {
+        padding: 0;
+        border: none;
+        max-width: 351px;
+        width: 100%;
+        aspect-ratio: 351 / 444;
+
+        a {
+            height: 100%;
+        }
+    }
+}
+
+
+// 熱銷推薦
+.recommend_product {
+    background: #F8F7F6;
+    padding: 80px 0;
+
+    .recommend_product_title {
+        display: flex;
+    }
+
+    .btn {
+        padding: 11px 31px;
+        border: 1px solid #484848;
+    }
+
+    .recommend_product_card {
+        max-height: 430px;
+        margin: auto;
+    }
+
+    .recommend_product_swiper,
+    .recommend_product_card {
+        .card {
+            &:hover .recommend_product_card_img::after {
+                opacity: 1;
+            }
+        }
+
+        .heart-btn {
+            margin-right: 8px;
+            margin-bottom: 8px;
+            z-index: 10;
+        }
+    }
+
+    .recommend_product_card_img {
+        position: relative;
+        aspect-ratio: 304 / 304;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+    }
+
+    .card-body {
+        height: auto;
+
+        img {
+            margin-bottom: 31px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .recommend_product {
+        padding: 40px 0 0 0;
+
+        h4 {
+            padding-bottom: 8px;
+            border-bottom: #000000 solid 3px;
+        }
+
+        .recommend_product_title {
+            flex-direction: column;
+            gap: 40px;
+
+            .btn {
+                padding: 11px 51px;
+                background-color: #F6F2E8;
+                border: 1px solid #F6F2E8;
+
+                &:hover {
+                    background-color: #F5EFDF;
+                }
+            }
+        }
+
+        .recommend_product_swiper {
+            .mySwiper2 {
+                max-width: 575px;
+
+                .swiper-slide {
+                    width: 164px;
+                    height: 276px;
+                }
+            }
+
+            .heart-icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .card-body {
+            img {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .recommend_product_swiper {
+        .mySwiper2 {
+            width: 375px;
+            padding: 0 12px;
+        }
+    }
+}
+
+
+// 最新消息
+.news {
+    padding: 80px 0;
+
+    .btn {
+        padding: 11px 31px;
+        border: 1px solid #484848;
+    }
+
+    .card {
+        height: 511px;
+        border: 2px solid $gray-200;
+
+        .card-img-top {
+            width: 100%;
+            max-height: 285px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.news_card {
+    a {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 991px) {
+    .news {
+        padding: 40px 0 0 0;
+
+        .card {
+            max-width: 100%;
+            max-height: 437.5px;
+        }
+
+        h4 {
+            padding-bottom: 8px;
+            border-bottom: #000000 solid 3px;
+        }
+
+        .news_title {
+            flex-direction: column;
+            gap: 40px;
+
+            .btn {
+                padding: 11px 51px;
+                background-color: #F6F2E8;
+                border: 1px solid #F6F2E8;
+
+                &:hover {
+                    background-color: #F5EFDF;
+                }
+            }
+        }
+
+        .news_swiper {
+            .mySwiper2 {
+                max-width: 575px;
+
+                .swiper-slide {
+                    max-width: 330px;
+                }
+            }
+
+            .card-img-top {
+                max-height: 210px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .news_swiper {
+        .mySwiper2 {
+            width: 375px;
+            padding: 0 12px;
+        }
+
+        h5 {
+            font-size: 16px;
+            line-height: 1.4;
+            font-weight: 900;
+        }
+    }
+}
+
+// 卡片陰影和圓角
+.card-enhanced {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+}

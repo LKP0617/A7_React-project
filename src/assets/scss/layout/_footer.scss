@@ -1,0 +1,208 @@
+/* 頁尾 */
+footer {
+    // background-color: #000;
+    width: 100%;
+    // overflow-x: hidden;
+
+}
+
+
+/*pc*/
+@media (min-width:992px) {
+    .mobileLogoSlogan {
+        display: none !important;
+    }
+
+    .logoSlogan {
+        width: 25%;
+    }
+
+    .logoSlogan .logo {
+        margin: 0 auto;
+        margin-bottom: 38px;
+    }
+
+    .logoSlogan p {
+        margin: 0 auto;
+        color: #484848;
+    }
+
+    footer .row {
+        width: 75%;
+        margin-bottom: 80px;
+    }
+
+    footer .row h6 {
+        font-weight: 700;
+    }
+
+    footer .row a {
+        font-size: 14px;
+        line-height: 1.4;
+        display: inline-block;
+        width: 100px;
+        padding: 6px 0;
+        color: #484848;
+    }
+
+    .footerMail {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    footer .row p {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #484848;
+    }
+
+    footer .row a:hover,
+    footer .row a:active {
+        color: #1666df;
+    }
+
+    footer .footerIcon a:hover,
+    footer .footerIcon a:active {
+        filter: brightness(2.5) sepia(1) hue-rotate(90deg);
+    }
+
+    .footerBorder {
+        border-bottom: 1px solid #4848481A;
+        border-top: 1px solid #4848481A;
+        padding-top: 80px;
+    }
+
+    .footerBorder .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyright {
+        padding: 42px 0;
+    }
+
+    .container .copyright p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    .forbgColor {
+        background: #F8F7F6;
+    }
+}
+
+/*平板&手機*/
+@media (max-width: 991px) {
+    .logoSlogan {
+        display: none !important;
+    }
+
+    .mobileLogoSlogan .logo {
+        margin: 0 auto;
+        margin-bottom: 38px;
+        padding-top: 40px;
+    }
+
+    .mobileLogoSlogan .logo img {
+        // max-width: 100%;
+        // height: 100vh;
+        // vertical-align: middle;
+    }
+
+    .mobileLogoSlogan h6 {
+        margin: 0 auto;
+        color: #484848;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+    footer .row {
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    footer .row h6 {
+        font-weight: 700;
+    }
+
+    .footerBorder .forMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .row a {
+        display: block;
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 700;
+        flex-direction: row;
+        color: #484848;
+    }
+
+    .bt-40 {
+        margin-bottom: 40px;
+    }
+
+    .service .forMobile {
+        flex-wrap: wrap;
+    }
+
+    .service .forMobile a {
+        margin-bottom: 16px;
+    }
+
+    footer .footerIcon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 24px;
+    }
+
+
+
+    footer .row p {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #484848;
+
+    }
+
+    footer .forMobile a:hover,
+    footer .forMobile a:active {
+        color: #1666df;
+        filter: brightness(2.5) sepia(1) hue-rotate(90deg);
+    }
+
+    footer .footerIcon a:hover,
+    footer .footerIcon a:active {
+        filter: brightness(2.5) sepia(1) hue-rotate(90deg);
+    }
+
+    .footerBorder {
+        border-top: 1px solid #EAE6DD;
+        border-bottom: 1px solid #EAE6DD;
+    }
+
+    .copyright {
+        padding: 26px 0;
+    }
+
+    .container .copyright p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    .forbgColor {
+        background: #F8F7F6;
+    }
+}
