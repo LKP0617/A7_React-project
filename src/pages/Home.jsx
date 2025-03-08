@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import sevenImgs from '../assets/images/seven/SevenImgs';
 import Icons from '../assets/images/icons/Icons';
-// import bgImage from '/src/images/seven/index_bg_image.png';
 
 function Home() {
     return (
@@ -119,20 +118,103 @@ function Home() {
 
                         <div className="recommend_product_swiper d-lg-none">
                             <div className="swiper mySwiper2">
-                                <div className="swiper-wrapper">
-
-                                    <div className="swiper-slide">
+                                <Swiper
+                                    modules={[Navigation, Pagination]}
+                                    spaceBetween={48}
+                                    slidesPerView={'auto'}
+                                    loop={true}
+                                    initialSlide={1}
+                                    pagination={{ clickable: true }}
+                                    // navigation
+                                    breakpoints={{
+                                        768: { slidesPerView: 1, spaceBetween: 30 },
+                                        576: { slidesPerView: 1, spaceBetween: 0 },
+                                        0: { slidesPerView: 1, spaceBetween: 0 },
+                                    }}
+                                    className='position-relative'
+                                >
+                                    <SwiperSlide>
                                         <div className="col card border-0 px-0 rounded-bottom-0">
                                             <a href="#" className="border border-1 rounded-top-3 h-100">
                                                 <div className="position-relative recommend_product_card_img">
-                                                    <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
+                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
                                                     <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
                                                         <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
                                                     </button>
                                                 </div>
                                                 <div className="card-body d-flex flex-column gap-2">
                                                     <div className="d-flex justify-content-center align-items-center gap-3">
-                                                        {/* <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style={"width: 24px; height: 24px;"} /> */}
+                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
+                                                        <p className="fs-10">Nega Flower</p>
+                                                    </div>
+                                                    <div className="d-flex flex-column justify-content-center gap-1">
+                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
+                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="col card border-0 px-0 rounded-bottom-0">
+                                            <a href="#" className="border border-1 rounded-top-3 h-100">
+                                                <div className="position-relative recommend_product_card_img">
+                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
+                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                                    </button>
+                                                </div>
+                                                <div className="card-body d-flex flex-column gap-2">
+                                                    <div className="d-flex justify-content-center align-items-center gap-3">
+                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
+                                                        <p className="fs-10">Nega Flower</p>
+                                                    </div>
+                                                    <div className="d-flex flex-column justify-content-center gap-1">
+                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
+                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="col card border-0 px-0 rounded-bottom-0">
+                                            <a href="#" className="border border-1 rounded-top-3 h-100">
+                                                <div className="position-relative recommend_product_card_img">
+                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
+                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                                    </button>
+                                                </div>
+                                                <div className="card-body d-flex flex-column gap-2">
+                                                    <div className="d-flex justify-content-center align-items-center gap-3">
+                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
+                                                        <p className="fs-10">Nega Flower</p>
+                                                    </div>
+                                                    <div className="d-flex flex-column justify-content-center gap-1">
+                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
+                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
+
+                                {/* <div className="swiper-wrapper">
+
+                                    <div className="swiper-slide">
+                                        <div className="col card border-0 px-0 rounded-bottom-0">
+                                            <a href="#" className="border border-1 rounded-top-3 h-100">
+                                                <div className="position-relative recommend_product_card_img">
+                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
+                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                                    </button>
+                                                </div>
+                                                <div className="card-body d-flex flex-column gap-2">
+                                                    <div className="d-flex justify-content-center align-items-center gap-3">
+                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
                                                         <p className="fs-10">Nega Flower</p>
                                                     </div>
                                                     <div className="d-flex flex-column justify-content-center gap-1">
@@ -146,7 +228,7 @@ function Home() {
 
                                 </div>
                                 <div className="swiper-button-next2"></div>
-                                <div className="swiper-button-prev2"></div>
+                                <div className="swiper-button-prev2"></div> */}
                             </div>
                         </div>
 
@@ -160,13 +242,13 @@ function Home() {
                         <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
                             <a href="#" className="border border-1 rounded-top-3 h-100">
                                 <div className="position-relative recommend_product_card_img">
-                                    <img src="../assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
+                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
                                     <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
                                         <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
                                     </button>
                                 </div>
                                 <div className="card-body d-flex gap-3">
-                                    {/* <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style="width: 61px; height: 61px;" /> */}
+                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
                                     <div className="d-flex flex-column justify-content-center">
                                         <p className="fs-9 mb-2">Nega Flower</p>
                                         <p className="fw-bold text-truncate">可可棕配色零食花束</p>
@@ -179,16 +261,16 @@ function Home() {
                         <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
                             <a href="#" className="border border-1 rounded-top-3 rounded-bottom-0">
                                 <div className="position-relative recommend_product_card_img">
-                                    <img src="../assets/images/negaflower/玻璃花盅｜黑白配色.jpg" className="card-img-top" alt="玻璃花盅｜黑白配色" />
+                                    <img src="src/assets/images/negaflower/進口白玫瑰鮮花束.jpg" className="card-img-top" alt="進口白玫瑰鮮花束" />
                                     <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
                                     </button>
                                 </div>
                                 <div className="card-body d-flex gap-3">
-                                    {/* <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style="width: 61px; height: 61px;" /> */}
+                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
                                     <div className="d-flex flex-column justify-content-center">
                                         <p className="fs-9 mb-2">Nega Flower</p>
-                                        <p className="fw-bold text-truncate">玻璃花盅｜黑白配色</p>
+                                        <p className="fw-bold text-truncate">進口白玫瑰鮮花束</p>
                                         <p className="fw-bold mt-1">NT$999</p>
                                     </div>
                                 </div>
@@ -198,13 +280,13 @@ function Home() {
                         <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
                             <a href="#" className="border border-1 rounded-top-3 rounded-bottom-0">
                                 <div className="position-relative recommend_product_card_img">
-                                    <img src="../assets/images/negaflower/紫玫瑰永生花束.jpg" className="card-img-top" alt="紫玫瑰永生花束" />
+                                    <img src="src/assets/images/negaflower/紫玫瑰永生花束.jpg" className="card-img-top" alt="紫玫瑰永生花束" />
                                     <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
                                     </button>
                                 </div>
                                 <div className="card-body d-flex gap-3">
-                                    {/* <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style="width: 61px; height: 61px;" /> */}
+                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
                                     <div className="d-flex flex-column justify-content-center">
                                         <p className="fs-9 mb-2">Nega Flower</p>
                                         <p className="fw-bold text-truncate">紫玫瑰永生花束</p>
@@ -217,13 +299,13 @@ function Home() {
                         <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
                             <a href="#" className="border border-1 rounded-top-3 rounded-bottom-0">
                                 <div className="position-relative recommend_product_card_img">
-                                    <img src="../assets/images/negaflower/牛油果綠配色零食花束.jpg" className="card-img-top" alt="牛油果綠配色零食花束" />
+                                    <img src="src/assets/images/negaflower/牛油果綠配色零食花束.jpg" className="card-img-top" alt="牛油果綠配色零食花束" />
                                     <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
+                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
                                     </button>
                                 </div>
                                 <div className="card-body d-flex gap-3">
-                                    {/* <img src="../assets/images/negaflower/logo/nega.jpg" alt="nega" style="width: 61px; height: 61px;" /> */}
+                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
                                     <div className="d-flex flex-column justify-content-center">
                                         <p className="fs-9 mb-2">Nega Flower</p>
                                         <p className="fw-bold text-truncate">牛油果綠配色零食花束</p>
@@ -279,7 +361,7 @@ function Home() {
 
                         <a href="#">
                             <div className="card p-4 card-enhanced">
-                                {/* <img src="../assets/images/news_01.png" className="card-img-top mb-4" alt="news_01" style="height: 100%;" /> */}
+                                <img src="/src/assets/images/seven/news_01.png" className="card-img-top mb-4" alt="news_01" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column">
                                         <h5 className="card-title fw-bold">精選手製小品特惠活動</h5>
@@ -292,7 +374,7 @@ function Home() {
 
                         <a href="#">
                             <div className="card p-4 card-enhanced">
-                                {/* <img src="../assets/images/news_03.png" className="card-img-top mb-4" alt="news_03" style="height: 100%;" /> */}
+                                <img src="/src/assets/images/seven/news_03.png" className="card-img-top mb-4" alt="news_03" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column">
                                         <h5 className="card-title fw-bold">父親節特惠活動</h5>
@@ -305,7 +387,7 @@ function Home() {
 
                         <a href="#">
                             <div className="card p-4 card-enhanced">
-                                {/* <img src="../assets/images/news_02.png" className="card-img-top mb-4" alt="news_02" style="height: 100%;" /> */}
+                                <img src="/src/assets/images/seven/news_02.png" className="card-img-top mb-4" alt="news_02" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column">
                                         <h5 className="card-title fw-bold">本月壽星優惠通知</h5>
