@@ -1,3 +1,5 @@
+import pc_logo from './pc_logo.png'
+import pc_logo_lg from './pc_logo_lg.png'
 import brands_toa from './brands_陶之家.png';
 import brands_negaflower from './brands_negaflower.png';
 import brands_sos from './brands_sos.png';
@@ -14,6 +16,8 @@ import product_type02 from './product_type02.png';
 import product_type03 from './product_type03.png';
 
 const sevenImgs = {
+    pc_logo,
+    pc_logo_lg,
     brands_toa,
     brands_negaflower,
     brands_sos,
