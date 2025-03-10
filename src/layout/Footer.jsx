@@ -1,4 +1,5 @@
-import pc_logo from '../assets/images/pc_logo.png'
+import SevenImgs from '../assets/images/seven/SevenImgs'
+import Icons from '../assets/images/icons/Icons'
 
 function Footer() {
     return (
@@ -12,7 +13,7 @@ function Footer() {
                             <div className="container  ">
                                 <div className="logoSlogan d-flex flex-column me-5 wwe">
                                     <a href="index.html" className="logo">
-                                        <img src={pc_logo} alt="pc_logo" className="" />
+                                        <img src={SevenImgs.pc_logo} alt="pc_logo" className="" />
                                     </a>
                                     <p>
                                         手工的溫暖，品牌的堅持
@@ -50,16 +51,16 @@ function Footer() {
                                         <h6 className=" h6 my-3 ">聯絡我們</h6>
                                         <div className=" footerIcon  d-flex gap-4 my-4">
                                             <a href="#">
-                                                <img src="../assets/images/header_footer/Line (dark).png" alt="" />
+                                                <img src={Icons.Line_dark} alt="" />
                                             </a>
                                             <a href="javascript:;">
-                                                <img src="../assets/images/header_footer/mail 1.png" alt="" />
+                                                <img src={Icons.mail} alt="" />
                                             </a>
                                             <a href="javascript:;">
-                                                <img src="../assets/images/header_footer/Facebook (B&W).png" alt="" />
+                                                <img src={Icons.Facebook_BW} alt="" />
                                             </a>
                                             <a href="javascript:;">
-                                                <img src="../assets/images/header_footer/Instagram(B&W).png" alt="" />
+                                                <img src={Icons.Instagram_BW} alt="" />
                                             </a>
                                         </div>
                                         <div className="footerMail">
