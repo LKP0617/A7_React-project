@@ -34,7 +34,7 @@ function Header() {
             <header>
                 <div className="container-fluid">
                     <div className="d-flex justify-content-between align-items-center py-4">
-                        <Link to="index.html" className="pcLogo">
+                        <Link to="/" className="pcLogo">
                             <img src={SevenImgs.pc_logo} alt="pc_logo" />
                         </Link>
                         <div className="headerRight ">
@@ -42,7 +42,7 @@ function Header() {
                                 <Link to="#" className='headerIcons'>
                                     <img className='headerIcon' src={Icons.search} alt="search" />
                                 </Link>
-                                <Link to="#" className='headerIcons'>
+                                <Link to="/cart" className='headerIcons'>
                                     <img className='headerIcon' src={Icons.shopping_cart} alt="shopping_cart" />
                                 </Link>
                                 <button onClick={() => handleOpenLoginModal(null)} type="button" className="btn border-0 rounded-pill loginBtn">
@@ -83,13 +83,13 @@ function Header() {
                             </Dropdown>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link fs-6 fw-bloder" to="#">最新消息</Link>
+                            <Link className="nav-link fs-6 fw-bloder" to="/news">最新消息</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link fs-6 fw-bloder" to="#">關於拾柒</Link>
+                            <Link className="nav-link fs-6 fw-bloder" to="/sevenStory">關於拾柒</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link fs-6 fw-bloder" to="#">Q&A</Link>
+                            <Link className="nav-link fs-6 fw-bloder" to="/Q&A">Q&A</Link>
                         </li>
                     </ul>
                 </div>
@@ -138,6 +138,34 @@ function Header() {
                                 <button className="btn btn-facebook btn-block">Facebook</button>
                                 {/* <!-- Google 登入按鈕 --> */}
                                 <button className="btn btn-google btn-block">Google</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <!-- 搜尋彈窗 --> */}
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="searchModalLabel"><i class="bi bi-search"></i> 搜尋商品</h5>
+                            <a href="#" class="btn-close close-style" data-bs-dismiss="modal" aria-label="Close"></a>
+                        </div>
+                        <div class="modal-body">
+                            {/* <!-- 輸入框和搜尋按鈕 --> */}
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="輸入關鍵字" />
+                                    <a href="#" class="btn btn-secondary">搜尋</a>
+                            </div>
+
+                            <h6 class="my-4">熱門分類</h6>
+                            <div class="d-flex flex-wrap ">
+                                <a href="#" class="btn  hashtag-link">#花藝</a>
+                                <a href="#" class="btn  hashtag-link">#盆花</a>
+                                <a href="#" class="btn  hashtag-link">#開幕花禮</a>
+                                <a href="#" class="btn  hashtag-link">#陶器</a>
+                                <a href="#" class="btn  hashtag-link">#香氛</a>
                             </div>
                         </div>
                     </div>
