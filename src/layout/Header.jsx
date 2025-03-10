@@ -9,11 +9,12 @@ import SevenImgs from '../assets/images/seven/SevenImgs';
 function Header() {
 
     const loginModalRef = useRef(null);
+    const searchModalRef = useRef(null);
     const [modalMode, setModalMode] = useState(null);
 
     useEffect(() => {
         new Modal(loginModalRef.current, { backdrop: false });
-
+        new Modal(searchModalRef.current, { backdrop: false });
         // new Modal(delProductModalRef.current, { backdrop: false });
     }, [])
 
@@ -24,8 +25,20 @@ function Header() {
         modalInstance.show();
     }
 
-    const handleCloseLoginModal = (mode) => {
+    const handleCloseLoginModal = () => {
         const modalInstance = Modal.getInstance(loginModalRef.current);
+        modalInstance.hide();
+    }
+
+    const handleOpenSearchModal = (mode) => {
+        setModalMode(mode);
+
+        const modalInstance = Modal.getInstance(searchModalRef.current);
+        modalInstance.show();
+    }
+
+    const handleCloseSearchModal = () => {
+        const modalInstance = Modal.getInstance(searchModalRef.current);
         modalInstance.hide();
     }
 
@@ -39,7 +52,7 @@ function Header() {
                         </Link>
                         <div className="headerRight ">
                             <div className='d-flex align-items-center'>
-                                <Link to="#" className='headerIcons'>
+                                <Link onClick={() => handleOpenSearchModal(null)} className='headerIcons'>
                                     <img className='headerIcon' src={Icons.search} alt="search" />
                                 </Link>
                                 <Link to="/cart" className='headerIcons'>
@@ -114,12 +127,12 @@ function Header() {
                             <form>
                                 {/* <!-- 帳號欄位 --> */}
                                 <div className="form-group my-4 ">
-                                    <label for="username" className="my-2">登入會員</label>
+                                    <label htmlFor="username" className="my-2">登入會員</label>
                                     <input type="text" className="form-control" id="username" placeholder="登入拾柒帳號" />
                                 </div>
                                 {/* <!-- 密碼欄位 --> */}
                                 <div className="form-group  my-4 ">
-                                    <label for="password" className="my-2">輸入密碼</label>
+                                    <label htmlFor="password" className="my-2">輸入密碼</label>
                                     <input type="password" className="form-control" id="password" placeholder="輸入密碼" />
                                 </div>
                                 {/* <!-- 登入按鈕 --> */}
@@ -145,27 +158,29 @@ function Header() {
             </div>
 
             {/* <!-- 搜尋彈窗 --> */}
-            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="searchModalLabel"><i class="bi bi-search"></i> 搜尋商品</h5>
-                            <a href="#" class="btn-close close-style" data-bs-dismiss="modal" aria-label="Close"></a>
+            <div ref={searchModalRef} id="searchModal" className="modal fade" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                        <div className="modal-header d-flex justify-content-between border-0">
+                            <h5 className="modal-title" id="searchModalLabel"><i className="bi bi-search"></i> 搜尋商品</h5>
+                            <button onClick={() => handleCloseSearchModal(null)} type="button" className="close">
+                                <img src={Icons.x} alt="x" />
+                            </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             {/* <!-- 輸入框和搜尋按鈕 --> */}
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="輸入關鍵字" />
-                                    <a href="#" class="btn btn-secondary">搜尋</a>
+                            <div className="input-group mb-3">
+                                <input type="text" className="form-control" placeholder="輸入關鍵字" />
+                                <Link href="#" className="btn btn-secondary">搜尋</Link>
                             </div>
 
-                            <h6 class="my-4">熱門分類</h6>
-                            <div class="d-flex flex-wrap ">
-                                <a href="#" class="btn  hashtag-link">#花藝</a>
-                                <a href="#" class="btn  hashtag-link">#盆花</a>
-                                <a href="#" class="btn  hashtag-link">#開幕花禮</a>
-                                <a href="#" class="btn  hashtag-link">#陶器</a>
-                                <a href="#" class="btn  hashtag-link">#香氛</a>
+                            <h6 className="my-4">熱門分類</h6>
+                            <div className="d-flex flex-wrap ">
+                                <Link href="#" className="btn  hashtag-link">#花藝</Link>
+                                <Link href="#" className="btn  hashtag-link">#盆花</Link>
+                                <Link href="#" className="btn  hashtag-link">#開幕花禮</Link>
+                                <Link href="#" className="btn  hashtag-link">#陶器</Link>
+                                <Link href="#" className="btn  hashtag-link">#香氛</Link>
                             </div>
                         </div>
                     </div>

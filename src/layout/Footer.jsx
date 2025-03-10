@@ -23,28 +23,28 @@ function Footer() {
                                     <div className=" bt-40 col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column">
                                         <h6 className="h6 my-3">網站地圖</h6>
                                         <div className="forMobile">
-                                            <a href="javascript:;">商品總覽</a>
-                                            <a href="javascript:;">最新消息</a>
-                                            <a href="javascript:;">關於拾柒</a>
+                                            <a href="#">商品總覽</a>
+                                            <a href="#">最新消息</a>
+                                            <a href="#">關於拾柒</a>
                                         </div>
                                     </div>
                                     <div className="bt-40 col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column">
                                         <h6 className="h6 my-3">幫助/政策</h6>
                                         <div className="forMobile">
-                                            <a href="javascript:;">服務條款</a>
-                                            <a href="javascript:;">隱私政策</a>
-                                            <a href="javascript:;">退貨政策</a>
-                                            <a href="javascript:;">防詐騙宣導</a>
+                                            <a href="#">服務條款</a>
+                                            <a href="#">隱私政策</a>
+                                            <a href="#">退貨政策</a>
+                                            <a href="#">防詐騙宣導</a>
                                         </div>
                                     </div>
                                     <div className="bt-40 service col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column flex-wrap">
                                         <h6 className="h6 my-3">客戶服務</h6>
                                         <div className="forMobile">
-                                            <a href="javascript:;">常見問題</a>
-                                            <a href="javascript:;">退換貨須知</a>
-                                            <a href="javascript:;">訂貨進度查詢</a>
-                                            <a href="javascript:;">折價卷說明</a>
-                                            <a href="javascript:;">品牌合作窗口</a>
+                                            <a href="#">常見問題</a>
+                                            <a href="#">退換貨須知</a>
+                                            <a href="#">訂貨進度查詢</a>
+                                            <a href="#">折價卷說明</a>
+                                            <a href="#">品牌合作窗口</a>
                                         </div>
                                     </div>
                                     <div className="  col-xl-3 col-lg-3 col-md-12 col-sm-12 ">
@@ -53,13 +53,13 @@ function Footer() {
                                             <a href="#">
                                                 <img src={Icons.Line_dark} alt="" />
                                             </a>
-                                            <a href="javascript:;">
+                                            <a href="#">
                                                 <img src={Icons.mail} alt="" />
                                             </a>
-                                            <a href="javascript:;">
+                                            <a href="#">
                                                 <img src={Icons.Facebook_BW} alt="" />
                                             </a>
-                                            <a href="javascript:;">
+                                            <a href="#">
                                                 <img src={Icons.Instagram_BW} alt="" />
                                             </a>
                                         </div>

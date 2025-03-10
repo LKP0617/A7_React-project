@@ -1,4 +1,4 @@
-.shopping_status {
+.shopping_status_cart {
     margin: 80px 0;
 
     .progress-stacked {
@@ -48,21 +48,24 @@
     align-self: flex-start;
 
     .total_price_title {
+        background-color: #ffffff;
+        border-bottom: 1px solid #F5E9CB;
         padding: 12px;
-        border-bottom: 1px solid #ffffff;
     }
 
     .total_price_footer {
+        background-color: #ffffff;
         padding: 12px;
 
         a {
             width: 50%;
             border: 1px solid #F8F7F6;
-            background-color: #F8F7F6;
+            background-color: #F5E9CB;
             color: #484848;
 
             &:hover {
                 background-color: #F6F2E8;
+                color: #969696;
             }
         }
     }
@@ -72,7 +75,7 @@
     background-color: #F5E9CB;
 }
 
-.brand_product {
+.cart_brand_product {
     .card-header {
         background-color: #F6F2E8;
     }
@@ -82,6 +85,26 @@
             background-color: red;
             color: #ffffff;
         }
+    }
+
+    .cart_coupon {
+        background-color: #F8F7F6;
+    }
+
+    .coupon_title {
+        margin: 10px 0;
+    }
+
+    .coupon_noDetail {
+        color: #969696;
+    }
+
+    .coupon_detail {
+        color: #EB4649;
+    }
+
+    .couponCode_detail {
+        color: #484848;
     }
 
     .card-footer {
