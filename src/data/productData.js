@@ -2,14 +2,14 @@ const productData = [
     {
       "id": "00001",
       "name": "牛油果綠配色零食花束",
-      "price": 1680,
+      "price": [1680],
       "quantity": 22,
       "min_purchase_quantity": 1,
       "sku": "NG00001",
       "category": "花束",
       "sub_category": ["永生花", "索拉花", "零食花束"],
       "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": [],
       "images": [
         "https://i.imgur.com/bE7mr94.jpg",
@@ -29,14 +29,14 @@ const productData = [
     {
       "id": "00002",
       "name": "可可棕配色零食花束",
-      "price": 1680,
+      "price": [1680],
       "quantity": 12,
       "min_purchase_quantity": 1,
       "sku": "NG00002",
       "category": "花束",
       "sub_category": ["永生花", "索拉花", "零食花束"],
       "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": [],
       "images": [
         "https://i.imgur.com/txgkWp8.jpg",
@@ -55,14 +55,14 @@ const productData = [
     {
       "id": "00003",
       "name": "母親節花禮｜永生康乃馨玻璃盅",
-      "price": 1380,
+      "price": [1380],
       "quantity": 18,
       "min_purchase_quantity": 1,
       "sku": "NG00003",
       "category": "花禮",
       "sub_category": ["永生花", "母親節花禮"],
       "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": [],
       "images": [
         "https://i.imgur.com/7q5mqxP.jpg",
@@ -83,14 +83,14 @@ const productData = [
     {
       "id": "00004",
       "name": "仿真鬱金香花束（三色）",
-      "price": 1080,
+      "price": [1080],
       "quantity": 44,
       "min_purchase_quantity": 1,
       "sku": "NG00004",
       "category": "花束",
       "sub_category": ["人造花", "情人節花束"],
       "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": ["白", "黃", "粉"],
       "images": [
       "https://i.imgur.com/MyAc4iX.jpg",
@@ -110,14 +110,14 @@ const productData = [
     {
       "id": "00005",
       "name": "美拉德永生花束",
-      "price": 1580,
+      "price": [750],
       "quantity": 10,
       "min_purchase_quantity": 1,
       "sku": "NG00005",
       "category": "花束",
       "sub_category": ["永生花", "情人節花束"],
       "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": [],
       "images": [
         "https://i.imgur.com/FeQQJiJ.jpg",
@@ -137,14 +137,14 @@ const productData = [
     {
       "id": "00006",
       "name": "索拉向日葵小花束（四色）",
-      "price": 100,
+      "price": [100, 100, 100, 100],
       "quantity": 30,
       "min_purchase_quantity": 3,
       "sku": "NG00006",
       "category": "花束",
       "sub_category": ["索拉花", "畢業花束"],
       "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": ["白", "粉", "藍", "黃"],
       "images": [
         "https://i.imgur.com/MJHl9LC.jpg",
@@ -163,14 +163,14 @@ const productData = [
     {
       "id": "00007",
       "name": "婚禮伴娘手腕花（兩色）",
-      "price": 450,
+      "price": [450, 450],
       "quantity": 12,
       "min_purchase_quantity": 2,
       "sku": "NG00007",
       "category": "婚禮花藝",
       "sub_category": ["手腕花", "婚禮花藝"],
       "add_on_items": ["透明提袋（小）", "代寫卡片"],
-      "brand": "nagaflower",
+      "brand": "Negaflower",
       "features": ["粉白", "紅白"],
       "images": [
         "https://i.imgur.com/BIiArX8.jpg",
@@ -189,14 +189,14 @@ const productData = [
     {
         "id": "00008",
         "name": "婚禮胸花｜人造花胸花",
-        "price": 375,
+        "price": [375],
         "quantity": 20,
         "min_purchase_quantity": 2,
         "sku": "NG00008",
         "category": "婚禮花藝",
         "sub_category": ["胸花", "婚禮花藝"],
         "add_on_items": ["透明提袋（小）", "代寫卡片"],
-        "brand": "nagaflower",
+        "brand": "Negaflower",
         "features": [],
         "images": [
         "https://i.imgur.com/uyATdlY.jpg",
@@ -215,14 +215,14 @@ const productData = [
     {
         "id": "00009",
         "name": "婚禮胸花｜永生花／索拉花（四色）",
-        "price": 375,
+        "price": [375, 375, 375, 375],
         "quantity": 14,
         "min_purchase_quantity": 1,
         "sku": "NG00009",
         "category": "婚禮花藝",
         "sub_category": ["胸花", "婚禮花藝"],
         "add_on_items": ["透明提袋（小）", "代寫卡片"],
-        "brand": "nagaflower",
+        "brand": "Negaflower",
         "features": ["粉", "紅", "奶茶", "白"],
         "images": [
         "https://i.imgur.com/aSoi7bG.jpg",
@@ -241,14 +241,14 @@ const productData = [
     {
         "id": "00010",
         "name": "單朵永生玫瑰花束（多色）",
-        "price": 350,
+        "price": [350, 350, 350, 350, 350, 350],
         "quantity": 10,
         "min_purchase_quantity": 1,
         "sku": "NG00010",
         "category": "花束",
         "sub_category": ["永生花", "情人節花束"],
         "add_on_items": ["透明提袋（小）", "代寫卡片"],
-        "brand": "nagaflower",
+        "brand": "Negaflower",
         "features": ["藍", "淺藍", "紅", "粉", "香檳", "紫"],
         "images": [
         "https://i.imgur.com/KqT2Mrm.jpg",
@@ -267,14 +267,14 @@ const productData = [
     {
         "id": "00011",
         "name": "紫玫瑰永生花束",
-        "price": 1880,
+        "price": [1880],
         "quantity": 12,
         "min_purchase_quantity": 1,
         "sku": "NG00011",
         "category": "花束",
         "sub_category": ["永生花", "情人節花束"],
         "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-        "brand": "nagaflower",
+        "brand": "Negaflower",
         "features": [],
         "images": [
         "https://i.imgur.com/gN58MR7.jpg",
@@ -293,14 +293,14 @@ const productData = [
     {
         "id": "00012",
         "name": "進口白玫瑰鮮花束",
-        "price": 2680,
+        "price": [2680],
         "quantity": 8,
         "min_purchase_quantity": 1,
         "sku": "NG00012",
         "category": "花束",
         "sub_category": ["鮮花", "情人節花束"],
         "add_on_items": ["透明提袋（大）", "透明提袋（小）", "代寫卡片"],
-        "brand": "nagaflower",
+        "brand": "Negaflower",
         "features": [],
         "images": [
         "https://i.imgur.com/3HkI6rI.jpg",
@@ -319,14 +319,14 @@ const productData = [
     {
         id: "00013",
         name: "開幕花禮｜奶油燕麥盆花",
-        price: 980,
+        price: [980],
         quantity: 5,
         min_purchase_quantity: 1,
         sku: "NG00013",
         category: "花禮",
         sub_category: ["永生花", "開幕花禮"],
         add_on_items: ["禮盒包裝", "透明提袋（小）", "代寫卡片"],
-        brand: "nagaflower",
+        brand: "Negaflower",
         features: [],
         images: [
             "https://i.imgur.com/puE4Ga8.jpg",
@@ -353,7 +353,7 @@ const productData = [
         category: "花束",
         sub_category: ["永生花", "聖誕花束"],
         add_on_items: ["透明提袋（小）", "代寫卡片"],
-        brand: "nagaflower",
+        brand: "Negaflower",
         features: ["紅", "白"],
         images: [
             "https://i.imgur.com/fsPZ2nN.jpg",
@@ -380,7 +380,7 @@ const productData = [
         category: "花束",
         sub_category: ["永生花", "情人節花束"],
         add_on_items: ["透明提袋（大）", "代寫卡片"],
-        brand: "nagaflower",
+        brand: "Negaflower",
         features: ["紅", "白"],
         images: [
             "https://i.imgur.com/3O1baWW.jpg",
@@ -399,7 +399,33 @@ const productData = [
         ],
         is_available: true,
         created_at: "2025-01-23T14:10:00"
-    }
+    },
+    {
+      id: "10011",
+      name: "素陶酒組 (Sake Set)",
+      price: [1380],
+      quantity: [4],
+      min_purchase_quantity: 1,
+      sku: ["TA10011"],
+      category: "酒壺",
+      sub_category: ["清酒壺", "酒杯"],
+      add_on_items: ["品牌設計提袋", "品牌手繪明信片", "日式風呂敷包裝", "質感木製托盤", "質感原木杯墊"],
+      brand: "陶之家",
+      features: [],
+      images: [
+          "https://i.imgur.com/708cAH0.jpg",
+          "https://i.imgur.com/KfDUcSZ.jpg"
+      ],
+      description: "典雅素陶壺與兩只杯子組成，呈現日式簡約風格，是品味清酒的不二選擇。",
+      details: "<div class='product-detail-content'><p>素陶酒組 (Sake Set) 是一款將手作美學與簡約生活完美結合的清酒壺與杯組。壺身以柔和的白色釉面包覆，並點綴著如星空般的細小斑點，散發出溫暖、沉穩的氣息。兩個小酒杯則以圓潤造型呈現，輕盈且貼合掌心，讓每一次舉杯都充滿細膩的觸感。</p><p>這套作品不僅適合日常小酌，亦是特別聚會時的亮點。無論是品嚐純米清酒或溫熱的燗酒，這組酒器都為每一杯美酒增添專屬的儀式感與生活情調。</p></div>",
+      specifications: [
+        { "name": "容量", "value": "350ml/100mlx2" },
+        { "name": "材質", "value": "天然高嶺土" },
+        { "name": "產地", "value": "台灣" }
+      ],
+      is_available: true,
+      created_at: "2025-01-23T13:00:00"
+  }
 ];
  
 export default productData;
