@@ -1,0 +1,271 @@
+/*字體字型*/
+@font-face{
+    font-family: 'gensen-b';
+    src: url(/assets/fonts/GenSenRounded2TW-B.otf);
+}
+@font-face{
+    font-family: 'gensen-r';
+    src: url(/assets/fonts/GenSenRounded2TW-R.otf);
+}
+@font-face{
+    font-family: 'chenyuluoyan';
+    src: url(/assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf);
+}
+@font-face{
+    font-family: 'AR Brush2 Ultra';
+    src: url(/assets/fonts/b287fa9818ecd1e48da5d579b5655e68.ttf);
+}
+
+
+a{
+    text-decoration: none;
+}
+.h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h2{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h3{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h4{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h5{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.h6{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.title{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.subtitle{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: 'gensen-b';
+}
+.button{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.placeholder{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.body-1{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.body-2{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.minumum{
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'gensen-r';
+}
+.branding-h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h2{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h3{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h4{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h5{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+.branding-h6{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'chenyuluoyan';
+}
+
+//自訂
+
+.mt-80{
+    margin-top: 80px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+
+//左側欄篩選與按鈕
+.price-input {
+    flex: 1; // 讓兩個輸入框等寬
+    min-width: 80px; // 設定最小寬度
+    max-width: 120px; // 避免過寬
+}
+
+
+.category-leftbar-btn {
+    background-color: #382511; // 設定主要色
+    border-radius: 8px; // 圓角
+    color: #fff; // 白色字體
+    font-weight: bold;
+    padding: 12px 16px; // 按鈕內距
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #5a3825; // 深色變化
+    }
+}
+
+
+
+//左側欄
+.custom-sidebar {
+    .list-title {
+        margin: 16px, 0px;
+        padding: 16px 0px;
+    }
+    .list-group {
+        border: none;
+        background: transparent;
+        
+        padding: 0;
+
+        .list-group-item {
+            background: transparent;
+            color: #484848;
+            border: none;
+            margin: 8px 0px;
+            padding: 16px;
+            
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #eee;
+                color: #000;
+                border-radius: 8px;
+            }
+
+            &.active {
+                background: #F6F2E8; // 主要色
+                color: #484848;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+
+
+
+//分頁
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .page-item {
+        border-radius: 50%;
+        overflow: hidden;
+
+        .page-link {
+            color: #484848;
+            border: none; // 移除邊框
+            padding: 10px 16px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: all 0.3s;
+            background: transparent; // 透明背景
+
+            &:hover {
+                background-color: #f8f8f8;
+                color: #000;
+            }
+        }
+
+        &.active .page-link {
+            background-color: #382511;
+            color: #fff;
+        }
+    }
+
+    // 前後箭頭按鈕樣式（移除背景和框線）
+    .pagination-prev,
+    .pagination-next {
+        width: auto;
+        height: auto;
+        background-color: transparent !important; // 透明背景
+        border: none !important; // 無邊框
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: #484848; // 預設箭頭顏色
+
+        &:hover {
+            color: #000; // 滑鼠懸停時變深
+        }
+
+        &:disabled {
+            color: #ccc; // 禁用狀態變灰
+            pointer-events: none;
+        }
+    }
+}
