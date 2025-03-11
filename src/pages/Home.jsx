@@ -6,6 +6,42 @@ import sevenImgs from '../assets/images/seven/SevenImgs';
 import Icons from '../assets/images/icons/Icons';
 
 function Home() {
+
+    const products = [
+        {
+            id: 1,
+            name: "可可棕配色零食花束",
+            price: "NT$2,000",
+            image: "src/assets/images/negaflower/可可棕配色零食花束.jpg",
+            brand: "Nega Flower",
+            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
+        },
+        {
+            id: 2,
+            name: "進口白玫瑰鮮花束",
+            price: "NT$1,000",
+            image: "src/assets/images/negaflower/進口白玫瑰鮮花束.jpg",
+            brand: "Nega Flower",
+            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
+        },
+        {
+            id: 3,
+            name: "可可棕配色零食花束",
+            price: "NT$2,000",
+            image: "src/assets/images/negaflower/可可棕配色零食花束.jpg",
+            brand: "Nega Flower",
+            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
+        },
+        {
+            id: 4,
+            name: "進口白玫瑰鮮花束",
+            price: "NT$1,000",
+            image: "src/assets/images/negaflower/進口白玫瑰鮮花束.jpg",
+            brand: "Nega Flower",
+            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
+        },
+    ];
+
     return (
         <>
             <Header />
@@ -47,7 +83,8 @@ function Home() {
                     <div className="index_brand_title_mobile margin-bottom-mobile-1"></div>
                     <div className="brand-content brand-content-lg p-4">
                         <h5 className="fw-bold">
-                            在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。</h5>
+                            在時光的流轉中，我們拾起那些微小而珍貴的瞬間，將它們凝結成為日常中的詩意與美好。讓你在平凡的生活中尋找到溫柔與浪漫的所在，邀請你一同拾取屬於你的光陰之美。
+                        </h5>
                         <h4 className="fw-bold text-end">——拾柒</h4>
                     </div>
 
@@ -116,92 +153,10 @@ function Home() {
                     <div className="recommend_product_title justify-content-between align-items-center margin-bottom-2">
                         <h4 className="fw-bold">熱銷推薦</h4>
 
-                        <div className="recommend_product_swiper d-lg-none">
+                        {/* <div className="recommend_product_swiper d-lg-none">
                             <div className="swiper mySwiper2">
-                                <Swiper
-                                    modules={[Navigation, Pagination]}
-                                    spaceBetween={48}
-                                    slidesPerView={'auto'}
-                                    loop={true}
-                                    initialSlide={1}
-                                    pagination={{ clickable: true }}
-                                    // navigation
-                                    breakpoints={{
-                                        768: { slidesPerView: 1, spaceBetween: 30 },
-                                        576: { slidesPerView: 1, spaceBetween: 0 },
-                                        0: { slidesPerView: 1, spaceBetween: 0 },
-                                    }}
-                                    className='position-relative'
-                                >
-                                    <SwiperSlide>
-                                        <div className="col card border-0 px-0 rounded-bottom-0">
-                                            <a href="#" className="border border-1 rounded-top-3 h-100">
-                                                <div className="position-relative recommend_product_card_img">
-                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
-                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
-                                                    </button>
-                                                </div>
-                                                <div className="card-body d-flex flex-column gap-2">
-                                                    <div className="d-flex justify-content-center align-items-center gap-3">
-                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
-                                                        <p className="fs-10">Nega Flower</p>
-                                                    </div>
-                                                    <div className="d-flex flex-column justify-content-center gap-1">
-                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
-                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="col card border-0 px-0 rounded-bottom-0">
-                                            <a href="#" className="border border-1 rounded-top-3 h-100">
-                                                <div className="position-relative recommend_product_card_img">
-                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
-                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
-                                                    </button>
-                                                </div>
-                                                <div className="card-body d-flex flex-column gap-2">
-                                                    <div className="d-flex justify-content-center align-items-center gap-3">
-                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
-                                                        <p className="fs-10">Nega Flower</p>
-                                                    </div>
-                                                    <div className="d-flex flex-column justify-content-center gap-1">
-                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
-                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="col card border-0 px-0 rounded-bottom-0">
-                                            <a href="#" className="border border-1 rounded-top-3 h-100">
-                                                <div className="position-relative recommend_product_card_img">
-                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
-                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
-                                                    </button>
-                                                </div>
-                                                <div className="card-body d-flex flex-column gap-2">
-                                                    <div className="d-flex justify-content-center align-items-center gap-3">
-                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
-                                                        <p className="fs-10">Nega Flower</p>
-                                                    </div>
-                                                    <div className="d-flex flex-column justify-content-center gap-1">
-                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
-                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </SwiperSlide>
-                                </Swiper>
 
-                                {/* <div className="swiper-wrapper">
+                                <div className="swiper-wrapper">
 
                                     <div className="swiper-slide">
                                         <div className="col card border-0 px-0 rounded-bottom-0">
@@ -228,7 +183,51 @@ function Home() {
 
                                 </div>
                                 <div className="swiper-button-next2"></div>
-                                <div className="swiper-button-prev2"></div> */}
+                                <div className="swiper-button-prev2"></div>
+                            </div>
+                        </div> */}
+
+                        <div className="recommend_product_swiper d-lg-none">
+                            <div className='mySwiper2'>
+                                <Swiper
+                                    modules={[Navigation, Pagination]}
+                                    spaceBetween={16}
+                                    slidesPerView={2}
+                                    initialSlide={0}
+                                    navigation={{
+                                        nextEl: ".swiper-button-next2",
+                                        prevEl: ".swiper-button-prev2",
+                                    }}
+                                >
+                                    {products.map((product) => (
+                                        <SwiperSlide key={product.id}>
+                                            <div className="card border-0 px-0 rounded-bottom-0">
+                                                <a href="#" className="border border-1 rounded-top-3 h-100">
+                                                    <div className="position-relative recommend_product_card_img">
+                                                        <img src={product.image} className="card-img-top" alt={product.name} />
+                                                        <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                                            <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
+                                                        </button>
+                                                    </div>
+                                                    <div className="card-body d-flex flex-column gap-2">
+                                                        <div className="d-flex justify-content-center align-items-center gap-3">
+                                                            <img src={product.logo} alt="brand logo" style={{ width: "24px", height: "24px" }} />
+                                                            <p className="fs-10">{product.brand}</p>
+                                                        </div>
+                                                        <div className="d-flex flex-column justify-content-center gap-1">
+                                                            <p className="fw-bold fs-9 text-center text-truncate">{product.name}</p>
+                                                            <p className="fw-bold fs-9 text-center">{product.price}</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+
+                                {/* Swiper Navigation */}
+                                <div className="swiper-button-next2"></div>
+                                <div className="swiper-button-prev2"></div>
                             </div>
                         </div>
 

@@ -339,7 +339,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "neutral-100": $neutral-100
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -437,6 +438,8 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 2.5,
+  7: $spacer * 5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -652,12 +655,18 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+$h1-font-size: $font-size-base * 3 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$h3-font-size: $font-size-base * 2 !default;
+$h4-font-size: $font-size-base * 1.75 !default;
+$h5-font-size: $font-size-base * 1.5 !default;
+$h6-font-size: $font-size-base * 1.25 !default;
 // scss-docs-end font-variables
 
 // 自訂字體大小
