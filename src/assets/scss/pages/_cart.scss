@@ -1,0 +1,221 @@
+.shopping_status_cart {
+    margin: 80px 0;
+
+    .progress-stacked {
+        height: 40px;
+
+        .progress {
+            height: 40px;
+        }
+    }
+
+    .progress-bar {
+        color: #484848;
+        background-color: #F6F2E8;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .stepbar1 {
+        background-color: #F5E9CB;
+    }
+
+    .stepbar2,
+    .stepbar3 {
+        color: #ffffff;
+    }
+}
+
+.cartform_style {
+    border: 3px solid #F5E9CB;
+    border-radius: 8px;
+}
+
+.product_list {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+
+.total_price {
+    width: 300px;
+    height: auto;
+    background-color: #F5E9CB;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+
+    .total_price_title {
+        background-color: #ffffff;
+        border-bottom: 1px solid #F5E9CB;
+        padding: 12px;
+    }
+
+    .total_price_footer {
+        background-color: #ffffff;
+        padding: 12px;
+
+        a {
+            width: 50%;
+            border: 1px solid #F8F7F6;
+            background-color: #F5E9CB;
+            color: #484848;
+
+            &:hover {
+                background-color: #F6F2E8;
+                color: #969696;
+            }
+        }
+    }
+}
+
+.product_list_title {
+    background-color: #F5E9CB;
+}
+
+.cart_brand_product {
+    .card-header {
+        background-color: #F6F2E8;
+    }
+
+    .delbtn {
+        &:hover {
+            background-color: red;
+            color: #ffffff;
+        }
+    }
+
+    .cart_coupon {
+        background-color: #F8F7F6;
+    }
+
+    .coupon_title {
+        margin: 10px 0;
+    }
+
+    .coupon_noDetail {
+        color: #969696;
+    }
+
+    .coupon_detail {
+        color: #EB4649;
+    }
+
+    .couponCode_detail {
+        color: #484848;
+    }
+
+    .card-footer {
+        padding: 0;
+        background-color: #F6F2E8;
+    }
+
+    .shopcart_plusProduct {
+        margin: 16px;
+
+        .card {
+            width: calc(33.33% - 11px);
+
+            .plus-btn {
+                background-color: #ffffff;
+                border: #ffffff;
+                margin: 8px;
+
+                &:hover {
+                    background-color: #F5E9CB;
+                    border: #F5E9CB;
+                }
+
+                .plus-icon {
+                    width: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .shopping_status {
+        margin: 40px 0;
+
+        .progress-stacked {
+            height: 30px;
+
+            .progress {
+                height: 30px;
+            }
+        }
+
+        .progress-bar {
+            p {
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .cart_content {
+        .total_price {
+            width: 100%;
+            margin-bottom: 20px;
+            top: auto;
+            position: relative;
+        }
+
+        .product_list {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .brand_product {
+        .card-body {
+            padding: 8px;
+
+            .cartproduct-list {
+                gap: 4px;
+                align-items: center;
+            }
+
+            .product_num {
+                .form-select {
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            a {
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+
+        .shopcart_plusProduct {
+            margin: 16px 0;
+
+            .card {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border-radius: 0px;
+                align-items: center;
+                height: 150px;
+
+                img.card-img-top {
+                    width: 150px;
+                }
+
+                .plus-btn {
+                    .plus-icon {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

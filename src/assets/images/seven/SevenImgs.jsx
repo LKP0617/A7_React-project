@@ -1,3 +1,14 @@
+import pc_logo from './pc_logo.png'
+import pc_logo_lg from './pc_logo_lg.png'
+import area_logo from './area_logo.png'
+import area1 from './area1.png'
+import area2_mobile from './area2_mobile.png'
+import area3 from './area3.png'
+import area4_mobile from './area4_mobile.png'
+import prc_clay_pot from './prc_clay_pot.png'
+import prc_pen_holder from './prc_pen_holder.png'
+import prc_time from './prc_time.png'
+import story_logo from './story_logo.png'
 import brands_toa from './brands_陶之家.png';
 import brands_negaflower from './brands_negaflower.png';
 import brands_sos from './brands_sos.png';
@@ -14,6 +25,17 @@ import product_type02 from './product_type02.png';
 import product_type03 from './product_type03.png';
 
 const sevenImgs = {
+    pc_logo,
+    pc_logo_lg,
+    area_logo,
+    area1,
+    area2_mobile,
+    area3,
+    area4_mobile,
+    prc_clay_pot,
+    prc_pen_holder,
+    prc_time,
+    story_logo,
     brands_toa,
     brands_negaflower,
     brands_sos,

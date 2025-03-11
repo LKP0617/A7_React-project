@@ -1,0 +1,35 @@
+.shopping_status_checkout {
+    margin: 80px 0 32px;
+
+    .progress-stacked {
+        height: 40px;
+
+        .progress {
+            height: 40px;
+        }
+    }
+
+    .progress-bar {
+        color: #484848;
+        background-color: #F6F2E8;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .stepbar1,
+    .stepbar2 {
+        background-color: #F5E9CB;
+    }
+
+
+    .stepbar3 {
+        color: #ffffff;
+    }
+}
+
+.backCartBtn {
+    color: #382511;
+    margin-bottom: 32px;
+}
