@@ -1,0 +1,342 @@
+.product-detail-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 80px;
+    @media (max-width: 768px) {
+        margin-top: 16px;
+      }
+  }
+  
+  /* 🔹 麵包屑：與 `product-detail` 左對齊 */
+  .breadcrumb {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; // 防止因為長度超過導致換行
+    white-space: nowrap;
+  }
+  
+  .breadcrumb-item {
+    a {
+      display: inline-block;
+      white-space: nowrap; // 讓文字不換行
+    }
+  }
+  
+  
+  /* 🔹 產品展示區 */
+  .product-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  
+    /*.product-info {
+      max-width: 600px;
+      flex: 1;
+      text-align: left;
+    }*/
+  }
+  .product-detail-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .product-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .product-detail{
+        flex-wrap: nowrap;
+    }
+  }
+
+
+
+  
+  /* 🔹 左側圖片輪播 */
+  .product-left {
+    .product-gallery {
+        .main-image {
+          width: 100%;  /* 🔹 讓主圖撐滿整個區塊 */
+          height: 500px; /* 🔹 固定高度 */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; /* 避免圖片溢出 */
+          
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 🔹 保持圖片比例填滿 */
+          }
+        }
+      
+        /* 🔹 小圖區域調整 */
+        .thumbnail-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin-top: 10px;
+        }
+      
+        .thumbnail-list {
+          display: flex;
+          gap: 10px;
+          overflow-x: auto;
+          max-width: 100%;
+          padding: 5px 40px; /* 預留按鈕位置 */
+          scrollbar-width: none; /* 隱藏滾動條 */
+          
+          img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+      
+            &.active {
+              transform: scale(1.1);
+              border: 2px solid #000;
+            }
+          }
+        }
+      
+        /* 🔹 左右按鈕 */
+        .prev-btn,
+        .next-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(255, 255, 255, 0.8);
+          border: none;
+          cursor: pointer;
+          font-size: 18px;
+          padding: 5px 10px;
+          z-index: 10;
+      
+          &:hover {
+            background-color: rgba(255, 255, 255, 1);
+          }
+        }
+      
+        .prev-btn {
+          left: 0;
+        }
+      
+        .next-btn {
+          right: 0;
+        }
+      }
+  }  
+  
+  // 🔹 右側商品資訊區域
+.product-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // 讓選擇框 & 按鈕置底
+    height: 500px; // 確保與左側主圖對齊
+    @media (max-width: 768px) {
+        height: 100%;
+      }
+  }
+  
+  // 🔹 商品名稱
+  .product-name {
+    font-size: 28px;
+    
+    margin-bottom: 8px;
+  }
+  
+  // 🔹 商品描述
+  .product-description {
+    font-size: 16px;
+    color: #484848;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  // 🔹 Subcategory Hashtags（確保每個標籤間有間距）
+  .product-tags {
+    font-size: 16px;
+    
+    color: #484848;
+    margin-bottom: 16px;
+  
+    span {
+      margin-right: 8px; // 確保標籤間有空格
+    }
+  }
+  
+  // 🔹 商品價格
+  .product-price {
+    font-size: 32px;
+    
+    margin-bottom: 24px;
+  }
+  
+  // 🔹 選擇框區域（讓 `select-group` 置底並確保間距）
+  .select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; // 規格選擇框 & 按鈕之間的間距
+    width: 100%;
+    margin-top: auto; // 讓按鈕群組自動推到底部
+  }
+  
+  // 🔹 選擇框樣式
+  .form-select {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: #484848;
+    width: 100%;
+  }
+  
+  // 🔹 按鈕群組（確保按鈕與左側主圖底部對齊）
+  .button-group {
+   /* margin-top: auto; // 讓按鈕群組自動推到底部*/
+  
+    .btn {
+      padding: 12px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+    }
+  
+    // 🔹 按鈕間距
+    .d-flex {
+      gap: 16px; // 購物車 & 立即購買按鈕間距
+    }
+  
+    // 🔹 購物車 & 立即購買按鈕
+    .btn-primary-100 {
+      background-color: #F3EFEA;
+      color: #382511;
+      border: none;
+  
+      &:hover {
+        background-color: #e0d9d3;
+      }
+    }
+  
+    .btn-secondary-100 {
+      background-color: #F6EAD9;
+      color: #382511;
+      border: none;
+  
+      &:hover {
+        background-color: #e5dac6;
+      }
+    }
+  
+    // 🔹 加入收藏清單按鈕
+    .btn-outline-dark {
+      border: 1px solid #484848;
+      color: #484848;
+      background-color: #fff;
+  
+      &:hover {
+        background-color: #f8f8f8;
+      }
+    }
+  
+    // 🔹 按鈕內的 icon
+    .btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .mt-40{
+        margin-top: 40px;
+    }
+  }
+
+
+  /* 電腦版分享按鈕 */
+.share-row {
+    position: absolute;
+    bottom: 20px;  // 與左側小圖底部對齊
+    right: 20px;   // 與右側內容對齊
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
+  
+    .share-icon {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        a {
+          display: inline-block;
+        }
+  
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  /* 手機版分享按鈕 */
+  .share-row-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    /*padding-top: 16px; /* 與上方區塊間距 */
+    /*margin-top: 16px;*/
+    width: 100%;
+    
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  
+    p {
+      font-weight: bold;
+      margin: 0;
+    }
+  
+    .share-icon {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        a {
+          display: inline-block;
+        }
+  
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+  
