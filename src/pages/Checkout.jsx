@@ -96,7 +96,7 @@ function checkout() {
                                         <p className='mb-1'>給設計師的留言：</p>
                                         <p className='fs-9 text-neutral-100 mb-3'>可於此填寫客製細節與規格說明(非客製化商品可略過)</p>
                                         <div className="input-group">
-                                            <textarea className="form-control" aria-label="With textarea" placeholder="填寫留言" rows="5"></textarea>
+                                            <textarea className="form-control" aria-label="With textarea" placeholder="請填寫留言" rows="5"></textarea>
                                         </div>
                                     </div>
 

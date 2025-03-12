@@ -26,9 +26,21 @@
 }
 
 .created-order-card {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 3px solid #F5E9CB;
+
     .card-title {
-        background-color: #F5E9CB;
+        background-color: #F6F2E8;        
     }
+}
+
+.orderBrand {
+    background-color: #F6F2E8;
+}
+
+.orderContent {
+    border: 2px solid #F5E9CB;
 }
 
 .backHomeBtn {

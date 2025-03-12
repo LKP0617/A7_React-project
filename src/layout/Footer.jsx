@@ -1,5 +1,6 @@
 import SevenImgs from '../assets/images/seven/SevenImgs'
 import Icons from '../assets/images/icons/Icons'
+import { Link } from 'react-router'
 
 function Footer() {
     return (
@@ -12,9 +13,9 @@ function Footer() {
                         <div className="footerBorder">
                             <div className="container  ">
                                 <div className="logoSlogan d-flex flex-column me-5 wwe">
-                                    <a href="index.html" className="logo">
-                                        <img src={SevenImgs.pc_logo} alt="pc_logo" className="" />
-                                    </a>
+                                    <Link to="/" className="logo">
+                                        <img src={SevenImgs.pc_logo} alt="pc_logo" className="pc_logo" />
+                                    </Link>
                                     <p>
                                         手工的溫暖，品牌的堅持
                                     </p>
@@ -23,45 +24,45 @@ function Footer() {
                                     <div className=" bt-40 col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column">
                                         <h6 className="h6 my-3">網站地圖</h6>
                                         <div className="forMobile">
-                                            <a href="#">商品總覽</a>
-                                            <a href="#">最新消息</a>
-                                            <a href="#">關於拾柒</a>
+                                            <Link to="/products">商品總覽</Link>
+                                            <Link to="/news">最新消息</Link>
+                                            <Link to="/sevenStory">關於拾柒</Link>
                                         </div>
                                     </div>
                                     <div className="bt-40 col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column">
                                         <h6 className="h6 my-3">幫助/政策</h6>
                                         <div className="forMobile">
-                                            <a href="#">服務條款</a>
-                                            <a href="#">隱私政策</a>
-                                            <a href="#">退貨政策</a>
-                                            <a href="#">防詐騙宣導</a>
+                                            <Link to="/">服務條款</Link>
+                                            <Link to="/">隱私政策</Link>
+                                            <Link to="/">退貨政策</Link>
+                                            <Link to="/">防詐騙宣導</Link>
                                         </div>
                                     </div>
                                     <div className="bt-40 service col-xl-3 col-lg-3 col-md-12 col-sm-12  flex-column flex-wrap">
                                         <h6 className="h6 my-3">客戶服務</h6>
                                         <div className="forMobile">
-                                            <a href="#">常見問題</a>
-                                            <a href="#">退換貨須知</a>
-                                            <a href="#">訂貨進度查詢</a>
-                                            <a href="#">折價卷說明</a>
-                                            <a href="#">品牌合作窗口</a>
+                                            <Link to="/Q&A">常見問題</Link>
+                                            <Link to="/Q&A">退換貨須知</Link>
+                                            <Link to="/Q&A">訂貨進度查詢</Link>
+                                            <Link to="/Q&A">折價卷說明</Link>
+                                            <Link to="/Q&A">品牌合作窗口</Link>
                                         </div>
                                     </div>
                                     <div className="  col-xl-3 col-lg-3 col-md-12 col-sm-12 ">
                                         <h6 className=" h6 my-3 ">聯絡我們</h6>
                                         <div className=" footerIcon  d-flex gap-4 my-4">
-                                            <a href="#">
-                                                <img src={Icons.Line_dark} alt="" />
-                                            </a>
-                                            <a href="#">
-                                                <img src={Icons.mail} alt="" />
-                                            </a>
-                                            <a href="#">
-                                                <img src={Icons.Facebook_BW} alt="" />
-                                            </a>
-                                            <a href="#">
-                                                <img src={Icons.Instagram_BW} alt="" />
-                                            </a>
+                                            <Link to="/">
+                                                <img src={Icons.Line_dark} alt="Line_dark" />
+                                            </Link>
+                                            <Link to="/">
+                                                <img src={Icons.mail} alt="mail" />
+                                            </Link>
+                                            <Link to="/">
+                                                <img src={Icons.Facebook_BW} alt="Facebook_BW" />
+                                            </Link>
+                                            <Link to="/">
+                                                <img src={Icons.Instagram_BW} alt="Instagram_BW" />
+                                            </Link>
                                         </div>
                                         <div className="footerMail">
                                             <p>seventeen17@gmail.com</p>
@@ -74,10 +75,8 @@ function Footer() {
                     </div>
                     <div className="copyrightBorder">
                         <div className="container">
-                            <div className="copyright d-flex justify-content-center ">
-                                <p>
-                                    <img src="../assets/images/header_footer/copyright.png" alt="" />
-                                </p>
+                            <div className="copyright d-flex justify-content-center gap-1">
+                                <img src={Icons.copyright} alt="copyright" />
                                 <p>seventeen 2024</p>
                             </div>
                         </div>
