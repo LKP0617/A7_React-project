@@ -108,17 +108,17 @@ function Header() {
                 </div>
             </nav>
 
-            {/* 登入 */}
+            {/* 登入Modal */}
             <div ref={loginModalRef} id="loginModal" className="modal" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
-                        {/* <!-- 關閉按鈕 --> */}
+                        {/* 關閉按鈕 */}
                         <div className="modal-header border-0">
                             <button onClick={() => handleCloseLoginModal(null)} type="button" className="close">
                                 <img src={Icons.x} alt="x" />
                             </button>
                         </div>
-                        {/* <!-- 彈出視窗內容 --> */}
+                        {/* 彈出視窗內容 */}
                         <div className="modal-body">
                             {/* <!-- Logo --> */}
                             <div className="modal-title">

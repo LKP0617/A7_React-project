@@ -1,10 +1,26 @@
+import { useEffect, useRef, useState } from 'react'
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import sevenImgs from '../assets/images/seven/SevenImgs';
 import Icons from '../assets/images/icons/Icons';
 import { Link } from 'react-router';
+import { Modal } from 'bootstrap';
 
 function Cart() {
+
+    const couponModalRef = useRef(null);
+    const [modalMode, setModalMode] = useState(null);
+
+    useEffect(() => {
+        new Modal(couponModalRef.current, { backdrop: false });
+    }, [])
+
+    const handleOpenCouponModal = (mode) => {
+        setModalMode(mode);
+
+        const modalInstance = Modal.getInstance(couponModalRef.current);
+        modalInstance.show();
+    }
 
     return (
         <>
@@ -68,11 +84,11 @@ function Cart() {
                             </div>
                         </div>
                         <div className="total_price_footer d-flex flex-column gap-2 align-items-center">
-                            <Link to="/checkout" className="btn rounded-pill d-flex justify-content-center gap-1" role="button" style={{width: "100%"}}>
+                            <Link to="/checkout" className="btn rounded-pill d-flex justify-content-center gap-1" role="button" style={{ width: "100%" }}>
                                 <img src={Icons.shopping_bag} alt="chevron-left" style={{ width: "24px" }} />
                                 <p>前往結帳</p>
                             </Link>
-                            <Link to="/products" className="btn rounded-pill d-flex justify-content-center gap-1" role="button" style={{width: "100%"}}>
+                            <Link to="/products" className="btn rounded-pill d-flex justify-content-center gap-1" role="button" style={{ width: "100%" }}>
                                 <img src={Icons.chevron_left} alt="chevron-left" style={{ width: "24px" }} />
                                 <p>返回購物</p>
                             </Link>
@@ -99,50 +115,50 @@ function Cart() {
                                     </div>
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div className="card-body">
 
+                                <div className="card-body">
                                     <div className="cartproduct-list d-flex justify-content-between align-items-center p-4 border-bottom">
-                                        <input className="form-check-input" type="checkbox" id="nega_flower" />
                                         <div className='d-flex align-items-center'>
-                                            <img src="/src/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" className='me-4' alt="開幕花禮｜奶油燕麥盆花" style={{ width: "96px" }} />
+                                            <input className="form-check-input me-2" type="checkbox" id="nega_flower" />
+                                            <img src="/src/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" className='mx-4' alt="開幕花禮｜奶油燕麥盆花" style={{ width: "96px" }} />
                                             <div className="ms-2">
                                                 <p>開幕花禮 | 奶油燕麥盆花</p>
                                                 <span className='fs-9 text-neutral-100 specification'>規格 奶油燕麥</span>
                                             </div>
                                         </div>
-                                        <p>NT$ 550</p>
-                                        <div className="product_num">
-                                            <select id="inputState" className="form-select" defaultValue="1">
+                                        <div className='d-flex align-items-center'>
+                                            <p className='fw-bold me-2'>NT$ 550</p>
+                                            <select id="inputState" className="form-select mx-4" defaultValue="1" style={{ width: '96px' }}>
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
                                                 <option>4</option>
                                                 <option>5</option>
                                             </select>
+                                            <button type="button" className="btn border border-1 rounded-pill ms-2 delbtn">刪除</button>
                                         </div>
-                                        <button type="button" className="btn border border-1 rounded-pill delbtn">刪除</button>
                                     </div>
 
                                     <div className="cartproduct-list d-flex justify-content-between align-items-center p-4 border-bottom">
-                                        <input className="form-check-input" type="checkbox" id="nega_flower" />
                                         <div className='d-flex align-items-center'>
-                                            <img src="/src/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" className='me-4' alt="開幕花禮｜奶油燕麥盆花" style={{ width: "96px" }} />
+                                            <input className="form-check-input me-2" type="checkbox" id="nega_flower" />
+                                            <img src="/src/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" className='mx-4' alt="開幕花禮｜奶油燕麥盆花" style={{ width: "96px" }} />
                                             <div className="ms-2">
                                                 <p>開幕花禮 | 奶油燕麥盆花</p>
                                                 <span className='fs-9 text-neutral-100 specification'>規格 奶油燕麥</span>
                                             </div>
                                         </div>
-                                        <p>NT$ 550</p>
-                                        <div className="product_num">
-                                            <select id="inputState" className="form-select" defaultValue="1">
+                                        <div className='d-flex align-items-center'>
+                                            <p className='fw-bold me-2'>NT$ 550</p>
+                                            <select id="inputState" className="form-select mx-4" defaultValue="1" style={{ width: '96px' }}>
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
                                                 <option>4</option>
                                                 <option>5</option>
                                             </select>
+                                            <button type="button" className="btn border border-1 rounded-pill ms-2 delbtn">刪除</button>
                                         </div>
-                                        <button type="button" className="btn border border-1 rounded-pill delbtn">刪除</button>
                                     </div>
 
                                 </div>
@@ -159,7 +175,7 @@ function Cart() {
                                             <h6 className='couponCode_detail'>優惠碼 17BIRTHDAY200</h6>
                                         </div>
                                     </div>
-                                    <button type="button" className="btn btn-outline-danger rounded-pill fs-8 my-2 me-3">使用優惠</button>
+                                    <button onClick={() => handleOpenCouponModal(null)} type="button" className="btn btn-outline-danger rounded-pill fs-8 my-2 me-3">使用優惠</button>
                                 </div>
 
                                 <div className="card-footer border-bottom border-2">
@@ -170,8 +186,8 @@ function Cart() {
                                         data-bs-target="#brand_1_plusProduct"
                                         aria-expanded="false"
                                         aria-controls="brand_1_plusProduct">
-                                        <img src={Icons.plus} alt="plus" style={{ width: "24px" }} />
                                         <h6>可加購商品</h6>
+                                        <img src={Icons.chevron_up} alt="chevron_up" style={{ width: "32px" }} />
                                     </button>
                                 </div>
 
@@ -363,25 +379,25 @@ function Cart() {
                                 <div className="card-body">
 
                                     <div className="cartproduct-list d-flex justify-content-between align-items-center p-4 border-bottom">
-                                        <input className="form-check-input" type="checkbox" id="nega_flower" />
                                         <div className='d-flex align-items-center'>
-                                            <img src="/src/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" className='me-4' alt="開幕花禮｜奶油燕麥盆花" style={{ width: "96px" }} />
+                                            <input className="form-check-input me-2" type="checkbox" id="nega_flower" />
+                                            <img src="/src/assets/images/negaflower/開幕花禮｜奶油燕麥盆花.jpeg" className='mx-4' alt="開幕花禮｜奶油燕麥盆花" style={{ width: "96px" }} />
                                             <div className="ms-2">
                                                 <p>開幕花禮 | 奶油燕麥盆花</p>
                                                 <span className='fs-9 text-neutral-100 specification'>規格 奶油燕麥</span>
                                             </div>
                                         </div>
-                                        <p>NT$ 550</p>
-                                        <div className="product_num">
-                                            <select id="inputState" className="form-select" defaultValue="1">
+                                        <div className='d-flex align-items-center'>
+                                            <p className='fw-bold me-2'>NT$ 550</p>
+                                            <select id="inputState" className="form-select mx-4" defaultValue="1" style={{ width: '96px' }}>
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
                                                 <option>4</option>
                                                 <option>5</option>
                                             </select>
+                                            <button type="button" className="btn border border-1 rounded-pill ms-2 delbtn">刪除</button>
                                         </div>
-                                        <button type="button" className="btn border border-1 rounded-pill delbtn">刪除</button>
                                     </div>
 
                                 </div>
@@ -395,7 +411,7 @@ function Cart() {
                                         <img src={Icons.chevron_right} alt="chevron_right" />
                                         <h6 className='coupon_noDetail'>尚未使用任何優惠</h6>
                                     </div>
-                                    <button type="button" className="btn btn-outline-danger rounded-pill fs-8 my-2 me-3">使用優惠</button>
+                                    <button onClick={() => handleOpenCouponModal(null)} type="button" className="btn btn-outline-danger rounded-pill fs-8 my-2 me-3">使用優惠</button>
                                 </div>
 
                                 <div className="card-footer border-bottom border-2">
@@ -406,8 +422,8 @@ function Cart() {
                                         data-bs-target="#brand_2_plusProduct"
                                         aria-expanded="false"
                                         aria-controls="brand_2_plusProduct">
-                                        <img src={Icons.plus} alt="plus" style={{ width: "24px" }} />
                                         <h6>可加購商品</h6>
+                                        <img src={Icons.chevron_up} alt="chevron_up" style={{ width: "32px" }} />
                                     </button>
                                 </div>
 
@@ -586,6 +602,28 @@ function Cart() {
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+
+                {/* 優惠券Modal */}
+                <div ref={couponModalRef} className="modal" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <div className='d-flex gap-2'>
+                                    <img src={Icons.TicketPerforated} className='me-1' alt="TicketPerforated" />
+                                    <h6 className="modal-title">優惠</h6>
+                                </div>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" className="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -17,8 +17,8 @@ function QA() {
                                     Q: 如何選擇適合我的商品?
                                 </a>
                             </h3>
-                            <div id="collapse1" className="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                            <div id="collapse1" className="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#qaAccordion">
+                                <div className="accordion-body fs-8">
                                     我們的選品團隊精心挑選了各類獨特商品,並在每個產品頁面提供詳細的描述與建議搭配,
                                     幫助您找到最符合您需求的產品。
                                 </div>
@@ -32,7 +32,7 @@ function QA() {
                                 </a>
                             </h3>
                             <div id="collapse2" className="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                                <div className="accordion-body fs-8">
                                     我們保證所有商品皆為品牌正品,直接來自於官方授權的供應商。每一件商品在上架前都經過嚴格檢驗,確保品質無虞。
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ function QA() {
                                 </a>
                             </h3>
                             <div id="collapse3" className="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                                <div className="accordion-body fs-8">
                                     每個商品的尺寸或規格資訊都會詳細列在商品頁面,並附有尺寸表或參考圖。
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ function QA() {
                                 </a>
                             </h3>
                             <div id="collapse4" className="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                                <div className="accordion-body fs-8">
                                     我們接受有效的折扣碼,您可以在結帳時輸入折扣碼,系統會自動計算折扣金額。請注意,部分折扣碼可能僅適用於特定商品或活動期間。
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ function QA() {
                                 </a>
                             </h3>
                             <div id="collapse5" className="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                                <div className="accordion-body fs-8">
                                     您可以在我們的網站上免費註冊成為會員,享受會員專屬的優惠和活動通知。
                                     註冊過程簡單,只需填寫基本資料即可。
                                 </div>
@@ -83,7 +83,7 @@ function QA() {
                             </h3>
                             <div id="collapse6" className="accordion-collapse collapse" aria-labelledby="heading6"
                                 data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                                <div className="accordion-body fs-8">
                                     我們接受有效的折扣碼,您可以在結帳時輸入折扣碼,系統會自動計算折扣金額。請注意,部分折扣碼可能僅適用於特定商品或活動期間。
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ function QA() {
                             </h3>
                             <div id="collapse7" className="accordion-collapse collapse" aria-labelledby="heading7"
                                 data-bs-parent="#qaAccordion">
-                                <div className="accordion-body Body2">
+                                <div className="accordion-body fs-8">
                                     我們接受有效的折扣碼,您可以在結帳時輸入折扣碼,系統會自動計算折扣金額。請注意,部分折扣碼可能僅適用於特定商品或活動期間。
                                 </div>
                             </div>

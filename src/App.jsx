@@ -8,6 +8,7 @@ import News from './pages/News';
 import QA from './pages/QA';
 import Cart from './pages/cart';
 import Checkout from './pages/Checkout';
+import CreatedOrder from './pages/CreatedOrder';
 import './assets/scss/all.scss'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/Q&A' element={<QA/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
         <Route path='/checkout' element={<Checkout/>}></Route>
+        <Route path='/createdOrder' element={<CreatedOrder/>}></Route>
       </Routes>
     </>
   )
