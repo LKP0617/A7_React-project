@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import sevenImgs from '../assets/images/seven/SevenImgs';
+import SevenImgs from '../assets/images/seven/SevenImgs';
 import Icons from '../assets/images/icons/Icons';
 import { Link } from 'react-router';
 import { Modal } from 'bootstrap';

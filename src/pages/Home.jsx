@@ -2,7 +2,7 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import sevenImgs from '../assets/images/seven/SevenImgs';
+import SevenImgs from '../assets/images/seven/SevenImgs';
 import Icons from '../assets/images/icons/Icons';
 
 function Home() {
@@ -360,7 +360,7 @@ function Home() {
 
                         <a href="#">
                             <div className="card p-4 card-enhanced">
-                                <img src="/src/assets/images/seven/news_01.png" className="card-img-top mb-4" alt="news_01" style={{ height: '100%' }} />
+                                <img src={SevenImgs.news_01} className="card-img-top mb-4" alt="news_01" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column">
                                         <h5 className="card-title fw-bold">精選手製小品特惠活動</h5>
@@ -373,7 +373,7 @@ function Home() {
 
                         <a href="#">
                             <div className="card p-4 card-enhanced">
-                                <img src="/src/assets/images/seven/news_03.png" className="card-img-top mb-4" alt="news_03" style={{ height: '100%' }} />
+                                <img src={SevenImgs.news_03} className="card-img-top mb-4" alt="news_03" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column">
                                         <h5 className="card-title fw-bold">父親節特惠活動</h5>
@@ -386,7 +386,7 @@ function Home() {
 
                         <a href="#">
                             <div className="card p-4 card-enhanced">
-                                <img src="/src/assets/images/seven/news_02.png" className="card-img-top mb-4" alt="news_02" style={{ height: '100%' }} />
+                                <img src={SevenImgs.news_02} className="card-img-top mb-4" alt="news_02" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
                                     <div className="d-flex flex-column">
                                         <h5 className="card-title fw-bold">本月壽星優惠通知</h5>

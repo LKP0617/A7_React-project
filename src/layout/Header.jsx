@@ -7,6 +7,8 @@ import Icons from '../assets/images/icons/Icons';
 import SevenImgs from '../assets/images/seven/SevenImgs';
 
 function Header() {
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
+    const API_PATH = import.meta.env.VITE_API_PATH;
 
     const loginModalRef = useRef(null);
     const searchModalRef = useRef(null);
@@ -15,7 +17,6 @@ function Header() {
     useEffect(() => {
         new Modal(loginModalRef.current, { backdrop: false });
         new Modal(searchModalRef.current, { backdrop: false });
-        // new Modal(delProductModalRef.current, { backdrop: false });
     }, [])
 
     const handleOpenLoginModal = (mode) => {
@@ -138,6 +139,19 @@ function Header() {
                                 {/* <!-- 登入按鈕 --> */}
                                 <button type="submit" className=" login-btn btn btn-dark btn-block">登入拾柒</button>
                             </form>
+
+                            {/* <form onSubmit={login} className="d-flex flex-column gap-3">
+                                <div className="form-floating mb-3">
+                                    <input name='username' value={account.username} onChange={handleInputChange} type="email" className="form-control" id="username" placeholder="name@example.com" />
+                                    <label htmlFor="username">Email address</label>
+                                </div>
+                                <div className="form-floating">
+                                    <input name='password' value={account.password} onChange={handleInputChange} type="password" className="form-control" id="password" placeholder="Password" />
+                                    <label htmlFor="password">Password</label>
+                                </div>
+                                <button className="btn btn-primary">登入</button>
+                            </form> */}
+
                             {/* <!-- 額外選項 --> */}
                             <div className="extra-option">
                                 <Link href="#"><span>忘記密碼？</span></Link>
