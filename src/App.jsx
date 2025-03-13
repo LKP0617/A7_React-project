@@ -10,6 +10,8 @@ import Cart from './pages/cart';
 import Checkout from './pages/Checkout';
 import './assets/scss/all.scss'
 
+import TestAPI from "./pages/TestApi"; // 🔹 新增測試頁面
+
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
         <Route path='/Q&A' element={<QA/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
         <Route path='/checkout' element={<Checkout/>}></Route>
+
+        <Route path="/test-api" element={<TestAPI />} /> {/* 🔹 測試 API */}
       </Routes>
     </>
   )

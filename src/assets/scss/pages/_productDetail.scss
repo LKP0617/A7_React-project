@@ -1,8 +1,9 @@
 .product-detail-container {
-    max-width: 1200px;
+    max-width: 1320px;
     margin: auto;
-    padding: 20px;
+    /*padding: 20px;*/
     margin-top: 80px;
+    margin-bottom: 40px;
     @media (max-width: 768px) {
         margin-top: 16px;
       }
@@ -28,7 +29,11 @@
   .product-detail {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
+    /*gap: 24px;*/
+    flex-wrap: nowrap;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   
     /*.product-info {
       max-width: 600px;
@@ -336,6 +341,198 @@
           width: 28px;
           height: 28px;
         }
+      }
+    }
+  }
+  
+
+  //可加購區塊
+
+  .add-on-container{
+    /*margin: 0px -12px;*/
+    min-width: 1320px;
+    .add{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    
+    
+    .row{
+      padding-top: 24px;
+      padding-bottom: 24px;
+      background-color: #F8F7F6;
+    }
+    
+  }
+  .add-content {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      gap: 40px;
+    }
+    .card {
+      max-width: 196px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+      
+  
+      .card-img-top {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;  // 讓圖片保持 1:1 比例
+        object-fit: cover; // 確保圖片填滿區塊，不變形
+        border-radius: 8px; // 圓角，可自行調整
+        
+      }
+  
+      .card-title {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: left;
+      }
+  
+      .form-select {
+        width: 100%;
+        font-size: 0.875rem;
+      }
+  
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 0.875rem;
+        border-radius: 8px;
+  
+        img {
+          max-width: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  
+  //品牌館
+  .shop {
+    border-radius: 16px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  
+    .shop-icon {
+      max-width: 107px;
+      margin-left: 86px;
+    }
+  
+    p {
+      font-size: 32px;
+      
+    }
+    
+    .branding-h3{
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 100;
+      font-family: 'chenyuluoyan';
+    }
+
+
+    .follow-btn {
+      border-radius: 100px;
+      padding: 13.5px 32px;
+      background-color: #f5f5f5; // 預設灰色背景
+      border: 1px solid #ccc;
+      color: #333;
+      transition: all 0.3s ease-in-out;
+  
+      .follow-icon {
+        max-width: 24px;
+        margin-right: 8px;
+      }
+  
+      &:hover {
+        background-color: #e0e0e0;
+      }
+  
+      &.active {
+        background-color: #d33e41; // 關注後變紅色
+        color: white;
+        border-color: #d33e41;
+  
+        .follow-text {
+          content: "已關注";
+        }
+  
+        .follow-icon {
+          display: none; // 隱藏加號
+        }
+      }
+    }
+  }
+  
+
+  //tab
+
+  .detail {
+    .detail-nav {
+      gap: 256px;
+      
+      .nav-link {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #484848;
+        
+        &.active {
+          border-bottom: 2px solid #484848;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .info-table {
+      margin: 0 auto;
+      th {
+        background-color: #f6f2e8;
+      }
+  
+      th, td {
+        padding: 12px 0;
+        width: 428px;
+        max-width: 428px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    .container-text {
+      max-width: 854px;
+      margin: 0 auto;
+      .p{
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 400;
+        font-family: 'gensen-r';
+      }
+
+    }
+  
+    .product-img {
+      .img {
+        width: 100%;
+        max-width: 1296px;
+        height: auto;
+        margin: 0 auto;
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
       }
     }
   }

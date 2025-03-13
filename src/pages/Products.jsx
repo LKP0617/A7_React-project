@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Accordion, Form, Button, Pagination } from "react-bootstrap";
 import "../assets/scss/pages/_products.scss";
 import Header from "../layout/Header";
 import Banner from "../layout/Banner";
 import ProductCard from "../layout/ProductCard"; // ✅ 確保導入 ProductCard
-import productData from "../data/productData"; // ✅ 確保導入 ProductData
+/*import productData from "../data/productData"; // 確保路徑正確*/
+import productData from "../data/products.json";
 import Footer from "../layout/Footer";
 
-const categories = [...new Set(productData.map((product) => product.category))]; 
-const brands = [...new Set(productData.map((product) => product.brand))]; 
+const categories = [
+    "全部商品",
+    ...new Set(productData
+        .map((product) => product.category)
+        .filter((category) => category !== "加購") // 🛠️ 排除「加購」
+    ),
+];
+
+const brands = [...new Set(productData.map((product) => product.brand))];
 
 function Products() {
     const [selectedCategory, setSelectedCategory] = useState("全部商品");
@@ -16,47 +24,45 @@ function Products() {
     const [currentPage, setCurrentPage] = useState(1);
     const [minPrice, setMinPrice] = useState("");
     const [maxPrice, setMaxPrice] = useState("");
-    const [filteredProducts, setFilteredProducts] = useState(productData);
+    
+    // 直接篩選出「非加購」類別的商品
+    const [filteredProducts, setFilteredProducts] = useState(
+        productData.filter((product) => product.category !== "加購")
+    );
 
     const itemsPerPage = 12;
 
-    // 商品篩選邏輯（按下按鈕後才篩選）
-    const handlePriceFilter = () => {
-        if (!minPrice || !maxPrice) {
-            alert("請輸入價格範圍");
-            return;
-        }
-        if (parseFloat(minPrice) > parseFloat(maxPrice)) {
-            alert("最低價格不能大於最高價格");
-            return;
-        }
+    // 🛠️ 更新篩選條件
+    useEffect(() => {
+        let updatedProducts = productData.filter(product => 
+            (selectedCategory === "全部商品" || product.category === selectedCategory) &&
+            (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
+            (product.category !== "加購") // 🛠️ 避免「加購」商品顯示
+        );
 
-        // 進行篩選
-        const filtered = productData
-            .filter(product => {
+        // 價格篩選（如果有填寫）
+        if (minPrice && maxPrice) {
+            updatedProducts = updatedProducts.filter(product => {
                 const price = Array.isArray(product.price) ? product.price[0] : product.price;
-                return (
-                    (selectedCategory === "全部商品" || product.category === selectedCategory) &&
-                    (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
-                    price >= Number(minPrice) &&
-                    price <= Number(maxPrice)
-                );
-            })
-            .sort((a, b) => new Date(b.created_at) - new Date(a.created_at)); // 按 `created_at` 排序
+                return price >= Number(minPrice) && price <= Number(maxPrice);
+            });
+        }
 
-        setFilteredProducts(filtered);
-        setCurrentPage(1); // 🆕 重設為第一頁
-    };
+        // 🛠️ 按 `created_at` 排序（新到舊）
+        updatedProducts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
+        setFilteredProducts(updatedProducts);
+        setCurrentPage(1); // 🛠️ 選擇分類後重置為第一頁
+    }, [selectedCategory, selectedBrands, minPrice, maxPrice]);
 
-
-    // 計算分頁（這裡 filteredProducts 已經包含排序後的資料）
+    // 計算分頁
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const displayedProducts = filteredProducts.slice(
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
-    // 切換品牌篩選
+
+    // 🛠️ 切換品牌篩選
     const handleBrandSelection = (brand) => {
         setSelectedBrands((prev) =>
             prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand]
@@ -73,13 +79,6 @@ function Products() {
                     <Col md={3} className="d-none d-md-block custom-sidebar">
                         <h5 className="list-title title">商品類別</h5>
                         <ul className="list-group Body-1">
-                            <li
-                                className={`list-group-item ${selectedCategory === "全部商品" ? "active" : ""}`}
-                                onClick={() => setSelectedCategory("全部商品")}
-                            >
-                                全部商品
-                            </li>
-
                             {categories.map((category, index) => (
                                 <li
                                     key={index}
@@ -90,8 +89,6 @@ function Products() {
                                 </li>
                             ))}
                         </ul>
-                    
-
 
                         <hr />
 
@@ -132,17 +129,15 @@ function Products() {
                                     />
                                 </Accordion.Body>
                             </Accordion.Item>
-
                         </Accordion>
 
-                        {/* ✅ 套用篩選按鈕（可自訂樣式） */}
+                        {/* ✅ 套用篩選按鈕 */}
                         <Button 
                             className="w-100 mt-3 category-leftbar-btn"
-                            onClick={handlePriceFilter} // 🔥 這裡按下才會執行篩選
+                            onClick={() => setFilteredProducts([...filteredProducts])} 
                         >
                             套用篩選
                         </Button>
-
                     </Col>
 
                     {/* 右側商品列表 */}
@@ -155,49 +150,46 @@ function Products() {
                             </div>
                         </div>
 
-                        {/* 使用 ProductCard 來確保與組員一致 */}
                         <Row>
-                            {displayedProducts.map((product) => (
-                                <Col xs={6} md={4} key={product.id} className="mb-4">
-                                    <ProductCard product={product} />
-                                </Col>
-                            ))}
+                            {displayedProducts.length > 0 ? (
+                                displayedProducts.map((product) => (
+                                    <Col xs={6} md={4} key={product.id} className="mb-4">
+                                        <ProductCard product={product} />
+                                    </Col>
+                                ))
+                            ) : (
+                                <p className="no-products">沒有符合條件的商品</p>
+                            )}
                         </Row>
-
 
                         {/* 分頁 */}
                         <Pagination className="custom-pagination justify-content-center mt-4">
-                        {/* 前一頁按鈕 */}
-                        <Pagination.Prev
-                            className="pagination-prev"
-                            onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
-                            disabled={currentPage === 1}
-                        >
-                            &lt;
-                        </Pagination.Prev>
-
-                        {/* 頁碼 */}
-                        {[...Array(totalPages)].map((_, index) => (
-                            <Pagination.Item
-                                key={`page-${index + 1}`} // 修正 key 屬性警告
-                                active={index + 1 === currentPage}
-                                onClick={() => setCurrentPage(index + 1)}
+                            <Pagination.Prev
+                                className="pagination-prev"
+                                onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                                disabled={currentPage === 1}
                             >
-                                {index + 1}
-                            </Pagination.Item>
-                        ))}
+                                &lt;
+                            </Pagination.Prev>
 
-                        {/* 下一頁按鈕 */}
-                        <Pagination.Next
-                            className="pagination-next"
-                            onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
-                            disabled={currentPage === totalPages}
-                        >
-                            &gt;
-                        </Pagination.Next>
+                            {[...Array(totalPages)].map((_, index) => (
+                                <Pagination.Item
+                                    key={`page-${index + 1}`} 
+                                    active={index + 1 === currentPage}
+                                    onClick={() => setCurrentPage(index + 1)}
+                                >
+                                    {index + 1}
+                                </Pagination.Item>
+                            ))}
+
+                            <Pagination.Next
+                                className="pagination-next"
+                                onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                                disabled={currentPage === totalPages}
+                            >
+                                &gt;
+                            </Pagination.Next>
                         </Pagination>
-
-                        
                     </Col>
                 </Row>
             </Container>
