@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Accordion, Form, Button, Pagination } from "react-bootstrap";
-import "../assets/scss/pages/_products.scss";
+// import "../assets/scss/pages/_products.scss";
 import Header from "../layout/Header";
-import Banner from "../layout/Banner";
-import ProductCard from "../layout/ProductCard"; // ✅ 確保導入 ProductCard
-/*import productData from "../data/productData"; // 確保路徑正確*/
-import productData from "../data/products.json";
 import Footer from "../layout/Footer";
+import Banner from "../components/Banner";
+import ProductCard from "../components/ProductCard"; // ✅ 確保導入 ProductCard
+import productData from "../data/productData"; // ✅ 確保導入 ProductData
 
 const categories = [
     "全部商品",
