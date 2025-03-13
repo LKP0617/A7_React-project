@@ -4,12 +4,15 @@ import "../assets/scss/layout/_productCard.scss";
 
 function ProductCard({ product }) {
     // 設定品牌對應的圖片
+    
     const brandLogo =
-        product.brand === "Negaflower"
-        ? "https://i.imgur.com/Y9nAq2A.jpg"
-        : product.brand === "陶之家"
-        ? "https://i.imgur.com/nTCBTgi.png"
-        : "https://via.placeholder.com/60"; // 預設圖片，防止 brand 沒匹配時顯示錯誤
+    product?.brand === "Negaflower"
+      ? "https://i.imgur.com/Y9nAq2A.jpg"
+      : product?.brand === "陶之家"
+      ? "https://i.imgur.com/nTCBTgi.png"
+      : product?.brand === "SOS香氛"
+      ? "https://i.imgur.com/WE6gmjk.png"
+      : "https://i.imgur.com/r5w9tAg.png"; // 預設圖片，防止 brand 沒匹配時顯示錯誤    
 
     // 收藏功能狀態
     const [isFavorite, setIsFavorite] = useState(false);
@@ -24,7 +27,7 @@ function ProductCard({ product }) {
       <a href="#" className=" rounded-top-3 h-100 d-block">
         {/* 圖片區域 */}
         <div className="position-relative product-card-img-container">
-          <img src={product.images[0]} className="product-image card-img-top" alt={product.name} />
+          <img src={product.images[0]} className="product-image card-img-top" alt={product.title} />
           {/* 收藏按鈕 */}
           <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0" onClick={toggleFavorite}>
             <img
@@ -40,8 +43,8 @@ function ProductCard({ product }) {
           <img src={brandLogo} alt={product.brand} className="brand-logo" />
           <div className="text-container">
             <p className="brand-name body-2">{product.brand}</p>
-            <p className="product-name title">{product.name}</p>
-            <p className="product-price title">NT${product.price[0]}</p>
+            <p className="product-name title">{product.title}</p>
+            <p className="product-price title">NT${product.price}</p>
           </div>
         </Card.Body>
 
@@ -51,8 +54,8 @@ function ProductCard({ product }) {
           <img src={brandLogo} alt={product.brand} className="brand-logo" />
             <p className="brand-name minimum">{product.brand}</p>
           </div>
-          <p className="product-name subtitle">{product.name}</p>
-          <p className="product-price subtitle">NT${product.price[0]}</p>
+          <p className="product-name subtitle">{product.title}</p>
+          <p className="product-price subtitle">NT${product.price}</p>
         </Card.Body>
       </a>
     </Card>

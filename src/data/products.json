@@ -1,0 +1,1678 @@
+[
+  {
+    "id": "00001",
+    "title": "牛油果綠配色零食花束",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "索拉花",
+      "零食花束"
+    ],
+    "description": "30cm 綠色系零食花束，清新搭配優質零食，適合生日與感謝禮物。",
+    "details": "<div class= product-detail-content><p>獨特的牛油果綠主題搭配，將花卉與美味結合，精選優質零食，適合作為生日或感謝禮品。</p><p>每束花約高 30cm，採用精美包裝紙搭配緞帶，內含多款零食，顏色以清新綠調為主。</p></div>",
+    "origin_price": 1680,
+    "price": 1680,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00001"
+    ],
+    "quantity": [
+      22
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value":"30cm"},
+      { "name": "材質", "value":"零食、包裝紙"},
+      { "name": "產地", "value": "台灣"}
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45680.50069444445,
+    "images": [
+      "https://i.imgur.com/bE7mr94.jpg",
+      "https://i.imgur.com/AmY7XdO.jpg",
+      "https://i.imgur.com/mhBYqI0.jpg"
+    ]
+  },
+  {
+    "id": "00002",
+    "title": "可可棕配色零食花束",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "索拉花",
+      "零食花束"
+    ],
+    "description": "35cm 可可棕色零食花束，濃郁巧克力配色，冬季與節日送禮首選。",
+    "details": "<div class=product-detail-content><p>濃郁可可色系，結合經典巧克力與零食，帶來滿滿的幸福感，是巧克力愛好者的最佳選擇。</p><p>花束高約 35cm，包裝採用溫暖可可色系，適合冬季或特別節日送禮。</p></div>",
+    "origin_price": 1680,
+    "price": 1680,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00002"
+    ],
+    "quantity": [
+      12
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "35cm" },
+      { "name": "材質", "value": "零食、包裝紙" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45681.50069444445,
+    "images": [
+      "https://i.imgur.com/txgkWp8.jpg",
+      "https://i.imgur.com/gIydjkB.jpg"
+    ]
+  },
+  {
+    "id": "00003",
+    "title": "母親節花禮｜永生康乃馨玻璃盅",
+    "category": "花禮",
+    "sub_category": [
+      "永生花",
+      "索拉花",
+      "母親節花禮"
+    ],
+    "description": "15cm 玻璃罩內含粉色/紅色永生康乃馨，持久保存，無需養護。",
+    "details": "<div class=product-detail-content><p>象徵母愛的康乃馨，搭配永生花技術保存美好時光，精美玻璃盅設計，為媽媽送上最純粹的心意。</p><p>尺寸約 15cm x 15cm，玻璃罩內含粉色或紅色永生康乃馨，耐久保存，不需額外養護。</p></div>",
+    "origin_price": 750,
+    "price": 750,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00003"
+    ],
+    "quantity": [
+      23
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "15cm x 15cm" },
+      { "name": "材質", "value": "永生康乃馨、玻璃罩" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片\n",
+      "禮盒包裝"
+    ],
+    "created_at": 45682.50069444445,
+    "images": [
+      "https://i.imgur.com/7q5mqxP.jpg",
+      "https://i.imgur.com/5Ujq1q6.jpg",
+      "https://i.imgur.com/eOMyyc2.jpg",
+      "https://i.imgur.com/7bI3Ss3.jpg"
+    ]
+  },
+  {
+    "id": "00004",
+    "title": "仿真鬱金香花束（三色）",
+    "category": "花束",
+    "sub_category": [
+      "人造花",
+      "情人節花束"
+    ],
+    "description": "40cm 仿真鬱金香花束，粉、黃、白三色可選，環保 PU 材質，手感細膩。",
+    "details": "<div class=product-detail-content><p>優雅的鬱金香，提供粉色、黃色與白色選擇，栩栩如生的仿真花束，為居家或婚禮增添浪漫氛圍。</p><p>每束含 9 支仿真鬱金香，高約 40cm，花材使用環保 PU 材質，手感細膩，易於打理。</p></div>",
+    "origin_price": 1080,
+    "price": 1080,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0000401",
+      "NG0000402",
+      "NG0000403"
+    ],
+    "quantity": [
+      15,
+      20,
+      9
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [
+      "白",
+      "黃",
+      "粉"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "40cm" },
+      { "name": "材質", "value": "PU 材質（仿真花）" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45683.50069444445,
+    "images": [
+      "https://i.imgur.com/MyAc4iX.jpg",
+      "https://i.imgur.com/DppSSkO.jpg",
+      "https://i.imgur.com/DL8MXsU.jpg",
+      "https://i.imgur.com/zjnCAJi.jpg"
+    ]
+  },
+  {
+    "id": "00005",
+    "title": "美拉德永生花束",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "索拉花",
+      "情人節花束"
+    ],
+    "description": "35cm 美拉德色系花束，焦糖、棕、暖橘色調，適合秋季氛圍與高雅送禮。",
+    "details": "<div class=product-detail-content><p>以美拉德色系為主，融合焦糖、棕色與暖橘色調，呈現秋日氛圍，是獨特高雅的花禮選擇。</p><p>高約 35cm，內含多種永生花材，持久不凋，適合擺放於客廳、書房或禮贈佳品。</p></div>",
+    "origin_price": 1350,
+    "price": 1350,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00005"
+    ],
+    "quantity": [
+      18
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "35cm" },
+      { "name": "材質", "value": "永生花、乾燥花" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45684.50069444445,
+    "images": [
+      "https://i.imgur.com/FeQQJiJ.jpg",
+      "https://i.imgur.com/4CIb34t.jpg",
+      "https://i.imgur.com/hP29dgb.jpg"
+    ]
+  },
+  {
+    "id": "00006",
+    "title": "索拉向日葵小花束（四色）",
+    "category": "花束",
+    "sub_category": [
+      "索拉花",
+      "畢業花束"
+    ],
+    "description": "30cm 向日葵索拉花束，四色選擇，吸附精油功能，可作擴香花使用。",
+    "details": "<div class=product-detail-content><p>清新的向日葵索拉花，提供四種顏色選擇，溫暖而富有朝氣，適合各種場合贈送。</p><p>花束長約 30cm，索拉花具有吸附精油功能，可作為擴香花使用，為空間增添自然芳香。</p></div>",
+    "origin_price": 100,
+    "price": 100,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0000601",
+      "NG0000602",
+      "NG0000603",
+      "NG0000604"
+    ],
+    "quantity": [
+      30,
+      27,
+      32,
+      12
+    ],
+    "min_purchase_quantity": 3,
+    "brand": "Negaflower",
+    "features": [
+      "白",
+      "粉",
+      "藍",
+      "黃"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "30cm" },
+      { "name": "材質", "value": "索拉花、乾燥花" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45685.50069444445,
+    "images": [
+      "https://i.imgur.com/MJHl9LC.jpg",
+      "https://i.imgur.com/psZ3GNU.jpg",
+      "https://i.imgur.com/rb4ElUG.jpg",
+      "https://i.imgur.com/Pq4iT4F.jpg",
+      "https://i.imgur.com/zeuMdFC.jpg"
+    ]
+  },
+  {
+    "id": "00007",
+    "title": "婚禮伴娘手腕花（兩色）",
+    "category": "婚禮花藝",
+    "sub_category": [
+      "索拉花",
+      "手腕花",
+      "婚禮花藝"
+    ],
+    "description": "10cm 伴娘手腕花，粉/白兩色可選，緞帶固定，輕盈舒適。",
+    "details": "<div class=product-detail-content><p>專為婚禮伴娘設計的優雅手腕花，提供粉色與白色選擇，輕盈舒適，增添婚禮氣質感。</p><p>直徑約 10cm，使用柔軟緞帶固定，適合搭配各種婚紗或伴娘服飾。</p></div>",
+    "origin_price": 450,
+    "price": 450,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0000701",
+      "NG0000702"
+    ],
+    "quantity": [
+      30,
+      30
+    ],
+    "min_purchase_quantity": 2,
+    "brand": "Negaflower",
+    "features": [
+      "粉白",
+      "紅白"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "10cm" },
+      { "name": "材質", "value": "人造花、緞帶" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片",
+      "禮盒包裝"
+    ],
+    "created_at": 45686.50069444445,
+    "images": [
+      "https://i.imgur.com/BIiArX8.jpg",
+      "https://i.imgur.com/8uRXZKn.jpg",
+      "https://i.imgur.com/AuKElxw.jpg",
+      "https://i.imgur.com/pxeEEFX.jpg",
+      "https://i.imgur.com/yNeVHdQ.jpg"
+    ]
+  },
+  {
+    "id": "00008",
+    "title": "婚禮胸花｜人造花胸花",
+    "category": "婚禮花藝",
+    "sub_category": [
+      "人造花",
+      "胸花",
+      "婚禮花藝"
+    ],
+    "description": "精緻 8cm 人造花胸花，輕盈別針設計，適合婚禮與正式場合搭配。",
+    "details": "<div class=product-detail-content><p>精緻的人造花胸花，細膩工藝打造，適合新郎、伴郎或親友配戴，提升整體婚禮造型。</p><p>尺寸約 8cm，輕盈設計，搭配別針固定，方便配戴。</p></div>",
+    "origin_price": 375,
+    "price": 375,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00008"
+    ],
+    "quantity": [
+      28
+    ],
+    "min_purchase_quantity": 2,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "8cm" },
+      { "name": "材質", "value": "人造花" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片",
+      "禮盒包裝"
+    ],
+    "created_at": 45687.50069444445,
+    "images": [
+      "https://i.imgur.com/uyATdlY.jpg",
+      "https://i.imgur.com/1QCGZwX.jpg",
+      "https://i.imgur.com/u7Lcz8H.jpg",
+      "https://i.imgur.com/Zp4wdkr.jpg"
+    ]
+  },
+  {
+    "id": "00009",
+    "title": "婚禮胸花｜永生花／索拉花（四色）",
+    "category": "婚禮花藝",
+    "sub_category": [
+      "永生花",
+      "索拉花",
+      "胸花",
+      "婚禮花藝"
+    ],
+    "description": "9cm 永生花/索拉花胸花，紅、白、粉、藍四色可選，輕盈固定夾方便配戴。",
+    "details": "<div class=product-detail-content><p>經典的永生花與索拉花胸花，提供紅、白、粉、奶茶四色，搭配高級緞帶，展現優雅氣息。</p><p>胸花尺寸約 9cm，使用輕盈固定夾，適合正式場合與婚禮佩戴。</p></div>",
+    "origin_price": 375,
+    "price": 375,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0000901",
+      "NG0000902",
+      "NG0000903",
+      "NG0000904"
+    ],
+    "quantity": [
+      20,
+      26,
+      28,
+      24
+    ],
+    "min_purchase_quantity": 2,
+    "brand": "Negaflower",
+    "features": [
+      "粉",
+      "紅",
+      "奶茶",
+      "白"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "9cm" },
+      { "name": "材質", "value": "永生花、索拉花" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片\n",
+      "禮盒包裝"
+    ],
+    "created_at": 45688.50069444445,
+    "images": [
+      "https://i.imgur.com/aSoi7bG.jpg",
+      "https://i.imgur.com/GzaVrAv.jpg",
+      "https://i.imgur.com/It3WLHP.jpg",
+      "https://i.imgur.com/qddM27O.jpg"
+    ]
+  },
+  {
+    "id": "00010",
+    "title": "單朵永生玫瑰花束（多色）",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "情人節花束"
+    ],
+    "description": "25cm 單朵永生玫瑰，6cm 花徑，多色選擇，適合情人節、生日與紀念日。",
+    "details": "<div class=product-detail-content><p>優雅的單朵永生玫瑰，精緻包裝設計，適合作為情人節、生日或特別日子的心意禮物。</p><p>玫瑰直徑約 6cm，花束長約 25cm，多色可選，持久保存。</p></div>",
+    "origin_price": 350,
+    "price": 350,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0001001",
+      "NG0001002",
+      "NG0001003",
+      "NG0001004",
+      "NG0001005",
+      "NG0001006"
+    ],
+    "quantity": [
+      15,
+      20,
+      16,
+      15,
+      10,
+      9
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [
+      "藍",
+      "淺藍",
+      "紅",
+      "粉",
+      "香檳",
+      "紫"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "25cm (花徑 6cm)" },
+      { "name": "材質", "value": "永生玫瑰" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45689.50069444445,
+    "images": [
+      "https://i.imgur.com/KqT2Mrm.jpg",
+      "https://i.imgur.com/FeikUyc.jpg",
+      "https://i.imgur.com/bQIuvZo.jpg",
+      "https://i.imgur.com/5OWT5eg.jpg",
+      "https://i.imgur.com/Ou8nId3.jpg",
+      "https://i.imgur.com/VMAqXJQ.jpg"
+    ]
+  },
+  {
+    "id": "00011",
+    "title": "紫玫瑰永生花束",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "情人節花束"
+    ],
+    "description": "30cm 高雅紫玫瑰永生花束，內含多朵玫瑰與乾燥花，象徵浪漫與神秘。",
+    "details": "<div class=product-detail-content><p>神秘而高貴的紫玫瑰永生花束，象徵尊貴與浪漫，適合獻給特別的人。</p><p>花束高約 30cm，內含多朵紫色永生玫瑰與乾燥花材，包裝優雅大方。</p></div>",
+    "origin_price": 1988,
+    "price": 1988,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00011"
+    ],
+    "quantity": [
+      4
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "30cm" },
+      { "name": "材質", "value": "永生玫瑰、乾燥花" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45690.50069444445,
+    "images": [
+      "https://i.imgur.com/gN58MR7.jpg",
+      "https://i.imgur.com/J0rIQbY.jpg",
+      "https://i.imgur.com/nEd02EV.jpg"
+    ]
+  },
+  {
+    "id": "00012",
+    "title": "進口白玫瑰鮮花束",
+    "category": "花束",
+    "sub_category": [
+      "鮮花",
+      "情人節花束"
+    ],
+    "description": "進口白玫瑰 10-20 朵，包裝精緻，適合求婚、結婚與感謝禮物。",
+    "details": "<div class=product-detail-content><p>精選進口白玫瑰，純淨典雅，適合作為求婚、結婚、或感謝禮物，傳遞最真摯的情感。</p><p>花束內含 10-20 朵白玫瑰，根據客製需求搭配，包裝高級精緻。</p></div>",
+    "origin_price": 1680,
+    "price": 1680,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00012"
+    ],
+    "quantity": [
+      2
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "30cm - 40cm (根據花束大小)" },
+      { "name": "材質", "value": "鮮花（進口白玫瑰）" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片\n",
+      "禮盒包裝"
+    ],
+    "created_at": 45691.50069444445,
+    "images": [
+      "https://i.imgur.com/3HkI6rI.jpg",
+      "https://i.imgur.com/Lf6Cp6U.jpg",
+      "https://i.imgur.com/XcNGLmq.jpg"
+    ]
+  },
+  {
+    "id": "00013",
+    "title": "開幕花禮｜奶油燕麥盆花",
+    "category": "花禮",
+    "sub_category": [
+      "永生花",
+      "開幕花禮"
+    ],
+    "description": "40cm 開幕盆花，奶油燕麥色系，乾燥花與永生花搭配，高雅大方。",
+    "details": "<div class=product-detail-content><p>溫潤奶油與燕麥色系的開幕盆花，簡約中帶有高雅氣質，適合商店開幕、慶典場合。</p><p>盆花高度約 40cm，使用乾燥花與永生花搭配，色系柔和百搭，營造溫暖氛圍。</p></div>",
+    "origin_price": 980,
+    "price": 980,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00013"
+    ],
+    "quantity": [
+      3
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [],
+    "specifications": [
+      { "name": "尺寸", "value": "40cm" },
+      { "name": "材質", "value": "永生花、乾燥花、陶盆" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片\n",
+      "禮盒包裝"
+    ],
+    "created_at": 45692.50069444445,
+    "images": [
+      "https://i.imgur.com/puE4Ga8.jpg",
+      "https://i.imgur.com/2fYtEGJ.jpg",
+      "https://i.imgur.com/elE8mFE.jpg"
+    ]
+  },
+  {
+    "id": "00014",
+    "title": "聖誕甜筒花束（兩色）",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "索拉花",
+      "聖誕花束"
+    ],
+    "description": "25cm 甜筒造型花束，紅色與綠色款式，聖誕元素搭配節日飾品，溫馨趣味。",
+    "details": "<div class=product-detail-content><p>特別設計的甜筒造型聖誕花束，提供紅色與白色款式，為節日增添趣味與溫馨氛圍。</p><p>高度約 25cm，內含聖誕元素花材與飾品，適合送禮或作為節日裝飾。</p></div>",
+    "origin_price": 950,
+    "price": 950,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0001401",
+      "NG0001402"
+    ],
+    "quantity": [
+      0,
+      0
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [
+      "紅",
+      "白"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "25cm" },
+      { "name": "材質", "value": "乾燥花、永生花" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45693.50069444445,
+    "images": [
+      "https://i.imgur.com/fsPZ2nN.jpg",
+      "https://i.imgur.com/XyL8awa.jpg",
+      "https://i.imgur.com/VH7izjt.jpg"
+    ]
+  },
+  {
+    "id": "00015",
+    "title": "熊愛你永生玫瑰花束（兩色）",
+    "category": "花束",
+    "sub_category": [
+      "永生花",
+      "情人節花束"
+    ],
+    "description": "30cm 永生玫瑰花束，附可愛小熊，粉/紅兩色，包裝精美，長期保存。",
+    "details": "<div class=product-detail-content><p>浪漫玫瑰搭配可愛小熊，提供紅色與粉色選擇，是情人節、生日或紀念日的最佳禮物。</p><p>花束高度約 30cm，內含 3 朵永生玫瑰與玩偶熊，包裝精美，可長期保存。</p></div>",
+    "origin_price": 2520,
+    "price": 2520,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG0001501",
+      "NG0001502"
+    ],
+    "quantity": [
+      6,
+      9
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "Negaflower",
+    "features": [
+      "紅",
+      "白"
+    ],
+    "specifications": [
+      { "name": "尺寸", "value": "30cm" },
+      { "name": "材質", "value": "永生玫瑰、小熊玩偶" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "透明提袋（大）",
+      "透明提袋（小）",
+      "代寫卡片"
+    ],
+    "created_at": 45694.50069444445,
+    "images": [
+      "https://i.imgur.com/3O1baWW.jpg",
+      "https://i.imgur.com/joSvuIy.jpg",
+      "https://i.imgur.com/HzaHcnc.jpg",
+      "https://i.imgur.com/b7FLfSF.jpg",
+      "https://i.imgur.com/LGK6Zd5.jpg",
+      "https://i.imgur.com/atZ5OIp.jpg"
+    ]
+  },
+  {
+    "id": "00016",
+    "title": "透明提袋（大）",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 150,
+    "price": 150,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00016"
+    ],
+    "quantity": [
+      80
+    ],
+    "brand": "Negaflower",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45695.50069444445,
+    "images": [
+      "https://i.imgur.com/sLKwElO.png"
+    ]
+  },
+  {
+    "id": "00017",
+    "title": "透明提袋（小）",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 80,
+    "price": 80,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00017"
+    ],
+    "quantity": [
+      90
+    ],
+    "brand": "Negaflower",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45696.50069444445,
+    "images": [
+      "https://i.imgur.com/sLKwElO.png"
+    ]
+  },
+  {
+    "id": "00018",
+    "title": "代寫卡片",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 50,
+    "price": 50,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00018"
+    ],
+    "quantity": [
+      100
+    ],
+    "brand": "Negaflower",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45697.50069444445,
+    "images": [
+      "https://i.imgur.com/8ZvU9c5.jpg"
+    ]
+  },
+  {
+    "id": "00019",
+    "title": "禮盒包裝",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 150,
+    "price": 150,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00019"
+    ],
+    "quantity": [
+      100
+    ],
+    "brand": "Negaflower",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45698.50069444445,
+    "images": [
+      "https://i.imgur.com/O44AmCQ.jpg"
+    ]
+  },
+  {
+    "id": "00020",
+    "title": "花卉剪刀",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 600,
+    "price": 600,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00020"
+    ],
+    "quantity": [
+      8
+    ],
+    "brand": "Negaflower",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45699.50069444445,
+    "images": [
+      "https://i.imgur.com/ZRkbhrO.png"
+    ]
+  },
+  {
+    "id": "00021",
+    "title": "迷你噴壺",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 200,
+    "price": 200,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "NG00021"
+    ],
+    "quantity": [
+      15
+    ],
+    "brand": "Negaflower",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45700.50069444445,
+    "images": [
+      "https://i.imgur.com/2iFxbRT.png"
+    ]
+  },
+  {
+    "id": 10001,
+    "title": "咖啡系列｜拿鐵杯 (Latte Cup)",
+    "category": "杯具",
+    "sub_category": [
+      "馬克杯",
+      "咖啡杯"
+    ],
+    "description": "經典拿鐵杯造型，手感溫潤舒適，是品味咖啡時光的最佳選擇。",
+    "details": "<div class=product-detail-content><p>以暖白與棕釉為主色調的拿鐵杯 (Latte Mug)，猶如一杯經典拿鐵般散發出溫潤的質感。杯口的棕色釉面如同咖啡油脂，增添視覺上的層次，而杯身的柔和米白色與細緻的砂質觸感，讓人彷彿能聞到咖啡與奶香交融的氣息。每個細節都經過手工打磨，高溫燒製後呈現出自然細膩的紋理。這款拿鐵杯不僅適合享受每日的咖啡時光，更是你餐桌上雅緻生活的最佳陪伴。無論是早晨的提神咖啡，還是午後的小憩拿鐵，Latte Mug 都讓每一口咖啡都多了一份儀式感。</p></div>",
+    "origin_price": 580,
+    "price": 580,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10001"
+    ],
+    "quantity": [
+      10
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "350ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感原木杯墊"
+    ],
+    "created_at": 45682.50208333333,
+    "images": [
+      "https://i.imgur.com/o1MBXAG.jpg"
+    ]
+  },
+  {
+    "id": 10002,
+    "title": "咖啡系列｜奶泡拿鐵 (Foam Latte)",
+    "category": "杯具",
+    "sub_category": [
+      "馬克杯",
+      "咖啡杯"
+    ],
+    "description": "圓潤厚實的設計，搭配溫潤釉色，如同綿密奶泡般溫暖細膩。",
+    "details": "<div class=product-detail-content><p>奶泡拿鐵 (Foamy Latte Mug) 將濃郁的咖啡與柔滑的奶泡體現於陶杯之中。它擁有優雅的碗狀設計，讓每一口咖啡都可以與豐厚的奶泡完美融合。杯身以啞光白色釉面與內部細膩的亮面釉相呼應，展現出柔和而層次豐富的美感。其握感舒適的手把設計，讓你在端起咖啡時倍感溫暖與安心。Foamy Latte Mug 不僅是品味咖啡的理想選擇，更是日常生活中值得珍藏的藝術品，讓早晨的咖啡時光更為精緻。</p></div>",
+    "origin_price": 520,
+    "price": 520,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10002"
+    ],
+    "quantity": [
+      2
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "280ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感原木杯墊"
+    ],
+    "created_at": 45682.52291666667,
+    "images": [
+      "https://i.imgur.com/AkL7OD4.jpg"
+    ]
+  },
+  {
+    "id": 10003,
+    "title": "咖啡系列｜卡布奇諾 (Cappuccino)",
+    "category": "杯具",
+    "sub_category": [
+      "馬克杯",
+      "咖啡杯"
+    ],
+    "description": "以厚實短杯設計為特色，適合濃郁咖啡，為日常帶來儀式感。",
+    "details": "<div class=product-detail-content><p>卡布奇諾杯 (Cappuccino Mug) 的設計靈感源於經典的卡布奇諾比例，杯身小巧卻充滿質感，容量恰到好處，可盛裝一份滑順的雙份濃縮咖啡與豐厚的奶泡。外部的啞光砂色釉面，與杯緣深棕色的細釉相映成趣，帶來自然與現代兼具的視覺效果。杯口的開口比例經過精心設計，不僅適合品味卡布奇諾，也適合搭配茶飲或手沖咖啡。無論是悠閒的獨享時光，還是為客人準備一杯香濃的卡布奇諾，Cappuccino Mug 都能讓每一次舉杯都充滿情調與儀式感。</p></div>",
+    "origin_price": 450,
+    "price": 450,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10003"
+    ],
+    "quantity": [
+      1
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "180ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感原木杯墊"
+    ],
+    "created_at": 45683.50208333333,
+    "images": [
+      "https://i.imgur.com/fSn2Gr0.jpg"
+    ]
+  },
+  {
+    "id": 10004,
+    "title": "星點杯｜藍(Twinkle Dots – Blue)",
+    "category": "杯具",
+    "sub_category": [
+      "茶杯",
+      "水杯"
+    ],
+    "description": "點點藍色如星空般散佈，為桌面增添一抹趣味與夢幻感。",
+    "details": "<div class=product-detail-content><p>Twinkle Dots – Blue 是一款散發著藍色星點趣味的小杯子，藍色點點如同夏日夜空中的繁星，跳躍於米白色的杯壁之上。採用天然陶土手工製作而成，細膩的釉面手感溫潤舒適，讓每一次拿起杯子都彷彿與大自然對話。這款杯子適合用來享受一杯熱茶或咖啡，無論是200ml 的標準容量，還是150ml 的迷你尺寸，都讓你在生活中擁有一抹童趣與自在的心情。讓Twinkle Dots – Blue 成為你日常時光中不可或缺的小夥伴，每一抹藍點都帶著悠然的故事。</p></div>",
+    "origin_price": 420,
+    "price": 420,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA1000401",
+      "TA1000402"
+    ],
+    "quantity": [
+      15,
+      20
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [
+      "200ml",
+      "150ml"
+    ],
+    "specifications": [
+      { "name": "容量", "value": "200ml/150ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "質感木製托盤",
+      "質感原木杯墊"
+    ],
+    "created_at": 45683.52291666667,
+    "images": [
+      "https://i.imgur.com/ShKri82.jpg",
+      "https://i.imgur.com/XS9kTZo.jpg",
+      "https://i.imgur.com/oxBLSy7.jpg"
+    ]
+  },
+  {
+    "id": 10005,
+    "title": "星點杯｜粉 (Twinkle Dots - Pink)",
+    "category": "杯具",
+    "sub_category": [
+      "茶杯",
+      "水杯"
+    ],
+    "description": "粉色星點輕盈跳躍，散發俏皮甜美氛圍，適合療癒時光。",
+    "details": "<div class=product-detail-content><p>粉色的點點灑落在杯壁上，如春日花瓣般輕盈夢幻。Twinkle Dots – Pink 是一款充滿少女心的小杯子，適合每一位熱愛生活細節的使用者。手工點釉的工藝讓每個粉色斑點位置獨一無二，猶如一幅隨興創作的藝術品。這款杯子不僅是用來裝飲品，更是生活中一個溫暖的小點綴，適合午後的小憩或好友的聚會時光。選擇200ml 容量來享受一杯咖啡，或選擇150ml 迷你版來品味一小杯濃縮 espresso，讓每一口都充滿繽紛與驚喜。</p></div>",
+    "origin_price": 420,
+    "price": 420,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA1000501",
+      "TA1000502"
+    ],
+    "quantity": [
+      15,
+      20
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [
+      "200ml",
+      "150ml"
+    ],
+    "specifications": [
+      { "name": "容量", "value": "200ml/150ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "質感木製托盤",
+      "質感原木杯墊"
+    ],
+    "created_at": 45684.50208333333,
+    "images": [
+      "https://i.imgur.com/1ULohfL.jpg",
+      "https://i.imgur.com/KtSP5CJ.jpg"
+    ]
+  },
+  {
+    "id": 10006,
+    "title": "星點杯｜泡泡 (Twinkle Dots - Bubbles)",
+    "category": "杯具",
+    "sub_category": [
+      "茶杯",
+      "水杯"
+    ],
+    "description": "彩色點點如氣泡般躍動，為每一口飲品增添童趣活力。",
+    "details": "<div class=product-detail-content><p>Twinkle Dots – Bubble 像是一場泡泡派對，帶來滿滿的童趣與歡樂。這款杯子的彩點設計如同漂浮在空氣中的繽紛泡泡，每一個色點都是手工點綴，帶來不規則卻精緻的視覺效果。200ml 規格適合一杯暖心的茶，150ml 則是剛好盛裝一杯香濃的濃縮咖啡。使用無鉛安全釉料燒製，讓你在安心使用的同時享受視覺與味覺的雙重體驗。Twinkle Dots – Bubble 是為生活增添色彩的最佳選擇，無論是日常或是與朋友分享，都充滿趣味與儀式感。</p></div>",
+    "origin_price": 420,
+    "price": 420,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA1000601",
+      "TA1000602"
+    ],
+    "quantity": [
+      15,
+      20
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [
+      "200ml",
+      "150ml"
+    ],
+    "specifications": [
+      { "name": "容量", "value": "200ml/150ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "質感木製托盤",
+      "質感原木杯墊"
+    ],
+    "created_at": 45684.52291666667,
+    "images": [
+      "https://i.imgur.com/XO4AB1e.jpg"
+    ]
+  },
+  {
+    "id": 10007,
+    "title": "星點杯｜彩虹 (Twinkle Dots - Rainbow)",
+    "category": "杯具",
+    "sub_category": [
+      "茶杯",
+      "水杯"
+    ],
+    "description": "繽紛色彩交織如同彩虹，帶來愉悅氛圍，點亮每個日常瞬間。",
+    "details": "<div class=product-detail-content><p>Twinkle Dots – Rainbow 是杯子界的小型彩虹奇蹟！鮮豔的七彩點點如春雨後的彩虹一般隨機灑落在杯身，讓你每次使用都仿佛擁有了一個繽紛的驚喜。無論是早晨的一杯拿鐵，還是午後的一杯果茶，這款杯子都能讓日常飲品變得與眾不同。標準版200ml 容量適合日常咖啡使用，而150ml 小杯更適合濃縮風味的咖啡或奶茶。從早晨到黃昏，Twinkle Dots – Rainbow 都是你生活裡的那一道亮麗風景線！</p></div>",
+    "origin_price": 420,
+    "price": 420,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA1000701",
+      "TA1000702"
+    ],
+    "quantity": [
+      20,
+      12
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [
+      "200ml",
+      "150ml"
+    ],
+    "specifications": [
+      { "name": "容量", "value": "200ml/150ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "質感木製托盤",
+      "質感原木杯墊"
+    ],
+    "created_at": 45685.52291666667,
+    "images": [
+      "https://i.imgur.com/LVfEKZd.jpg",
+      "https://i.imgur.com/bLwBimV.jpg",
+      "https://i.imgur.com/Qu7ZSQf.jpg"
+    ]
+  },
+  {
+    "id": 10008,
+    "title": "素陶罐｜灰陶 (Clay Jar- Grey Clay)",
+    "category": "陶罐",
+    "sub_category": [
+      "茶葉罐",
+      "咖啡罐"
+    ],
+    "description": "灰色素陶質地，簡約質樸，適合儲存咖啡豆、茶葉或調味料。",
+    "details": "<div class=product-detail-content><p>素陶罐｜灰陶是一款將純粹與原始融為一體的設計。罐身無釉處理，保留了陶土最原始的觸感與氣息，每一次觸摸都像是與大地對話。適合用來裝茶葉、咖啡粉或香料，為你的生活增添自然的儀式感。</p></div>",
+    "origin_price": 480,
+    "price": 480,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10008"
+    ],
+    "quantity": [
+      28
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "350ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感木製托盤"
+    ],
+    "created_at": 45686.52291666667,
+    "images": [
+      "https://i.imgur.com/ArQciUb.jpg"
+    ]
+  },
+  {
+    "id": 10009,
+    "title": "素陶罐｜灰釉 (Clay Jar - Grey Glaze)",
+    "category": "陶罐",
+    "sub_category": [
+      "茶葉罐",
+      "咖啡罐"
+    ],
+    "description": "灰色釉面質感細膩，具備實用與美觀兼具的功能性設計。",
+    "details": "<div class=product-detail-content><p>素陶罐｜灰釉選用細膩的無鉛灰色釉料，以手工刷釉工法燒製而成，紋理自然不規則，營造出隨性的美感。無論是裝調味料還是日常小物，這款罐子都讓你的生活多了一份手作的溫暖與優雅。</p></div>",
+    "origin_price": 480,
+    "price": 480,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10009"
+    ],
+    "quantity": [
+      24
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "350ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感木製托盤"
+    ],
+    "created_at": 45687.52291666667,
+    "images": [
+      "https://i.imgur.com/zkUuCA8.jpg"
+    ]
+  },
+  {
+    "id": 10010,
+    "title": "素陶罐｜斑釉 (Clay Jar – Speckled Glaze)",
+    "category": "陶罐",
+    "sub_category": [
+      "茶葉罐",
+      "咖啡罐"
+    ],
+    "description": "柔和米白釉面，低調優雅，為廚房或客廳增添一份溫馨氛圍。",
+    "details": "<div class=product-detail-content><p>素陶罐｜斑釉是一款帶有隨機紋理與趣味的作品。自然生成的釉斑點綴在純白釉面上，每一款都是獨一無二的藝術品。無論是用來裝糖、鹽或茶葉，都讓使用者體會到極簡而有趣的生活美學。</p></div>",
+    "origin_price": 480,
+    "price": 480,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10010"
+    ],
+    "quantity": [
+      9
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "350ml" },
+      { "name": "材質", "value": "天然陶土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感木製托盤"
+    ],
+    "created_at": 45688.52291666667,
+    "images": [
+      "https://i.imgur.com/p2ecqSm.jpg"
+    ]
+  },
+  {
+    "id": 10011,
+    "title": "素陶酒組 (Sake Set)",
+    "category": "酒壺",
+    "sub_category": [
+      "清酒壺",
+      "酒杯"
+    ],
+    "description": "典雅素陶壺與兩只杯子組成，呈現日式簡約風格，是品味清酒的不二選擇。",
+    "details": "<div class=product-detail-content><p>素陶酒組 (Sake Set) 是一款將手作美學與簡約生活完美結合的清酒壺與杯組。壺身以柔和的白色釉面包覆，並點綴著如星空般的細小斑點，散發出溫暖、沉穩的氣息。兩個小酒杯則以圓潤造型呈現，輕盈且貼合掌心，讓每一次舉杯都充滿細膩的觸感。</p>\n<p>這套作品不僅適合日常小酌，亦是特別聚會時的亮點。無論是品嚐純米清酒或溫熱的燗酒，這組酒器都為每一杯美酒增添專屬的儀式感與生活情調。</p></div>",
+    "origin_price": 1380,
+    "price": 1380,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10011"
+    ],
+    "quantity": [
+      4
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "350ml/100mlx2" },
+      { "name": "材質", "value": "天然高嶺土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感木製托盤"
+    ],
+    "created_at": 45689.52291666667,
+    "images": [
+      "https://i.imgur.com/708cAH0.jpg",
+      "https://i.imgur.com/KfDUcSZ.jpg"
+    ]
+  },
+  {
+    "id": 10012,
+    "title": "素陶杯｜砂岩 (Clay Cup - Sandstone)",
+    "category": "杯具",
+    "sub_category": [
+      "馬克杯",
+      "咖啡杯"
+    ],
+    "description": "砂岩質感表面，帶有天然肌理之美，簡單而耐看。",
+    "details": "<div class=product-detail-content><p>素陶杯｜砂岩，以天然陶土手作而成，表面如砂岩般有機、樸素。每一口飲品，都像是與大自然的親密對話。無論是晨間咖啡還是晚間茶飲，這只杯子都能帶來寧靜且純粹的時光。</p></div>",
+    "origin_price": 420,
+    "price": 420,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10012"
+    ],
+    "quantity": [
+      12
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "150ml" },
+      { "name": "材質", "value": "天然高嶺土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感原木杯墊"
+    ],
+    "created_at": 45690.52291666667,
+    "images": [
+      "https://i.imgur.com/WKApA0Z.jpg"
+    ]
+  },
+  {
+    "id": 10013,
+    "title": "素陶杯｜流金 (Golden Flow Cup)",
+    "category": "杯具",
+    "sub_category": [
+      "馬克杯",
+      "咖啡杯"
+    ],
+    "description": "金黃細點釉燒，如晨曦灑落，展現溫暖光影質感，適合咖啡與茶飲。",
+    "details": "<div class=product-detail-content><p>素陶杯｜流金，手工釉燒出細緻的金黃色點紋，如同晨曦灑落大地的光芒。每一杯飲品，都在金黃的光影中變得更加溫暖。這款杯子適合搭配純茶或咖啡，為日常增添一絲雅致和趣味。</p></div>",
+    "origin_price": 450,
+    "price": 450,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10013"
+    ],
+    "quantity": [
+      1
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "陶之家",
+    "features": [],
+    "specifications": [
+      { "name": "容量", "value": "150ml" },
+      { "name": "材質", "value": "天然高嶺土" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [
+      "品牌設計提袋",
+      "品牌手繪明信片",
+      "日式風呂敷包裝",
+      "質感原木杯墊"
+    ],
+    "created_at": 45691.52291666667,
+    "images": [
+      "https://i.imgur.com/Wer65az.jpg"
+    ]
+  },
+  {
+    "id": 10014,
+    "title": "品牌設計提袋",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 100,
+    "price": 100,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10014"
+    ],
+    "quantity": [
+      80
+    ],
+    "brand": "陶之家",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45692.52291666667,
+    "images": [
+      "https://i.imgur.com/d8O4CMG.jpg"
+    ]
+  },
+  {
+    "id": 10015,
+    "title": "品牌手繪明信片",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 60,
+    "price": 60,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10015"
+    ],
+    "quantity": [
+      32
+    ],
+    "brand": "陶之家",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45693.52291666667,
+    "images": [
+      "https://i.imgur.com/OqCy3Jl.jpg"
+    ]
+  },
+  {
+    "id": 10016,
+    "title": "日式風呂敷包裝",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 300,
+    "price": 300,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10016"
+    ],
+    "quantity": [
+      13
+    ],
+    "brand": "陶之家",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45694.52291666667,
+    "images": [
+      "https://i.imgur.com/bQ14UnO.png"
+    ]
+  },
+  {
+    "id": 10017,
+    "title": "質感木製托盤",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 580,
+    "price": 580,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10017"
+    ],
+    "quantity": [
+      8
+    ],
+    "brand": "陶之家",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45695.52291666667,
+    "images": [
+      "https://i.imgur.com/XtWmOct.jpg"
+    ]
+  },
+  {
+    "id": 10018,
+    "title": "質感原木杯墊",
+    "category": "加購",
+    "sub_category": [],
+    "origin_price": 200,
+    "price": 200,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "TA10018"
+    ],
+    "quantity": [
+      15
+    ],
+    "brand": "陶之家",
+    "features": [],
+    "add_on_items": [],
+    "created_at": 45696.52291666667,
+    "images": [
+      "https://i.imgur.com/1cQ0TpH.jpg"
+    ]
+  },
+  {
+    "id": 20001,
+    "title": "雲間之光 (Cloudlit Glow)",
+    "category": "手工香皂",
+    "sub_category": [],
+    "description": "添加茶樹精油，溫和抗菌不刺激。純淨、清潔，適合隨身攜帶。",
+    "details": "<div class=product-detail-content><p>如雲間透射而下的柔光，雲間之光手工香皂將肌膚包裹在潔淨的泡沫中。天然椰子油與橄欖油帶來溫和的清潔與滋潤，甜杏仁油則為肌膚增添保護屏障，茶樹精油散發出淡淡的草本清香，使洗手成為淨化與舒心的儀式。無論是在家中或旅途中，雲間之光都是你隨身清潔的理想夥伴。</p></div>",
+    "origin_price": 180,
+    "price": 180,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "SS20001"
+    ],
+    "quantity": [
+      5
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "SOS香氛",
+    "features": [],
+    "specifications": [
+      { "name": "規格", "value": "100g" },
+      { "name": "成分", "value": "茶樹精油、甜杏仁油、椰子油、橄欖油" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [],
+    "created_at": 45684.51597222222,
+    "images": [
+      "https://i.imgur.com/lRpGIMg.jpg",
+      "https://i.imgur.com/t9pLM5j.jpg",
+      "https://i.imgur.com/wFbyn16.jpg"
+    ]
+  },
+  {
+    "id": 20002,
+    "title": "琥珀暖風 (Amber Breeze)",
+    "category": "手工香皂",
+    "sub_category": [],
+    "description": "乳油木果深層保濕，修護乾燥肌膚。琥珀色、溫暖香氣、深層滋養。",
+    "details": "<div class=product-detail-content><p>如同午後暖風輕拂臉頰，琥珀暖風手工香皂散發出濃郁而舒適的琥珀香氣。乳油木果脂與可可脂共同為肌膚形成滋潤保護屏障，讓乾燥的肌膚得到深層修護。杏桃仁油帶來柔軟細膩的觸感，使每一次使用都像是一次溫暖的呵護，為你注入無限暖意。</p></div>",
+    "origin_price": 200,
+    "price": 200,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "SS20002"
+    ],
+    "quantity": [
+      12
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "SOS香氛",
+    "features": [],
+    "specifications": [
+      { "name": "規格", "value": "120g" },
+      { "name": "成分", "value": "琥珀精油、杏桃仁油、可可脂、大豆油、乳油木果脂" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [],
+    "created_at": 45685.51597222222,
+    "images": [
+      "https://i.imgur.com/iXRNz1k.jpg",
+      "https://i.imgur.com/G3mZSUS.jpg",
+      "https://i.imgur.com/v1bhaIo.jpg"
+    ]
+  },
+  {
+    "id": 20003,
+    "title": "薰香時光 (Lavender Time)",
+    "category": "手工香皂",
+    "sub_category": [],
+    "description": "添加薰衣草精油與乾燥薰衣草，釋放草本香氣，舒緩、助眠、芳香沐浴。",
+    "details": "<div class=product-detail-content><p>夜幕降臨，薰香時光手工香皂為你帶來宛如置身薰衣草田般的放鬆體驗。選用高品質的薰衣草精油，釋放柔和的草本香氣，讓日常沐浴成為舒緩心靈的儀式。橄欖油和葡萄籽油的細膩呵護，為肌膚帶來深層滋潤，讓每一次使用都伴隨著溫柔與寧靜。</p></div>",
+    "origin_price": 220,
+    "price": 220,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "SS20003"
+    ],
+    "quantity": [
+      7
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "SOS香氛",
+    "features": [],
+    "specifications": [
+      { "name": "規格", "value": "120g" },
+      { "name": "成分", "value": "薰衣草精油、薰衣草、椰子油、紫羅蘭萃取、葡萄籽油" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [],
+    "created_at": 45686.51597222222,
+    "images": [
+      "https://i.imgur.com/GAefIE4.jpg",
+      "https://i.imgur.com/r4XfuZt.jpg",
+      "https://i.imgur.com/bwji2ED.jpg"
+    ]
+  },
+  {
+    "id": 20004,
+    "title": "棕色靜謐 (Espresso Calm)",
+    "category": "手工香皂",
+    "sub_category": [],
+    "description": "咖啡渣溫和去角質，搭配薄荷精油，提神醒膚、煥發新生。",
+    "details": "<div class=product-detail-content><p>讓每一次清潔都成為喚醒的儀式。棕色靜謐手工香皂富含天然咖啡渣，能夠輕柔去除老廢角質，使肌膚細緻光滑。結合甜杏仁油與可可脂，滋養肌膚，同時避免乾燥緊繃。薄荷與茶樹精油的香氣充滿清新提神效果，為你的日常帶來充滿活力的清潔體驗。</p></div>",
+    "origin_price": 200,
+    "price": 200,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "SS20004"
+    ],
+    "quantity": [
+      11
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "SOS香氛",
+    "features": [],
+    "specifications": [
+      { "name": "規格", "value": "120g" },
+      { "name": "成分", "value": "薄荷精油、咖啡渣、甜杏仁油、茶樹精油、可可脂" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [],
+    "created_at": 45687.51597222222,
+    "images": [
+      "https://i.imgur.com/0gJmFTO.jpg",
+      "https://i.imgur.com/4ey1XIB.jpg",
+      "https://i.imgur.com/Zle4pDN.jpg",
+      "https://i.imgur.com/pKyeKP7.jpg"
+    ]
+  },
+  {
+    "id": 20005,
+    "title": "黑白森林 (Twilight Woods)",
+    "category": "手工香皂",
+    "sub_category": [],
+    "description": "添加台灣在地竹炭粉，深層淨化毛孔、平衡肌膚油脂，達到油水平衡。",
+    "details": "<div class=product-detail-content><p>走入黑白森林，享受肌膚的純淨之旅。這款大理石紋香皂採用天然竹炭粉，有效吸附毛孔深處的污垢與油脂，同時保持肌膚水分平衡。荷荷巴油與乳木果脂的修護成分，為肌膚帶來柔嫩與光滑。洋甘菊萃取溫和舒緩，讓肌膚恢復純淨與穩定。</p></div>",
+    "origin_price": 250,
+    "price": 250,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "SS20005"
+    ],
+    "quantity": [
+      13
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "SOS香氛",
+    "features": [],
+    "specifications": [
+      { "name": "規格", "value": "120g" },
+      { "name": "成分", "value": "茶樹精油、竹炭粉、荷荷巴油、乳木果油、洋甘菊萃取" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [],
+    "created_at": 45688.51597222222,
+    "images": [
+      "https://i.imgur.com/iHSLNYH.jpg",
+      "https://i.imgur.com/pteNeWN.jpg",
+      "https://i.imgur.com/IEBxsvE.jpg",
+      "https://i.imgur.com/BuCzBCO.jpg"
+    ]
+  },
+  {
+    "id": 20006,
+    "title": "靜謐黃昏 (Serene Sunset)",
+    "category": "手工香皂",
+    "sub_category": [],
+    "description": "甜橙精油與柑橘萃取散發甜美香氣，保濕修護、柔和呵護，為肌膚鎖住水分。",
+    "details": "<div class=product-detail-content><p>日暮時分，靜謐黃昏為你帶來溫暖與安寧。這款以黃色與橘色漸層為特色的香皂，如同黃昏天空的餘暉，將肌膚包裹在甜美的橙香中。甜橙精油與乳油木果脂共同滋養乾燥肌膚，帶來長效保濕效果，讓沐浴成為充滿儀式感的時刻。</p></div>",
+    "origin_price": 220,
+    "price": 220,
+    "unit": "個",
+    "is_enabled": 1,
+    "sku": [
+      "SS20006"
+    ],
+    "quantity": [
+      9
+    ],
+    "min_purchase_quantity": 1,
+    "brand": "SOS香氛",
+    "features": [],
+    "specifications": [
+      { "name": "規格", "value": "120g" },
+      { "name": "成分", "value": "甜橙精油、柑橘萃取、乳木果油、蜜蠟、椰子油" },
+      { "name": "產地", "value": "台灣" }
+    ],
+    "add_on_items": [],
+    "created_at": 45689.51597222222,
+    "images": [
+      "https://i.imgur.com/dFldcgv.jpg",
+      "https://i.imgur.com/b7V3tzT.jpg",
+      "https://i.imgur.com/8onQsZ1.jpg"
+    ]
+  }
+]
