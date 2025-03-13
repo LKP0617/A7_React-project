@@ -30,6 +30,20 @@
 }
 
 .backCartBtn {
-    color: #382511;
     margin-bottom: 32px;
+    color: #382511;
+}
+
+.cart_detail {
+    background-color: #F6F2E8;
+}
+
+.checkoutBtn {
+    background-color: #F5E9CB;
+    padding: 13.5px 32px;
+
+    &:hover {
+        background-color: #F6F2E8;
+        color: #969696;
+    }
 }

@@ -1,0 +1,66 @@
+.shopping_status_createdOrder {
+    margin: 80px 0 32px;
+
+    .progress-stacked {
+        height: 40px;
+
+        .progress {
+            height: 40px;
+        }
+    }
+
+    .progress-bar {
+        color: #484848;
+        background-color: #F6F2E8;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .stepbar1,
+    .stepbar2,
+    .stepbar3 {
+        background-color: #F5E9CB;
+    }
+}
+
+.created-order-card {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 3px solid #F5E9CB;
+
+    .card-title {
+        background-color: #F6F2E8;        
+    }
+}
+
+.orderBrand {
+    background-color: #F6F2E8;
+}
+
+.orderContent {
+    border: 2px solid #F5E9CB;
+}
+
+.backHomeBtn {
+    background-color: #F5E9CB;
+    padding: 13.5px 32px;
+
+    &:hover {
+        background-color: #F6F2E8;
+        color: #969696;
+    }
+}
+
+.toOrderBtn {
+    background-color: #FFFFFF;
+    padding: 13.5px 32px;
+    border: #484848 solid 1px;
+
+    &:hover {
+        // background-color: #F6F2E8;
+        border: #F5E9CB solid 1px;
+        color: #969696;
+    }
+}
