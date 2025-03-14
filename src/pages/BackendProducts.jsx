@@ -28,7 +28,7 @@ export default function BackendProducts() {
 
     const getProducts = async () => {
         try {
-            const res = await axios.get(`${BASE_URL}/v2/api/${API_PATH}/products/all`);
+            const res = await axios.get(`${BASE_URL}/v2/api/${API_PATH}/admin/products/all`);
             setProducts(res.data.products)
             console.log("API 取得的所有產品", res.data.products);
             console.log("取得產品成功");
