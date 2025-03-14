@@ -1,8 +1,8 @@
-const API_BASE = import.meta.env.VITE_BASE_URL + import.meta.env.VITE_API_PATH;
-const PRODUCTS_API = `${API_BASE}${import.meta.env.VITE_PRODUCTS_ENDPOINT}`;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_PATH = import.meta.env.VITE_API_PATH;
+
+const PRODUCTS_API = `${BASE_URL}/v2/api/${API_PATH}/products/all`;
 console.log("完整 API URL:", PRODUCTS_API);
-
-
 
 function TestAPI() {
   const [products, setProducts] = useState([]);

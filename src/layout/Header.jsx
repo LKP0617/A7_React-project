@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
-import axios, { Axios } from 'axios'
+import { useEffect, useRef, useState } from 'react';
+import axios, { Axios } from 'axios';
 import { Modal } from 'bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
 import Icons from '../assets/images/icons/Icons';
 import SevenImgs from '../assets/images/seven/SevenImgs';
-import { Value } from 'sass';
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const API_PATH = import.meta.env.VITE_API_PATH;
@@ -120,12 +119,10 @@ function Header() {
                                     <img className='headerIcon' src={Icons.shopping_cart} alt="shopping_cart" />
                                 </Link>
                                 {!isLoginIn ? (
-                                    // **顯示登入按鈕**
                                     <button onClick={handleOpenLoginModal} type="button" className="btn border-0 rounded-pill loginBtn">
                                         <p className="fw-bold fs-8">註冊/登入</p>
                                     </button>
                                 ) : (
-                                    // **顯示使用者名稱按鈕**
                                     <div className="dropdown">
                                         <button className="btn border-0 rounded-pill userBtn fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             {userName || "USER"}

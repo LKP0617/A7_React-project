@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react';
+import axios, { Axios } from 'axios';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import SevenImgs from '../assets/images/seven/SevenImgs';
@@ -6,10 +7,21 @@ import Icons from '../assets/images/icons/Icons';
 import { Link } from 'react-router';
 import { Modal } from 'bootstrap';
 
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_PATH = import.meta.env.VITE_API_PATH;
+
 function Cart() {
 
     const couponModalRef = useRef(null);
     const [modalMode, setModalMode] = useState(null);
+
+    const getCart = async () => {
+        try {
+            await axios.get(`$`)
+        } catch (error) {
+            
+        }
+    }
 
     useEffect(() => {
         new Modal(couponModalRef.current, { backdrop: false });

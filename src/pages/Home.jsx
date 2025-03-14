@@ -1,46 +1,37 @@
+import { useEffect, useRef, useState } from 'react';
+import axios, { Axios } from 'axios';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import SevenImgs from '../assets/images/seven/SevenImgs';
 import Icons from '../assets/images/icons/Icons';
+import { Link } from 'react-router';
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_PATH = import.meta.env.VITE_API_PATH;
 
 function Home() {
+    const [hotProducts, setHotProducts] = useState([]);
 
-    const products = [
-        {
-            id: 1,
-            name: "可可棕配色零食花束",
-            price: "NT$2,000",
-            image: "src/assets/images/negaflower/可可棕配色零食花束.jpg",
-            brand: "Nega Flower",
-            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
-        },
-        {
-            id: 2,
-            name: "進口白玫瑰鮮花束",
-            price: "NT$1,000",
-            image: "src/assets/images/negaflower/進口白玫瑰鮮花束.jpg",
-            brand: "Nega Flower",
-            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
-        },
-        {
-            id: 3,
-            name: "可可棕配色零食花束",
-            price: "NT$2,000",
-            image: "src/assets/images/negaflower/可可棕配色零食花束.jpg",
-            brand: "Nega Flower",
-            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
-        },
-        {
-            id: 4,
-            name: "進口白玫瑰鮮花束",
-            price: "NT$1,000",
-            image: "src/assets/images/negaflower/進口白玫瑰鮮花束.jpg",
-            brand: "Nega Flower",
-            logo: "src/assets/images/negaflower/negaflower_logo.jpg",
-        },
-    ];
+    const getHotProducts = async () => {
+        try {
+            const res = await axios.get(`${BASE_URL}/v2/api/${API_PATH}/products/all`);
+            const sortedProducts = res.data.products.sort((a, b) => b.quantity - a.quantity);
+            const top4Products = sortedProducts.slice(0, 4);
+            setHotProducts(top4Products);
+            
+            // console.log("API 取得的所有產品", res.data.products);
+            console.log("前 4 個熱銷商品", top4Products);
+        } catch (error) {
+            console.error("取得產品失敗", error);
+            alert("取得產品失敗");
+        }
+    };
+
+    useEffect(() => {
+        getHotProducts();
+    }, [])
 
     return (
         <>
@@ -111,37 +102,37 @@ function Home() {
 
                     <div className="col">
                         <div className="product_type">
-                            <a href="#">
+                            <Link to="/">
                                 <div className="product_type01 d-flex align-items-center">
                                     <div className="d-flex flex-column m-auto">
                                         <h4 className="text-white fw-bold py-3">花藝</h4>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="col">
                         <div className="product_type">
-                            <a href="#">
+                            <Link to="/">
                                 <div className="product_type02 d-flex align-items-center">
                                     <div className="d-flex flex-column m-auto">
                                         <h4 className="text-white fw-bold py-3">香水</h4>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="col">
                         <div className="product_type">
-                            <a href="#">
+                            <Link to="/">
                                 <div className="product_type03 d-flex align-items-center">
                                     <div className="d-flex flex-column m-auto">
                                         <h4 className="text-white fw-bold py-3">陶藝</h4>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -152,40 +143,6 @@ function Home() {
                 <div className="container container-mobile">
                     <div className="recommend_product_title justify-content-between align-items-center margin-bottom-2">
                         <h4 className="fw-bold">熱銷推薦</h4>
-
-                        {/* <div className="recommend_product_swiper d-lg-none">
-                            <div className="swiper mySwiper2">
-
-                                <div className="swiper-wrapper">
-
-                                    <div className="swiper-slide">
-                                        <div className="col card border-0 px-0 rounded-bottom-0">
-                                            <a href="#" className="border border-1 rounded-top-3 h-100">
-                                                <div className="position-relative recommend_product_card_img">
-                                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
-                                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                                        <img className="heart-icon px-1 py-1" src="../assets/images/icons/heart_white.svg" alt="heart" />
-                                                    </button>
-                                                </div>
-                                                <div className="card-body d-flex flex-column gap-2">
-                                                    <div className="d-flex justify-content-center align-items-center gap-3">
-                                                        <img src="src/assets/images/negaflower/logo/nega.jpg" alt="nega" style={{ width: '24px', height: '24px' }} />
-                                                        <p className="fs-10">Nega Flower</p>
-                                                    </div>
-                                                    <div className="d-flex flex-column justify-content-center gap-1">
-                                                        <p className="fw-bold fs-9 text-center text-truncate">可可棕配色零食花束</p>
-                                                        <p className="fw-bold fs-9 text-center">NT$2,000</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className="swiper-button-next2"></div>
-                                <div className="swiper-button-prev2"></div>
-                            </div>
-                        </div> */}
 
                         <div className="recommend_product_swiper d-lg-none">
                             <div className='mySwiper2'>
@@ -199,27 +156,27 @@ function Home() {
                                         prevEl: ".swiper-button-prev2",
                                     }}
                                 >
-                                    {products.map((product) => (
+                                    {hotProducts.map((product) => (
                                         <SwiperSlide key={product.id}>
                                             <div className="card border-0 px-0 rounded-bottom-0">
-                                                <a href="#" className="border border-1 rounded-top-3 h-100">
+                                                <Link to="/" className="border border-1 rounded-top-3 h-100">
                                                     <div className="position-relative recommend_product_card_img">
-                                                        <img src={product.image} className="card-img-top" alt={product.name} />
+                                                        <img src={product.images[0]} className="card-img-top" alt={product.title} />
                                                         <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
                                                             <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
                                                         </button>
                                                     </div>
                                                     <div className="card-body d-flex flex-column gap-2">
                                                         <div className="d-flex justify-content-center align-items-center gap-3">
-                                                            <img src={product.logo} alt="brand logo" style={{ width: "24px", height: "24px" }} />
+                                                            <img src={product.brand_logo} alt="brand logo" style={{ width: "24px", height: "24px" }} />
                                                             <p className="fs-10">{product.brand}</p>
                                                         </div>
-                                                        <div className="d-flex flex-column justify-content-center gap-1">
-                                                            <p className="fw-bold fs-9 text-center text-truncate">{product.name}</p>
-                                                            <p className="fw-bold fs-9 text-center">{product.price}</p>
+                                                        <div className="d-flex flex-column justify-content-center gap-1 d-inline-block text-truncate" style={{maxWidth: "150px"}}>
+                                                            <p className="fw-bold fs-9 text-center">{product.title}</p>
+                                                            <p className="fw-bold fs-9 text-center">NT$ {product.price}</p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </SwiperSlide>
                                     ))}
@@ -231,88 +188,33 @@ function Home() {
                             </div>
                         </div>
 
-                        <a className="btn index_btn rounded-pill" href="#" role="button">
+                        <Link className="btn index_btn rounded-pill" to="/" role="button">
                             <p className="fs-8 fw-bold">查看更多</p>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="row recommend_product_card d-lg-flex gap-4 d-none rounded-bottom-0">
 
-                        <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
-                            <a href="#" className="border border-1 rounded-top-3 h-100">
-                                <div className="position-relative recommend_product_card_img">
-                                    <img src="src/assets/images/negaflower/可可棕配色零食花束.jpg" className="card-img-top" alt="可可棕配色零食花束" />
-                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
-                                    </button>
-                                </div>
-                                <div className="card-body d-flex gap-3">
-                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
-                                    <div className="d-flex flex-column justify-content-center">
-                                        <p className="fs-9 mb-2">Nega Flower</p>
-                                        <p className="fw-bold text-truncate">可可棕配色零食花束</p>
-                                        <p className="fw-bold mt-1">NT$2,000</p>
+                        {hotProducts.map((product) => (
+                            <div key={product.id} className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
+                                <Link to="/" className="border border-1 rounded-top-3 h-100">
+                                    <div className="position-relative recommend_product_card_img">
+                                        <img src={product.images[0]} className="card-img-top" alt={product.title} />
+                                        <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
+                                            <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
+                                        </button>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
-                            <a href="#" className="border border-1 rounded-top-3 rounded-bottom-0">
-                                <div className="position-relative recommend_product_card_img">
-                                    <img src="src/assets/images/negaflower/進口白玫瑰鮮花束.jpg" className="card-img-top" alt="進口白玫瑰鮮花束" />
-                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
-                                    </button>
-                                </div>
-                                <div className="card-body d-flex gap-3">
-                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
-                                    <div className="d-flex flex-column justify-content-center">
-                                        <p className="fs-9 mb-2">Nega Flower</p>
-                                        <p className="fw-bold text-truncate">進口白玫瑰鮮花束</p>
-                                        <p className="fw-bold mt-1">NT$999</p>
+                                    <div className="card-body d-flex gap-3">
+                                        <img src={product.brand_logo} alt="logo" style={{ width: "61px", height: "61px" }} />
+                                        <div className="d-flex flex-column justify-content-center">
+                                            <p className="fs-9 mb-2">{product.brand}</p>
+                                            <p className="fw-bold text-truncate">{product.title}</p>
+                                            <p className="fw-bold mt-1">NT$ {product.price}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
-                            <a href="#" className="border border-1 rounded-top-3 rounded-bottom-0">
-                                <div className="position-relative recommend_product_card_img">
-                                    <img src="src/assets/images/negaflower/紫玫瑰永生花束.jpg" className="card-img-top" alt="紫玫瑰永生花束" />
-                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
-                                    </button>
-                                </div>
-                                <div className="card-body d-flex gap-3">
-                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
-                                    <div className="d-flex flex-column justify-content-center">
-                                        <p className="fs-9 mb-2">Nega Flower</p>
-                                        <p className="fw-bold text-truncate">紫玫瑰永生花束</p>
-                                        <p className="fw-bold mt-1">NT$1,680</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="col card border-0 px-0 rounded-bottom-0 card-enhanced">
-                            <a href="#" className="border border-1 rounded-top-3 rounded-bottom-0">
-                                <div className="position-relative recommend_product_card_img">
-                                    <img src="src/assets/images/negaflower/牛油果綠配色零食花束.jpg" className="card-img-top" alt="牛油果綠配色零食花束" />
-                                    <button className="heart-btn position-absolute bottom-0 end-0 border-0 bg-transparent p-0">
-                                        <img className="heart-icon px-1 py-1" src={Icons.heart} alt="heart" />
-                                    </button>
-                                </div>
-                                <div className="card-body d-flex gap-3">
-                                    <img src="src/assets/images/negaflower/negaflower_logo.jpg" alt="nega" style={{ width: "61px", height: "61px" }} />
-                                    <div className="d-flex flex-column justify-content-center">
-                                        <p className="fs-9 mb-2">Nega Flower</p>
-                                        <p className="fw-bold text-truncate">牛油果綠配色零食花束</p>
-                                        <p className="fw-bold mt-1">NT$2,400</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                </Link>
+                            </div>
+                        ))}
 
                     </div>
                 </div>
@@ -329,7 +231,7 @@ function Home() {
 
                                     <div className="swiper-slide">
                                         <div className="col card border-0 px-0">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <div className="card p-4">
                                                     <img src="../assets/images/news_01.png" className="card-img-top mb-4" alt="news_01"
                                                         style="height: 100%;" />
@@ -341,7 +243,7 @@ function Home() {
                                                         <p className="card-text fs-10">2024/08/20</p>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -351,14 +253,14 @@ function Home() {
                             </div>
                         </div> */}
 
-                        <a className="btn index_btn rounded-pill" href="#" role="button">
+                        <Link className="btn index_btn rounded-pill" to="/news" role="button">
                             <p className="fs-8 fw-bold">查看更多</p>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="news_card d-lg-flex gap-4 d-none">
 
-                        <a href="#">
+                        <Link to="/">
                             <div className="card p-4 card-enhanced">
                                 <img src={SevenImgs.news_01} className="card-img-top mb-4" alt="news_01" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
@@ -369,9 +271,9 @@ function Home() {
                                     <p className="card-text fs-10">2024/08/20</p>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#">
+                        <Link to="/">
                             <div className="card p-4 card-enhanced">
                                 <img src={SevenImgs.news_03} className="card-img-top mb-4" alt="news_03" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
@@ -382,9 +284,9 @@ function Home() {
                                     <p className="card-text fs-10">2024/08/31</p>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#">
+                        <Link to="/">
                             <div className="card p-4 card-enhanced">
                                 <img src={SevenImgs.news_02} className="card-img-top mb-4" alt="news_02" style={{ height: '100%' }} />
                                 <div className="card-body p-0 h-auto d-flex flex-column justify-content-between">
@@ -395,7 +297,7 @@ function Home() {
                                     <p className="card-text fs-10">2024/10/23</p>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
 
                     </div>
                 </div>

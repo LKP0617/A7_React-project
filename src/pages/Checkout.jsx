@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import SevenImgs from '../assets/images/seven/SevenImgs';
