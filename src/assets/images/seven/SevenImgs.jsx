@@ -9,7 +9,7 @@ import prc_clay_pot from './prc_clay_pot.png'
 import prc_pen_holder from './prc_pen_holder.png'
 import prc_time from './prc_time.png'
 import story_logo from './story_logo.png'
-import brands_toa from './brands_陶之家.png';
+import brands_toa from './brands_toa.png';
 import brands_negaflower from './brands_negaflower.png';
 import brands_sos from './brands_sos.png';
 import index_bg_image from './index_bg_image.png';
