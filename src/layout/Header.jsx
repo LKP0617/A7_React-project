@@ -5,14 +5,19 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from 'react-router'
 import Icons from '../assets/images/icons/Icons';
 import SevenImgs from '../assets/images/seven/SevenImgs';
+import { Value } from 'sass';
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_PATH = import.meta.env.VITE_API_PATH;
 
 function Header() {
-    const BASE_URL = import.meta.env.VITE_BASE_URL;
-    const API_PATH = import.meta.env.VITE_API_PATH;
 
     const loginModalRef = useRef(null);
     const searchModalRef = useRef(null);
     const [modalMode, setModalMode] = useState(null);
+
+    const [isLoginIn, setIsLoginIn] = useState(false);
+    const [userName, setUserName] = useState("");
 
     useEffect(() => {
         new Modal(loginModalRef.current, { backdrop: false });
@@ -43,6 +48,61 @@ function Header() {
         modalInstance.hide();
     }
 
+    const [account, setAccount] = useState({
+        "username": "請登入拾柒帳號",
+        "password": "password"
+    });
+
+    const handleInputChange = (e) => {
+        const { value, name } = e.target;
+
+        setAccount({
+            ...account,
+            [name]: value
+        })
+    }
+
+    const login = async (e) => {
+        e.preventDefault();
+
+        try {
+            const res = await axios.post(`${BASE_URL}/v2/admin/signin`, account);
+            const { token, expired } = res.data;
+            document.cookie = `itToken=${token}; expires=${new Date(expired)}`;
+            axios.defaults.headers.common['Authorization'] = token;
+            setIsLoginIn(true);
+            console.log('登入成功');
+
+            handleCloseLoginModal();
+        } catch (error) {
+            alert('登入失敗');
+        }
+    }
+
+    useEffect(() => {
+        const token = document.cookie.replace(
+            /(?:(?:^|.*;\s*)itToken\s*\=\s*([^;]*).*$)|^.*$/,
+            "$1",
+        );
+        axios.defaults.headers.common['Authorization'] = token;
+
+        if (token) {
+            setUserName("USER");
+            setIsLoginIn(true);
+        }
+    }, [])
+
+    const logout = async () => {
+        try {
+            await axios.post(`${BASE_URL}/v2/logout`);
+        } catch (error) {
+            console.log("登出 API 失敗", error);
+        }
+        
+        setIsLoginIn(false);
+        setUserName("");
+    }
+
     return (
         <>
             <header>
@@ -59,9 +119,26 @@ function Header() {
                                 <Link to="/cart" className='headerIcons'>
                                     <img className='headerIcon' src={Icons.shopping_cart} alt="shopping_cart" />
                                 </Link>
-                                <button onClick={() => handleOpenLoginModal(null)} type="button" className="btn border-0 rounded-pill loginBtn">
-                                    <p className='fw-blod fs-8'>註冊/登入</p>
-                                </button>
+                                {!isLoginIn ? (
+                                    // **顯示登入按鈕**
+                                    <button onClick={handleOpenLoginModal} type="button" className="btn border-0 rounded-pill loginBtn">
+                                        <p className="fw-bold fs-8">註冊/登入</p>
+                                    </button>
+                                ) : (
+                                    // **顯示使用者名稱按鈕**
+                                    <div className="dropdown">
+                                        <button className="btn border-0 rounded-pill userBtn fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            {userName || "USER"}
+                                        </button>
+                                        <ul className="dropdown-menu text-center">
+                                            <li><a className="dropdown-item" href="#">會員中心</a></li>
+                                            <li><a className="dropdown-item" href="#">我的收藏</a></li>
+                                            <li><a className="dropdown-item" href="#">我的訂單</a></li>
+                                            <li><hr className="dropdown-divider" /></li>
+                                            <li><button onClick={logout} className="dropdown-item">登出</button></li>
+                                        </ul>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -113,46 +190,26 @@ function Header() {
             <div ref={loginModalRef} id="loginModal" className="modal" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
-                        {/* 關閉按鈕 */}
                         <div className="modal-header border-0">
                             <button onClick={() => handleCloseLoginModal(null)} type="button" className="close">
                                 <img src={Icons.x} alt="x" />
                             </button>
                         </div>
-                        {/* 彈出視窗內容 */}
                         <div className="modal-body">
-                            {/* <!-- Logo --> */}
                             <div className="modal-title">
                                 <img className="modal-logo" src={SevenImgs.pc_logo_lg} alt="pc_logo" />
                             </div>
-                            <form>
-                                {/* <!-- 帳號欄位 --> */}
+                            <form onSubmit={login}>
                                 <div className="form-group my-4 ">
-                                    <label htmlFor="username" className="my-2">登入會員</label>
-                                    <input type="text" className="form-control" id="username" placeholder="登入拾柒帳號" />
+                                    <label htmlFor="username" className="my-2">會員帳號</label>
+                                    <input name='username' value={account.username} onChange={handleInputChange} type="email" className="form-control" id="username" placeholder="請登入拾柒帳號" />
                                 </div>
-                                {/* <!-- 密碼欄位 --> */}
                                 <div className="form-group  my-4 ">
-                                    <label htmlFor="password" className="my-2">輸入密碼</label>
-                                    <input type="password" className="form-control" id="password" placeholder="輸入密碼" />
+                                    <label htmlFor="password" className="my-2">密碼</label>
+                                    <input name='password' value={account.password} onChange={handleInputChange} type="password" className="form-control" id="password" placeholder="請輸入密碼" />
                                 </div>
-                                {/* <!-- 登入按鈕 --> */}
-                                <button type="submit" className=" login-btn btn btn-dark btn-block">登入拾柒</button>
+                                <button type="submit" className="login-btn btn btn-dark btn-block">登入拾柒</button>
                             </form>
-
-                            {/* <form onSubmit={login} className="d-flex flex-column gap-3">
-                                <div className="form-floating mb-3">
-                                    <input name='username' value={account.username} onChange={handleInputChange} type="email" className="form-control" id="username" placeholder="name@example.com" />
-                                    <label htmlFor="username">Email address</label>
-                                </div>
-                                <div className="form-floating">
-                                    <input name='password' value={account.password} onChange={handleInputChange} type="password" className="form-control" id="password" placeholder="Password" />
-                                    <label htmlFor="password">Password</label>
-                                </div>
-                                <button className="btn btn-primary">登入</button>
-                            </form> */}
-
-                            {/* <!-- 額外選項 --> */}
                             <div className="extra-option">
                                 <Link href="#"><span>忘記密碼？</span></Link>
                                 <div className="ask-for">
@@ -161,9 +218,7 @@ function Header() {
                                 </div>
                             </div>
                             <div className="social-login-btn d-flex justify-content-between align-items-center">
-                                {/* <!-- Facebook 登入按鈕 --> */}
                                 <button className="btn btn-facebook btn-block">Facebook</button>
-                                {/* <!-- Google 登入按鈕 --> */}
                                 <button className="btn btn-google btn-block">Google</button>
                             </div>
                         </div>
