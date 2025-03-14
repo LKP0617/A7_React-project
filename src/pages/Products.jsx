@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Accordion, Form, Button, Pagination } from "react-bootstrap";
-import "../assets/scss/pages/_products.scss";
+// import "../assets/scss/pages/_products.scss";
 import Header from "../layout/Header";
 import Banner from "../components/Banner";
 import ProductCard from "../components/ProductCard"; // ✅ 確保導入 ProductCard
