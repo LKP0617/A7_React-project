@@ -58,7 +58,12 @@ export default function BackendProducts() {
             setSelectedProduct(defaultModalState);
         } else {
             setSelectedProduct({
-                ...product
+                ...product,
+                add_on_items: product.add_on_items || [""],
+                description: product.description || [""],
+                details: product.details || [""],
+                specifications: product.specifications || [""],
+                sub_category: product.sub_category || [""],
             });
         }
 
@@ -368,7 +373,7 @@ export default function BackendProducts() {
                                             id="category"
                                             type="text"
                                             className="form-control"
-                                            placeholder="請輸入分類"
+                                            placeholder="請輸入類別"
                                         />
                                     </div>
 
@@ -383,7 +388,7 @@ export default function BackendProducts() {
                                             id="sub_category"
                                             type="text"
                                             className="form-control"
-                                            placeholder="請輸入類別"
+                                            placeholder="請輸入子類別"
                                         />
                                     </div>
 
@@ -474,7 +479,7 @@ export default function BackendProducts() {
                                             id="specifications"
                                             className="form-control"
                                             rows={4}
-                                            placeholder="請輸入說明內容"
+                                            placeholder="請輸入規格"
                                         ></textarea>
                                     </div>
 
@@ -489,7 +494,7 @@ export default function BackendProducts() {
                                             id="add_on_items"
                                             className="form-control"
                                             rows={4}
-                                            placeholder="請輸入說明內容"
+                                            placeholder="請輸入加購商品"
                                         ></textarea>
                                     </div>
 
