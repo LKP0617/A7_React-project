@@ -1,134 +1,134 @@
-/*字體字型*/
-// @font-face{
-//     font-family: 'gensen-b';
-//     src: url(/assets/fonts/GenSenRounded2TW-B.otf);
-// }
-// @font-face{
-//     font-family: 'gensen-r';
-//     src: url(/assets/fonts/GenSenRounded2TW-R.otf);
-// }
-// @font-face{
-//     font-family: 'chenyuluoyan';
-//     src: url(/assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf);
-// }
-// @font-face{
-//     font-family: 'AR Brush2 Ultra';
-//     src: url(/assets/fonts/b287fa9818ecd1e48da5d579b5655e68.ttf);
-// }
-
-
-a{
+a {
     text-decoration: none;
 }
-.h1{
+
+.h1 {
     font-size: 48px;
     line-height: 1.2;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.h2{
+
+.h2 {
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.h3{
+
+.h3 {
     font-size: 32px;
     line-height: 1.2;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.h4{
+
+.h4 {
     font-size: 28px;
     line-height: 1.2;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.h5{
+
+.h5 {
     font-size: 24px;
     line-height: 1.2;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.h6{
+
+.h6 {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.title{
+
+.title {
     font-size: 16px;
     line-height: 1.4;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.subtitle{
+
+.subtitle {
     font-size: 14px;
     line-height: 1.4;
     font-weight: 700;
     font-family: 'gensen-b';
 }
-.button{
+
+.button {
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
     font-family: 'gensen-r';
 }
-.placeholder{
+
+.placeholder {
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
     font-family: 'gensen-r';
 }
-.body-1{
+
+.body-1 {
     font-size: 16px;
     line-height: 1.4;
     font-weight: 400;
     font-family: 'gensen-r';
 }
-.body-2{
+
+.body-2 {
     font-size: 14px;
     line-height: 1.4;
     font-weight: 400;
     font-family: 'gensen-r';
 }
-.minumum{
+
+.minumum {
     font-size: 12px;
     line-height: 1.4;
     font-weight: 400;
     font-family: 'gensen-r';
 }
-.branding-h1{
+
+.branding-h1 {
     font-size: 48px;
     line-height: 1.2;
     font-weight: 100;
     font-family: 'chenyuluoyan';
 }
-.branding-h2{
+
+.branding-h2 {
     font-size: 40px;
     line-height: 1.2;
     font-weight: 100;
     font-family: 'chenyuluoyan';
 }
-.branding-h3{
+
+.branding-h3 {
     font-size: 32px;
     line-height: 1.2;
     font-weight: 100;
     font-family: 'chenyuluoyan';
 }
-.branding-h4{
+
+.branding-h4 {
     font-size: 28px;
     line-height: 1.2;
     font-weight: 100;
     font-family: 'chenyuluoyan';
 }
-.branding-h5{
+
+.branding-h5 {
     font-size: 24px;
     line-height: 1.2;
     font-weight: 100;
     font-family: 'chenyuluoyan';
 }
-.branding-h6{
+
+.branding-h6 {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 100;
@@ -137,10 +137,11 @@ a{
 
 //自訂
 
-.mt-80{
+.mt-80 {
     margin-top: 80px;
 }
-.mb-80{
+
+.mb-80 {
     margin-bottom: 80px;
 }
 
@@ -173,10 +174,11 @@ a{
         margin: 16px, 0px;
         padding: 16px 0px;
     }
+
     .list-group {
         border: none;
         background: transparent;
-        
+
         padding: 0;
 
         .list-group-item {
@@ -185,7 +187,7 @@ a{
             border: none;
             margin: 8px 0px;
             padding: 16px;
-            
+
             cursor: pointer;
             transition: all 0.3s ease;
 

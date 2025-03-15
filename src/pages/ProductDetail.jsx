@@ -7,9 +7,9 @@ import { useState, useEffect, useRef } from "react";
 import { Row, Col, Button } from "react-bootstrap"; // 使用 Bootstrap
 import Icons from '../assets/images/icons/Icons';
 
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
-import HotProducts from "../components/hotProducts";
+import Header from '../layout/Header';
+import Footer from '../layout/Footer';
+import HotProducts from '../components/hotProducts';
 import axios from "axios";
 
 
@@ -270,7 +270,6 @@ const maxQuantity = product.quantity?.[selectedFeature] || 1;
                                 </svg>
                                 {isFavorite ? "已收藏" : "加入收藏清單"}
                             </button>
-                        </div>
                         </div>
 
                         {/* 📌 手機版分享按鈕 (改為內嵌到 select-group 內) */}

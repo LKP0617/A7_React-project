@@ -152,7 +152,7 @@ useEffect(() => {
                             >
                                 全部商品
                             </li>
-    
+
                             {/* ✅ 渲染分類，確保不包含「加購」 */}
                             {categories.map((category, index) => (
                                 <li
@@ -164,9 +164,9 @@ useEffect(() => {
                                 </li>
                             ))}
                         </ul>
-    
+
                         <hr />
-    
+
                         <Accordion defaultActiveKey="">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>品牌</Accordion.Header>
@@ -182,7 +182,7 @@ useEffect(() => {
                                     ))}
                                 </Accordion.Body>
                             </Accordion.Item>
-    
+
                             {/* ✅ 價格篩選區 */}
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header>價格</Accordion.Header>
@@ -205,16 +205,16 @@ useEffect(() => {
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
-    
+
                         {/* ✅ 修正篩選按鈕，使其可以手動觸發篩選 */}
-                        <Button 
+                        <Button
                             className="w-100 mt-3 category-leftbar-btn"
                             onClick={handleFilterUpdate} // ✅ 觸發篩選函式
                         >
                             套用篩選
                         </Button>
                     </Col>
-    
+
                     {/* 右側商品列表 */}
                     <Col md={9}>
                         {/* 🔹 商品分類標題 + 排序選單 */}
@@ -268,7 +268,7 @@ useEffect(() => {
 
                                 {[...Array(totalPages)].map((_, index) => (
                                     <Pagination.Item
-                                        key={`page-${index + 1}`} 
+                                        key={`page-${index + 1}`}
                                         active={index + 1 === currentPage}
                                         onClick={() => setCurrentPage(index + 1)}
                                     >
@@ -306,7 +306,7 @@ useEffect(() => {
             <Footer/>
         </>
     );
-    
+
 }
 
 export default Products;

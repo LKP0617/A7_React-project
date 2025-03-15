@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // 🔥 引入 useNavigate
 import { Card } from "react-bootstrap";
-import "../assets/scss/layout/_productCard.scss";
+// import "../assets/scss/components/_productCard.scss";
 
 function ProductCard({ product }) {
     
@@ -46,7 +46,7 @@ function ProductCard({ product }) {
         <img src={product.brand_logo} alt={product.brand} className="brand-logo" />
         <div className="text-container">
             <p className="brand-name body-2">{product.brand}</p>
-            <p className="product-name title">{product.title}</p>
+            <p className="product-name title text-truncate">{product.title}</p>
             <p className="product-price title">NT${product.price}</p>
         </div>
     </Card.Body>

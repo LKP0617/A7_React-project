@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import axios, { Axios } from 'axios'
 import { Modal } from 'bootstrap';
+import Header from '../layout/Header';
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const API_PATH = import.meta.env.VITE_API_PATH;
@@ -28,9 +29,10 @@ export default function BackendProducts() {
 
     const getProducts = async () => {
         try {
-            const res = await axios.get(`${BASE_URL}/v2/api/${API_PATH}/admin/products/all`);
+            // const res = await axios.get(`${BASE_URL}/v2/api/${API_PATH}/admin/products/all`); // 管理者
+            const res = await axios.get(`${BASE_URL}/v2/api/${API_PATH}/products/all`); // 客戶
             setProducts(res.data.products)
-            console.log("API 取得的所有產品", res.data.products);
+            // console.log("API 取得的所有產品", res.data.products);
             console.log("取得產品成功");
         } catch (error) {
             alert('取得產品失敗');
@@ -132,7 +134,15 @@ export default function BackendProducts() {
 
     const createProduct = async () => {
         try {
-            await axios.post(`${BASE_URL}/v2/api/${API_PATH}/admin/product`, { data: { ...selectedProduct, origin_price: Number(selectedProduct.origin_price), price: Number(selectedProduct.price), is_enabled: selectedProduct.is_enabled ? 1 : 0 } });
+            await axios.post(`${BASE_URL}/v2/api/${API_PATH}/admin/product`,
+                {
+                    data: {
+                        ...selectedProduct,
+                        origin_price: Number(selectedProduct.origin_price),
+                        price: Number(selectedProduct.price),
+                        is_enabled: selectedProduct.is_enabled ? 1 : 0
+                    }
+                });
             getProducts();
             setIsContent(true);
         } catch (error) {
@@ -142,7 +152,16 @@ export default function BackendProducts() {
 
     const updateProduct = async () => {
         try {
-            await axios.put(`${BASE_URL}/v2/api/${API_PATH}/admin/product/${selectedProduct.id}`, { data: { ...selectedProduct, origin_price: Number(selectedProduct.origin_price), price: Number(selectedProduct.price), is_enabled: selectedProduct.is_enabled ? 1 : 0 } });
+            await axios.put(`${BASE_URL}/v2/api/${API_PATH}/admin/product/${selectedProduct.id}`,
+                {
+                    data: {
+                        ...selectedProduct,
+                        origin_price: Number(selectedProduct.origin_price),
+                        price: Number(selectedProduct.price),
+                        is_enabled: selectedProduct.is_enabled ? 1 : 0
+                    }
+                }
+            );
             getProducts();
             setIsContent(true);
         } catch (error) {
@@ -152,7 +171,15 @@ export default function BackendProducts() {
 
     const delProduct = async () => {
         try {
-            await axios.delete(`${BASE_URL}/v2/api/${API_PATH}/admin/product/${selectedProduct.id}`, { data: { ...selectedProduct, origin_price: Number(selectedProduct.origin_price), price: Number(selectedProduct.price), is_enabled: selectedProduct.is_enabled ? 1 : 0 } });
+            await axios.delete(`${BASE_URL}/v2/api/${API_PATH}/admin/product/${selectedProduct.id}`,
+                {
+                    data: {
+                        ...selectedProduct,
+                        origin_price: Number(selectedProduct.origin_price),
+                        price: Number(selectedProduct.price),
+                        is_enabled: selectedProduct.is_enabled ? 1 : 0
+                    }
+                });
             getProducts();
             setIsContent(true);
         } catch (error) {
@@ -295,14 +322,14 @@ export default function BackendProducts() {
                                                 )}
                                             </div>
                                         ))}
-                                        {/* <div className="btn-group w-100">
-                                            {selectedProduct.imagesUrl.length < 5 && selectedProduct.imagesUrl[selectedProduct.imagesUrl.length - 1] !== '' && (
+                                        <div className="btn-group w-100">
+                                            {selectedProduct.images.length < 5 && selectedProduct.images[selectedProduct.images.length - 1] !== '' && (
                                                 <button onClick={handleAddImage} className="btn btn-outline-primary btn-sm w-100">新增圖片</button>
                                             )}
-                                            {selectedProduct.imagesUrl.length > 1 && (
+                                            {selectedProduct.images.length > 1 && (
                                                 <button onClick={handleRemoveImage} className="btn btn-outline-danger btn-sm w-100">取消圖片</button>
                                             )}
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
 
