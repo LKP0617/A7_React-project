@@ -165,14 +165,16 @@ a{
     /* 電腦版（768px 以上） */
     .product-info-desktop {
       display: flex;
-      align-items: top;
+      align-items: flex-start; /* ✅ 讓內容對齊到頂部 */
       padding: 16px;
       justify-content: space-between;
   
+  
       .brand-logo {
-        width: 61px;
-        height: 61px;
-        flex-shrink: 0;
+          width: 61px;
+          height: auto;
+          flex-shrink: 0;
+          padding-top: 0;
       }
   
       .text-container {
