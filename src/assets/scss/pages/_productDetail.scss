@@ -201,7 +201,19 @@
     font-size: 16px;
     color: #484848;
     width: 100%;
+    position: relative !important; /* 避免被 Bootstrap 預設樣式影響 */
+    z-index: 10; /* 確保不被其他內容覆蓋 */
+    transform: none !important;
   }
+
+  .quantity-select-wrapper {
+    position: relative; /* 確保 select 參考此元素進行定位 */
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+
   
   // 🔹 按鈕群組（確保按鈕與左側主圖底部對齊）
   .button-group {

@@ -102,20 +102,15 @@ function ProductDetail() {
         );
     };
 
-    // ✅ 處理規格選擇 & 庫存
-    const handleFeatureChange = (index) => {
-        setSelectedFeature(index);
-        setQuantity(1);
-    };
+    // ✅ 當選擇不同規格時，更新選擇的 `selectedFeature` 並重設數量為 1
+const handleFeatureChange = (event) => {
+    const selectedIndex = event.target.value; // 取得索引值
+    setSelectedFeature(selectedIndex);
+    setQuantity(1); // 重設數量
+};
 
-    const maxQuantity = product?.quantity?.[selectedFeature] || 1;
-
-    const handleQuantityChange = (amount) => {
-        const newQuantity = quantity + amount;
-        if (newQuantity >= 1 && newQuantity <= maxQuantity) {
-            setQuantity(newQuantity);
-        }
-    };
+// ✅ 取得目前選擇規格的最大數量
+const maxQuantity = product.quantity?.[selectedFeature] || 1;
 
     // ✅ 切換收藏狀態
     const toggleFavorite = () => {
@@ -227,15 +222,27 @@ function ProductDetail() {
                             NT${Array.isArray(product.price) ? product.price[selectedFeature] : product.price}
                         </p>
 
-                        <select className="form-select w-100" value={selectedFeature} onChange={(e) => handleFeatureChange(Number(e.target.value))}>
-                            {product.features?.length > 0 ? (
-                                product.features.map((feature, index) => (
-                                    <option key={index} value={index}>{feature}</option>
-                                ))
-                            ) : (
-                                <option value="無規格">無規格</option>
-                            )}
-                        </select>
+                        <div className="select-group mt-auto gap-4 d-flex flex-column">
+                            {/* 規格選擇框 */}
+                            <select className="form-select w-100" onChange={handleFeatureChange}>
+        <option value="" disabled selected>請選擇商品規格</option>
+        {product.features && product.features.length > 0 ? (
+            product.features.map((feature, index) => (
+                <option key={index} value={index}>{feature}</option> // ✅ 使用 `index` 傳回對應的 `selectedFeature`
+            ))
+        ) : (
+            <option value="無規格">無規格</option>
+        )}
+    </select>
+
+    {/* 🔹 數量選擇框 */}
+    <select className="form-select w-100" value={quantity} onChange={(e) => setQuantity(Number(e.target.value))}>
+        <option value="" disabled>數量</option>
+        {[...Array(maxQuantity).keys()].map((num) => (
+            <option key={num + 1} value={num + 1}>{num + 1}</option> // ✅ 確保數量選擇對應 `selectedFeature`
+        ))}
+    </select>
+             
 
                         <div className="button-group">
                             <div className="d-flex gap-2">
