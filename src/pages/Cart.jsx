@@ -3,7 +3,7 @@ import axios, { Axios } from 'axios';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Icons from '../assets/images/icons/Icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { data } from 'react-router';
 import { Modal } from 'bootstrap';
 
@@ -17,6 +17,7 @@ function Cart() {
     const [cart, setCart] = useState({});
     const [expandedItems, setExpandedItems] = useState({});
     const [allProducts, setAllProducts] = useState([]);
+    const navigate = useNavigate();
 
     const toggleAddOn = (itemId) => {
         setExpandedItems((prev) => ({
@@ -123,23 +124,15 @@ function Cart() {
         }
     };
 
-    const putCartOrder = async () => {
-        try {
-            await axios.post(`${BASE_URL}/v2/api/${API_PATH}/order`)
-        } catch (error) {
-            alert('建立訂單失敗')
-        }
-    }
-
     const handleCheckoutClick = async (e) => {
         // 防止 Link 預設行為，阻止跳轉
         e.preventDefault();
         const isLoggedIn = await checkUserLogin();
-    
+
         if (!isLoggedIn) {
             alert("尚未登入，請登入後再進行結帳")
         } else {
-            putCartOrder();
+            navigate('/checkout');
         }
     };
 
@@ -183,7 +176,7 @@ function Cart() {
                                 </div>
                                 <div className="d-flex justify-content-between mb-3 fs-9">
                                     <p>折扣</p>
-                                    <p>- NT$ </p>
+                                    <p>- NT$ 0</p>
                                 </div>
                             </div>
                             <div className="pricetotal d-flex justify-content-between mt-4">
@@ -229,7 +222,7 @@ function Cart() {
                                             </div>
 
                                             <div key={cartItem.id} className="card-body">
-                                                <div className="cartproduct-list d-flex justify-content-between align-items-center p-4 border-bottom">
+                                                <div className="cartproduct-list d-flex justify-content-between align-items-center">
 
                                                     <div className='d-flex align-items-center'>
                                                         <input className="form-check-input me-2" type="checkbox" id="nega_flower" />
@@ -270,22 +263,9 @@ function Cart() {
                                                 </div>
                                             </div>
 
-                                            <div className='cart_coupon d-flex justify-content-between align-items-center m-3'>
-                                                <div className='coupon_title d-flex gap-3 ms-3'>
-                                                    <div className='d-flex align-items-center'>
-                                                        <img src={Icons.TicketPerforated} className='me-2' alt="TicketPerforated" />
-                                                        <h6>套用優惠</h6>
-                                                    </div>
-                                                    <img src={Icons.chevron_right} alt="chevron_right" />
-                                                    <div>
-                                                        {/* <h6 className='coupon_detail'>全館滿1000享50元優惠</h6>
-                                                <h6 className='couponCode_detail'>優惠碼 17BIRTHDAY200</h6> */}
-                                                    </div>
-                                                </div>
-                                                <button onClick={() => handleOpenCouponModal(null)} type="button" className="btn btn-outline-danger rounded-pill fs-8 my-2 me-3">使用優惠</button>
-                                            </div>
 
-                                            <div className="card-footer border-bottom border-2">
+
+                                            {/* <div className="card-footer border-bottom border-2">
                                                 <button
                                                     className="btn d-flex align-items-center gap-1 justify-content-center w-100"
                                                     type="button"
@@ -297,7 +277,7 @@ function Cart() {
                                                     <h6>可加購商品</h6>
                                                     <img src={expandedItems[cartItem.id] ? Icons.chevron_down : Icons.chevron_up} alt="toggle-icon" style={{ width: "32px" }} />
                                                 </button>
-                                            </div>
+                                            </div> */}
 
                                             {cart.carts?.map((cartItem) => {
                                                 {/* 加購商品區塊 */ }
@@ -344,6 +324,22 @@ function Cart() {
                                         </div>
                                     </div>
                                 ))}
+
+                                <div className='cart_coupon d-flex justify-content-between align-items-center m-3' style={{ backgroundColor: '#F6F2E8' }}>
+                                    <div className='coupon_title d-flex gap-3 ms-3'>
+                                        <div className='d-flex align-items-center'>
+                                            <img src={Icons.TicketPerforated} className='me-2' alt="TicketPerforated" />
+                                            <h6>套用優惠</h6>
+                                        </div>
+                                        <img src={Icons.chevron_right} alt="chevron_right" />
+                                        <div>
+                                            {/* <h6 className='coupon_detail'>全館滿1000享50元優惠</h6>
+                                                <h6 className='couponCode_detail'>優惠碼 17BIRTHDAY200</h6> */}
+                                            <h6 className='' style={{ color: '#969696' }}>尚未使用任何優惠</h6>
+                                        </div>
+                                    </div>
+                                    <button onClick={() => handleOpenCouponModal(null)} type="button" className="btn btn-outline-danger rounded-pill fs-8 my-2 me-3">使用優惠</button>
+                                </div>
 
                             </div>
                         </div >

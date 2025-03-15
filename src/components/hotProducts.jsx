@@ -30,6 +30,10 @@ export default function hotProducts() {
         getHotProducts();
     }, [])
 
+    const handleClick = () => {
+        navigate(`/products/${product.id}`);
+    };
+
     return (
         <>
             <div className="recommend_product_title justify-content-between align-items-center margin-bottom-2">

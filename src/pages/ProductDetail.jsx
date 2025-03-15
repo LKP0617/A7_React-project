@@ -103,14 +103,14 @@ function ProductDetail() {
     };
 
     // ✅ 當選擇不同規格時，更新選擇的 `selectedFeature` 並重設數量為 1
-const handleFeatureChange = (event) => {
-    const selectedIndex = event.target.value; // 取得索引值
-    setSelectedFeature(selectedIndex);
-    setQuantity(1); // 重設數量
-};
+    const handleFeatureChange = (event) => {
+        const selectedIndex = event.target.value; // 取得索引值
+        setSelectedFeature(selectedIndex);
+        setQuantity(1); // 重設數量
+    };
 
-// ✅ 取得目前選擇規格的最大數量
-const maxQuantity = product.quantity?.[selectedFeature] || 1;
+    // ✅ 取得目前選擇規格的最大數量
+    const maxQuantity = product.quantity?.[selectedFeature] || 1;
 
     // ✅ 切換收藏狀態
     const toggleFavorite = () => {
@@ -225,73 +225,74 @@ const maxQuantity = product.quantity?.[selectedFeature] || 1;
                         <div className="select-group mt-auto gap-4 d-flex flex-column">
                             {/* 規格選擇框 */}
                             <select className="form-select w-100" onChange={handleFeatureChange}>
-        <option value="" disabled selected>請選擇商品規格</option>
-        {product.features && product.features.length > 0 ? (
-            product.features.map((feature, index) => (
-                <option key={index} value={index}>{feature}</option> // ✅ 使用 `index` 傳回對應的 `selectedFeature`
-            ))
-        ) : (
-            <option value="無規格">無規格</option>
-        )}
-    </select>
+                                <option value="" disabled selected>請選擇商品規格</option>
+                                {product.features && product.features.length > 0 ? (
+                                    product.features.map((feature, index) => (
+                                        <option key={index} value={index}>{feature}</option> // ✅ 使用 `index` 傳回對應的 `selectedFeature`
+                                    ))
+                                ) : (
+                                    <option value="無規格">無規格</option>
+                                )}
+                            </select>
 
-    {/* 🔹 數量選擇框 */}
-    <select className="form-select w-100" value={quantity} onChange={(e) => setQuantity(Number(e.target.value))}>
-        <option value="" disabled>數量</option>
-        {[...Array(maxQuantity).keys()].map((num) => (
-            <option key={num + 1} value={num + 1}>{num + 1}</option> // ✅ 確保數量選擇對應 `selectedFeature`
-        ))}
-    </select>
-             
+                            {/* 🔹 數量選擇框 */}
+                            <select className="form-select w-100" value={quantity} onChange={(e) => setQuantity(Number(e.target.value))}>
+                                <option value="" disabled>數量</option>
+                                {[...Array(maxQuantity).keys()].map((num) => (
+                                    <option key={num + 1} value={num + 1}>{num + 1}</option> // ✅ 確保數量選擇對應 `selectedFeature`
+                                ))}
+                            </select>
 
-                        <div className="button-group">
-                            <div className="d-flex gap-2">
-                                <button onClick={() => addCartProduct(productId, selectedFeatureName, quantity)} className="btn btn-primary-100 w-100">
-                                    <img src={Icons.shopping_cart} alt="cart" className="me-2" />加入購物車
+
+                            <div className="button-group">
+                                <div className="d-flex gap-2">
+                                    <button onClick={() => addCartProduct(productId, selectedFeatureName, quantity)} className="btn btn-primary-100 w-100">
+                                        <img src={Icons.shopping_cart} alt="cart" className="me-2" />加入購物車
+                                    </button>
+                                    <Link onClick={() => addCartProduct(productId, selectedFeatureName, quantity)} to="/cart" className="btn btn-secondary-100 w-100">
+                                        <img src={Icons.shopping_bag} alt="bag" className="me-2" />立即購買
+                                    </Link>
+                                </div>
+                                {/* 加入收藏清單 */}
+                                <button className="btn btn-outline-dark w-100 mt-40" onClick={toggleFavorite}>
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill={isFavorite ? "#D33E41" : "none"}
+                                        stroke={isFavorite ? "#D33E41" : "#484848"}
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="me-2"
+                                    >
+                                        <path d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.041 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z" />
+                                    </svg>
+                                    {isFavorite ? "已收藏" : "加入收藏清單"}
                                 </button>
-                                <Link onClick={() => addCartProduct(productId, selectedFeatureName, quantity)} to="/cart" className="btn btn-secondary-100 w-100">
-                                    <img src={Icons.shopping_bag} alt="bag" className="me-2" />立即購買
-                                </Link>
                             </div>
-                            {/* 加入收藏清單 */}
-                            <button className="btn btn-outline-dark w-100 mt-40" onClick={toggleFavorite}>
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill={isFavorite ? "#D33E41" : "none"}
-                                    stroke={isFavorite ? "#D33E41" : "#484848"}
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="me-2"
-                                >
-                                    <path d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.041 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z" />
-                                </svg>
-                                {isFavorite ? "已收藏" : "加入收藏清單"}
-                            </button>
-                        </div>
 
-                        {/* 📌 手機版分享按鈕 (改為內嵌到 select-group 內) */}
-                        <div className="share-row-mobile d-md-none d-flex  align-items-center mt-40">
-                            <p className="bold-text fs-6">分享到:</p>
-                            <ul className="share-icon d-flex">
-                                <li><a href="#"><img src={Icons.Line} alt="line" /></a></li>
-                                <li><a href="#"><img src={Icons.Instagram} alt="Instagram" /></a></li>
-                                <li><a href="#"><img src={Icons.Facebook} alt="facebook" /></a></li>
-                                <li><a href="#"><img src={Icons.share_2} alt="share" /></a></li>
-                            </ul>
-                        </div>
+                            {/* 📌 手機版分享按鈕 (改為內嵌到 select-group 內) */}
+                            <div className="share-row-mobile d-md-none d-flex  align-items-center mt-40">
+                                <p className="bold-text fs-6">分享到:</p>
+                                <ul className="share-icon d-flex">
+                                    <li><a href="#"><img src={Icons.Line} alt="line" /></a></li>
+                                    <li><a href="#"><img src={Icons.Instagram} alt="Instagram" /></a></li>
+                                    <li><a href="#"><img src={Icons.Facebook} alt="facebook" /></a></li>
+                                    <li><a href="#"><img src={Icons.share_2} alt="share" /></a></li>
+                                </ul>
+                            </div>
 
-                        {/* 📌 電腦版分享按鈕 (位置靠右底部) */}
-                        <div className="share-row d-none d-md-flex align-items-center">
-                            <p className="me-md-4 bold-text fs-6">分享到:</p>
-                            <ul className="share-icon d-flex">
-                                <li><a href="#"><img src={Icons.Line} alt="line" /></a></li>
-                                <li><a href="#"><img src={Icons.Instagram} alt="Instagram" /></a></li>
-                                <li><a href="#"><img src={Icons.Facebook} alt="facebook" /></a></li>
-                                <li><a href="#"><img src={Icons.share_2} alt="share" /></a></li>
-                            </ul>
+                            {/* 📌 電腦版分享按鈕 (位置靠右底部) */}
+                            <div className="share-row d-none d-md-flex align-items-center">
+                                <p className="me-md-4 bold-text fs-6">分享到:</p>
+                                <ul className="share-icon d-flex">
+                                    <li><a href="#"><img src={Icons.Line} alt="line" /></a></li>
+                                    <li><a href="#"><img src={Icons.Instagram} alt="Instagram" /></a></li>
+                                    <li><a href="#"><img src={Icons.Facebook} alt="facebook" /></a></li>
+                                    <li><a href="#"><img src={Icons.share_2} alt="share" /></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </Col>
                 </Row>
