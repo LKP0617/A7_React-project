@@ -8,7 +8,9 @@ import chevron_up from './chevron-up.svg';
 import copyright from './copyright.svg';
 import Delete from './Delete.svg';
 import filter from './filter.svg';
-import heart from './heart.svg';
+import heart_white from './heart.svg';
+import heart from './heart.png';
+import heart_red from './heart-red.png';
 import Facebook from './Facebook.svg';
 import Facebook_BW from './Facebook B&W.svg';
 import Instagram from './Instagram.svg';
@@ -40,7 +42,9 @@ const icons = {
     copyright,
     Delete,
     filter,
+    heart_white,
     heart,
+    heart_red,
     Facebook,
     Facebook_BW,
     Instagram,
