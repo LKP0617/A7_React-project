@@ -10,6 +10,8 @@ import Cart from './pages/cart';
 import Checkout from './pages/Checkout';
 import CreatedOrder from './pages/CreatedOrder';
 import BackendProducts from './pages/BackendProducts';
+import BrandNegaflower from './pages/BrandNegaflower';
+import BrandTao from './pages/BrandTao';
 import './assets/scss/all.scss'
 
 import TestAPI from "./pages/TestApi"; // 🔹 新增測試頁面
@@ -30,6 +32,8 @@ function App() {
           <Route path='/createdOrder' element={<CreatedOrder />}></Route>
           <Route path='/backendProducts' element={<BackendProducts />}></Route>
           <Route path="/test-api" element={<TestAPI />} /> {/* 🔹 測試 API */}
+          <Route path='/Negaflower' element={<BrandNegaflower />}></Route>
+          <Route path='/Tao' element={<BrandTao />}></Route>
         </Routes>
       </div>
     </>

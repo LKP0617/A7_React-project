@@ -1,0 +1,220 @@
+/* 🔹 Banner 樣式 */
+.banner {
+    width: 100%;
+  }
+  
+  .main-banner-m {
+    display: none;
+  }
+  
+  /* 🔹 手機版 RWD */
+  @media (max-width: 576px) {
+    .main-banner {
+      display: none;
+    }
+    .main-banner-m {
+      display: block;
+    }
+  }
+  
+  /* 🔹 品牌介紹 */
+  .brand-name {
+    text-align: center;
+    background-color: #f8e7d81a;
+  }
+  
+  .brand-logo {
+    width: 107px;
+    padding-top: 90.5px;
+    margin: 0 auto;
+  }
+  
+  .brand-title {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-text-stroke: 0.5px #484848;
+    text-align: center;
+  }
+  
+  .brand-story {
+    padding-bottom: 90.5px;
+    text-align: center;
+  }
+  
+  .brand-story-m {
+    display: none;
+  }
+  
+  /* 🔹 手機版 RWD 調整 */
+  @media (max-width: 576px) {
+    .brand-logo {
+      padding-top: 80px;
+    }
+    .brand-story {
+      display: none;
+    }
+    .brand-story-m {
+      display: block;
+      padding-bottom: 80px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  
+ /* 🔹 品牌介紹 */
+.brand-name {
+    text-align: center;
+    background-color: #f8e7d81a;
+  }
+  .brand-logo {
+    width: 107px;
+    padding-top: 90.5px;
+    margin: 0 auto;
+  }
+  .brand-title {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-text-stroke: 0.5px #484848;
+    text-align: center;
+  }
+  .brand-story {
+    padding-bottom: 90.5px;
+    text-align: center;
+  }
+  .brand-story-m {
+    display: none;
+  }
+  
+  /* 手機版 RWD 調整 */
+  @media (max-width: 576px) {
+    .brand-logo {
+      padding-top: 80px;
+    }
+    .brand-story {
+      display: none;
+    }
+    .brand-story-m {
+      display: block;
+      padding-bottom: 80px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  
+  /* 🔹 產品分類 */
+
+  .product-category{
+    .white{
+        color: white;
+    }
+  }
+  .product-category-title {
+    padding-top: 80px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  .product-category-title-hr {
+    border: 1.5px solid #484848;
+    width: 227px;
+    margin: 0 auto;
+  }
+  .product-category-img {
+    gap: 24px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .product-categary-l {
+    max-width: 856px;
+    height: 100%;
+    position: relative;
+  }
+  .product-categary-l span,
+  .product-category-b span,
+  .product-category-t span {
+    position: absolute;
+  }
+  .product-category-r {
+    gap: 24px;
+  }
+  .product-category-t {
+    max-width: 416px;
+    height: 100%;
+    position: relative;
+  }
+  .product-category-b {
+    max-width: 416px;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* 🔹 設置遮罩層的樣式 */
+  .product-category-l-hover,
+  .product-category-t-hover,
+  .product-category-b-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* 🔹 滑鼠懸停時顯示遮罩 */
+  .product-categary-l:hover .product-category-l-hover,
+  .product-category-t:hover .product-category-t-hover,
+  .product-category-b:hover .product-category-b-hover {
+    opacity: 1;
+  }
+  
+  /* 手機版 RWD 調整 */
+  @media (max-width: 768px) {
+    .product-category-img {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .product-category-t,
+    .product-category-b {
+      max-width: 768px;
+      height: 100%;
+    }
+  }
+   
+/* 🔹 熱銷推薦區塊 */
+.hot-sell-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .text-align-center{
+        text-align: center;
+    }
+  }
+  
+  .hot-sell-title {
+    padding-bottom: 24px;
+    font-weight: bold;
+  }
+  
+  /* 🔹 4 欄商品排列 */
+  .hot-sell-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-top: 40px;
+  }
+  
+  /* 🔹 手機版 RWD 調整 */
+  @media (max-width: 1024px) {
+    .hot-sell-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hot-sell-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

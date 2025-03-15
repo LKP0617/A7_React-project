@@ -4,17 +4,7 @@ import { Card } from "react-bootstrap";
 // import "../assets/scss/components/_productCard.scss";
 
 function ProductCard({ product }) {
-    // 設定品牌對應的圖片
     
-    const brandLogo =
-    product?.brand === "Negaflower"
-      ? "https://i.imgur.com/Y9nAq2A.jpg"
-      : product?.brand === "陶之家"
-      ? "https://i.imgur.com/nTCBTgi.png"
-      : product?.brand === "SOS香氛"
-      ? "https://i.imgur.com/WE6gmjk.png"
-      : "https://i.imgur.com/r5w9tAg.png"; // 預設圖片，防止 brand 沒匹配時顯示錯誤    
-
       const navigate = useNavigate(); // 🚀 使用 useNavigate
 
       // 🚀 點擊產品卡片後，導向 `/product/${product.id}`
@@ -53,7 +43,7 @@ function ProductCard({ product }) {
     
     {/* 電腦版資訊區域 */}
     <Card.Body className="product-info-desktop">
-        <img src={brandLogo} alt={product.brand} className="brand-logo" />
+        <img src={product.brand_logo} alt={product.brand} className="brand-logo" />
         <div className="text-container">
             <p className="brand-name body-2">{product.brand}</p>
             <p className="product-name title text-truncate">{product.title}</p>
@@ -64,7 +54,7 @@ function ProductCard({ product }) {
     {/* 手機版資訊區域 */}
     <Card.Body className="product-info-mobile">
         <div className="brand-row">
-            <img src={brandLogo} alt={product.brand} className="brand-logo" />
+            <img src={product.brand_logo} alt={product.brand} className="brand-logo" />
             <p className="brand-name minimum">{product.brand}</p>
         </div>
         <p className="product-name subtitle">{product.title}</p>

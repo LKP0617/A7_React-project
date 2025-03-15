@@ -159,10 +159,10 @@ function Header() {
 
                                 <Dropdown.Menu>
                                     <Dropdown.Item href="#/action-1">
-                                        <Link className="dropdown-item fs-6 fw-bloder" to="#">negaflower</Link>
+                                        <Link className="dropdown-item fs-6 fw-bloder" to="/negaflower">negaflower</Link>
                                     </Dropdown.Item>
                                     <Dropdown.Item href="#/action-2">
-                                        <Link className="dropdown-item fs-6 fw-bloder" to="#">陶之家</Link>
+                                        <Link className="dropdown-item fs-6 fw-bloder" to="/tao">陶之家</Link>
                                     </Dropdown.Item>
                                     <Dropdown.Item href="#/action-3">
                                         <Link className="dropdown-item fs-6 fw-bloder" to="#">SOS香氛</Link>

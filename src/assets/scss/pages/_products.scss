@@ -271,3 +271,20 @@ a {
         }
     }
 }
+
+/* 熱銷推薦區塊 */
+.hot-sale-container {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.hot-sale-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hot-sale-title-hr {
+    width: 150px;
+    border: 2px solid #484848;
+    margin: 10px auto 30px;
+}
