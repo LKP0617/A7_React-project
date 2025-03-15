@@ -5,7 +5,7 @@ const API_BASE = import.meta.env.VITE_BASE_URL;
 const API_PATH = import.meta.env.VITE_API_PATH;
 const PRODUCTS_API = `${API_BASE}/v2/api/${API_PATH}/products/all`;
 
-console.log("完整 API URL:", PRODUCTS_API); // ✅ 這裡應該要顯示正確的 API URL
+// console.log("完整 API URL:", PRODUCTS_API); // ✅ 這裡應該要顯示正確的 API URL
 
 
 // ✅ 定義 fetchProducts，負責從 API 取得資料

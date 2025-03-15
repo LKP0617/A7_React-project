@@ -1,0 +1,289 @@
+a {
+  text-decoration: none;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.h4 {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.h6 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.title {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: 'gensen-b';
+}
+
+.button {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'gensen-r';
+}
+
+.placeholder {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'gensen-r';
+}
+
+.body-1 {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'gensen-r';
+}
+
+.body-2 {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'gensen-r';
+}
+
+.minumum {
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'gensen-r';
+}
+
+.branding-h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: 'chenyuluoyan';
+}
+
+.branding-h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: 'chenyuluoyan';
+}
+
+.branding-h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: 'chenyuluoyan';
+}
+
+.branding-h4 {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: 'chenyuluoyan';
+}
+
+.branding-h5 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: 'chenyuluoyan';
+}
+
+.branding-h6 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: 'chenyuluoyan';
+}
+
+
+.product-card {
+  min-height: 100%;
+  /* 讓所有卡片統一高度 */
+  max-width: 320px;
+  background: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .product-card-img-container {
+    position: relative;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-top-left-radius: 8px #4848481A;
+    border-top-right-radius: 8px #4848481A;
+
+    .product-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .heart-btn {
+      margin-right: 8px;
+      margin-bottom: 8px;
+      z-index: 10;
+      transition: transform 0.2s ease;
+
+      .heart-icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  /* 電腦版（768px 以上） */
+  .product-info-desktop {
+    display: flex;
+    align-items: top;
+    padding: 16px;
+    justify-content: space-between;
+
+    .brand-logo {
+      width: 61px;
+      height: 61px;
+      flex-shrink: 0;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+      margin-left: 12px; // 確保文字與 logo 有適當間距
+
+      .brand-name {
+        padding-top: 8px;
+        font-size: 14px;
+        font-weight: 400;
+
+        color: #484848;
+      }
+
+      .product-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #484848;
+        padding-top: 8px;
+        white-space: normal;
+        /* ✅ 允許換行 */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        /* ✅ 限制最多顯示 2 行 */
+        overflow: hidden;
+      }
+
+      .product-price {
+        font-size: 18px;
+
+        padding-top: 4px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        color: #484848;
+      }
+    }
+  }
+
+  /* 手機版（768px 以下） */
+  .product-info-mobile {
+    display: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 8px;
+    }
+
+    .brand-logo {
+      width: 24px;
+      height: 24px;
+    }
+
+    .brand-name {
+      font-size: 12px;
+    }
+
+    .product-name {
+      font-size: 14px;
+      padding-top: 18px;
+    }
+
+    .product-price {
+      font-size: 14px;
+      color: #484848;
+      padding-top: 4px;
+      padding-bottom: 18px;
+    }
+  }
+
+  /* RWD 控制顯示 */
+  @media (max-width: 768px) {
+    .product-info-desktop {
+      display: none;
+    }
+
+    .product-info-mobile {
+      display: flex;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}

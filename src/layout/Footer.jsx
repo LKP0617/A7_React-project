@@ -8,9 +8,9 @@ function Footer() {
             <footer>
                 <div className="forbgColor">
 
-                    <div className="container">
+                    <div className="footerBorder">
+                        <div className="container">
 
-                        <div className="footerBorder">
                             <div className="container  ">
                                 <div className="logoSlogan d-flex flex-column me-5 wwe">
                                     <Link to="/" className="logo">
